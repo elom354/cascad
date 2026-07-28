@@ -24,6 +24,11 @@ class HuggingFaceModelSpec:
     requested_revision: str
     context_tokens: int
     disable_thinking: bool = False
+    do_sample: bool = False
+    temperature: float = 0.0
+    top_p: float | None = None
+    top_k: int | None = None
+    min_p: float | None = None
 
 
 MODEL_SPECS: dict[str, HuggingFaceModelSpec] = {
@@ -33,6 +38,11 @@ MODEL_SPECS: dict[str, HuggingFaceModelSpec] = {
         requested_revision="main",
         context_tokens=32_768,
         disable_thinking=True,
+        do_sample=True,
+        temperature=0.7,
+        top_p=0.8,
+        top_k=20,
+        min_p=0.0,
     ),
     "mistral-7b": HuggingFaceModelSpec(
         alias="mistral-7b",
@@ -81,7 +91,6 @@ class HuggingFaceAttributor:
     """Callable local model using the same attribution prompt as API baselines."""
 
     provider = "huggingface-local"
-    temperature = 0.0
     configured_max_retries = 0
 
     def __init__(
@@ -91,7 +100,7 @@ class HuggingFaceAttributor:
         resolved_revision: str | None = None,
         quantization: QuantizationMode = "4bit",
         attention_backend: AttentionBackend = "sdpa",
-        cache_implementation: CacheImplementation = "offloaded",
+        cache_implementation: CacheImplementation = "dynamic",
         max_new_tokens: int = 32,
         token: str | None = None,
         backend: Any | None = None,
@@ -116,6 +125,7 @@ class HuggingFaceAttributor:
         self.attention_backend = attention_backend
         self.cache_implementation = cache_implementation
         self.max_new_tokens = max_new_tokens
+        self.temperature = spec.temperature
         self.token = token or os.getenv("HF_TOKEN")
         self._backend = backend
         self.last_call_metadata: dict[str, Any] | None = None
@@ -166,6 +176,10 @@ class HuggingFaceAttributor:
             "attention_backend": self.attention_backend,
             "cache_implementation": self.cache_implementation,
             "temperature": self.temperature,
+            "do_sample": self.spec.do_sample,
+            "top_p": self.spec.top_p,
+            "top_k": self.spec.top_k,
+            "min_p": self.spec.min_p,
             "max_new_tokens": self.max_new_tokens,
             "input_tokens": None,
             "output_tokens": None,
@@ -315,8 +329,19 @@ class _TransformersBackend:
             )
         device = _input_device(self.model)
         inputs = {key: value.to(device) for key, value in inputs.items()}
+        generation_seed = int.from_bytes(
+            sha256(
+                (
+                    f"cascad-hf-v1|{self.resolved_revision}|{prompt}"
+                ).encode("utf-8")
+            ).digest()[:8],
+            "big",
+        )
+        self.torch.manual_seed(generation_seed)
+        if self.torch.cuda.is_available():
+            self.torch.cuda.manual_seed_all(generation_seed)
         generation_kwargs: dict[str, Any] = {
-            "do_sample": False,
+            "do_sample": self.spec.do_sample,
             "max_new_tokens": self.max_new_tokens,
             "pad_token_id": (
                 self.tokenizer.pad_token_id
@@ -324,6 +349,15 @@ class _TransformersBackend:
                 else self.tokenizer.eos_token_id
             ),
         }
+        if self.spec.do_sample:
+            generation_kwargs.update(
+                {
+                    "temperature": self.spec.temperature,
+                    "top_p": self.spec.top_p,
+                    "top_k": self.spec.top_k,
+                    "min_p": self.spec.min_p,
+                }
+            )
         if self.cache_implementation == "offloaded":
             generation_kwargs["cache_implementation"] = "offloaded"
         with self.torch.inference_mode():
@@ -347,6 +381,7 @@ class _TransformersBackend:
             "output_tokens": output_tokens,
             "total_tokens": input_tokens + output_tokens,
             "hardware": hardware,
+            "generation_seed": generation_seed,
         }
 
 

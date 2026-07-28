@@ -13,3 +13,4 @@ htmlcov/
 .DS_Store
 .huggingface/
 *.ipynb_checkpoints/
+cascad-huggingface-*/

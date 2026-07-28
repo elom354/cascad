@@ -19,6 +19,12 @@ weights. That resolved revision, GPU, quantization, token counts, latency, raw
 response, parsed response, and prompt hash are exported for every instance.
 Input truncation is forbidden.
 
+Qwen runs in non-thinking mode with its model-card sampling recommendation
+(`temperature=0.7`, `top_p=0.8`, `top_k=20`, `min_p=0`). A per-prompt seed is
+derived from the immutable revision and prompt hash and exported with the
+record. Mistral retains deterministic decoding because its registered model
+spec does not prescribe Qwen's sampling policy.
+
 ## Kaggle
 
 1. Create a notebook and enable a GPU accelerator.
@@ -80,7 +86,7 @@ PYTHONPATH=src python scripts/run_huggingface_attribution.py \
   --models qwen3-4b \
   --quantization 4bit \
   --attention-backend sdpa \
-  --cache-implementation offloaded
+  --cache-implementation dynamic
 ```
 
 Download weights in advance when a compute session has limited network time:
@@ -93,6 +99,13 @@ PYTHONPATH=src python scripts/download_huggingface_models.py \
 The append-only `raw_results.jsonl` checkpoint allows the same command to
 resume after interruption. Successfully completed model/revision/instance
 triples are never called twice.
+
+Before attribution begins, the runner performs a label-free exact-sentinel
+generation check. It then evaluates the largest pending trace pair first. A
+broken generation backend or an out-of-memory failure therefore stops the
+campaign before spending a full 200-call run. `offloaded` remains available
+for diagnostics, but it is not the accepted default: the July 2026 T4 run
+produced incoherent generations under that cache mode.
 
 ## Result acceptance
 

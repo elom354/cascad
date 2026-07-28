@@ -63,7 +63,7 @@ def test_local_attributor_uses_shared_parser_and_records_provenance() -> None:
     assert client.last_call_metadata["resolved_revision"] == "a" * 40
     assert client.last_call_metadata["quantization"] == "4bit"
     assert client.last_call_metadata["attention_backend"] == "sdpa"
-    assert client.last_call_metadata["cache_implementation"] == "offloaded"
+    assert client.last_call_metadata["cache_implementation"] == "dynamic"
     assert client.last_call_metadata["hardware"] == "fake-gpu"
     assert client.last_call_metadata["parse_valid"] is True
     assert client.last_call_metadata["parsed_response"] == "tool"
@@ -71,6 +71,9 @@ def test_local_attributor_uses_shared_parser_and_records_provenance() -> None:
 
 def test_model_registry_is_explicit_and_rejects_unknown_alias() -> None:
     assert model_spec("qwen3-4b").disable_thinking is True
+    assert model_spec("qwen3-4b").do_sample is True
+    assert model_spec("qwen3-4b").temperature == 0.7
+    assert model_spec("mistral-7b").do_sample is False
     assert model_spec("mistral-7b").model_id.startswith("mistralai/")
     with pytest.raises(ValueError, match="unknown Hugging Face model"):
         model_spec("unregistered")
@@ -165,3 +168,43 @@ def test_summary_rejects_an_incomplete_frozen_split() -> None:
 
     assert summary["study_complete"] is False
     assert summary["models"][0]["missing_instance_ids"] == ["two"]
+
+
+def test_runtime_conformance_gate_rejects_corrupted_generation() -> None:
+    module = _runner_module()
+    client = HuggingFaceAttributor(
+        model_spec("qwen3-4b"),
+        resolved_revision="a" * 40,
+        backend=FakeBackend("tool multilingual garbage"),
+    )
+
+    result = module._runtime_conformance_check(
+        client,
+        alias="qwen3-4b",
+        execution_config_id="config",
+    )
+
+    assert result["passed"] is False
+    assert result["raw_response"] == "tool multilingual garbage"
+
+
+def test_capacity_gate_orders_largest_pair_first(tmp_path: Path) -> None:
+    module = _runner_module()
+    small_clean = tmp_path / "small-clean"
+    small_bad = tmp_path / "small-bad"
+    large_clean = tmp_path / "large-clean"
+    large_bad = tmp_path / "large-bad"
+    small_clean.write_text("a")
+    small_bad.write_text("b")
+    large_clean.write_text("a" * 100)
+    large_bad.write_text("b" * 100)
+
+    ordered = module._capacity_first_order(
+        ["small", "large"],
+        {
+            "small": (small_clean, small_bad),
+            "large": (large_clean, large_bad),
+        },
+    )
+
+    assert ordered == ["large", "small"]

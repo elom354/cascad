@@ -5,8 +5,10 @@ from __future__ import annotations
 
 import argparse
 import csv
+import importlib.metadata
 import json
 import os
+import platform
 from collections import defaultdict
 from datetime import UTC, datetime
 from hashlib import sha256
@@ -64,7 +66,7 @@ def main() -> None:
     parser.add_argument(
         "--cache-implementation",
         choices=["dynamic", "offloaded"],
-        default="offloaded",
+        default="dynamic",
     )
     parser.add_argument("--max-new-tokens", type=int, default=32)
     parser.add_argument(
@@ -92,11 +94,14 @@ def main() -> None:
             raise ValueError("--limit must be positive")
         selected_ids = selected_ids[: args.limit]
 
+    software_versions = _software_versions()
     execution_config_id = _execution_config_id(
         quantization=args.quantization,
         attention_backend=args.attention_backend,
         cache_implementation=args.cache_implementation,
         max_new_tokens=args.max_new_tokens,
+        software_versions=software_versions,
+        decoding_policy="model-card-v1",
     )
     out.mkdir(parents=True, exist_ok=True)
     checkpoint = out / "raw_results.jsonl"
@@ -128,18 +133,30 @@ def main() -> None:
         "execution_config_id": execution_config_id,
         "models": resolved_models,
         "decoding": {
-            "temperature": 0.0,
-            "do_sample": False,
+            "policy": "model-card-v1",
             "max_new_tokens": args.max_new_tokens,
             "truncation": "forbidden",
             "attention_backend": args.attention_backend,
             "cache_implementation": args.cache_implementation,
         },
+        "software_versions": software_versions,
         "prompt_contract": "same paired observable prompt and strict parser",
+        "execution_order": (
+            "largest pending serialized trace pair first as a capacity gate; "
+            "remaining instance IDs in lexicographic order"
+        ),
+        "runtime_conformance": (
+            "exact sentinel generation before any evaluation call"
+        ),
         "checkpoint": "append-only raw_results.jsonl",
     }
     _write_json(out / "run_manifest.json", manifest)
 
+    preflight_path = out / "runtime_preflight.json"
+    preflight_records = (
+        _read_json(preflight_path) if preflight_path.is_file() else []
+    )
+    abort_reason: str | None = None
     for alias in args.models:
         spec = model_spec(alias)
         resolved = resolve_model_revision(spec, token=token)
@@ -154,6 +171,16 @@ def main() -> None:
                 "attention_backend": args.attention_backend,
                 "cache_implementation": args.cache_implementation,
                 "execution_config_id": execution_config_id,
+                "decoding": {
+                    "do_sample": spec.do_sample,
+                    "temperature": spec.temperature,
+                    "top_p": spec.top_p,
+                    "top_k": spec.top_k,
+                    "min_p": spec.min_p,
+                    "seed_policy": (
+                        "SHA-256(cascad-hf-v1|revision|prompt), first 64 bits"
+                    ),
+                },
             }
         )
         _write_json(out / "run_manifest.json", manifest)
@@ -179,6 +206,20 @@ def main() -> None:
         ]
         if pending:
             client.load()
+            preflight = _runtime_conformance_check(
+                client,
+                alias=alias,
+                execution_config_id=execution_config_id,
+            )
+            preflight_records.append(preflight)
+            _write_json(preflight_path, preflight_records)
+            if not preflight["passed"]:
+                abort_reason = (
+                    f"{alias} failed the runtime conformance gate; no "
+                    "evaluation calls were started"
+                )
+                break
+            pending = _capacity_first_order(pending, pairs)
         for index, instance_id in enumerate(pending, start=1):
             clean_path, perturbed_path = pairs[instance_id]
             graph = graph_by_id[instance_id]
@@ -256,6 +297,21 @@ def main() -> None:
                 ),
                 flush=True,
             )
+            if (
+                index == 1
+                and row["status"] == "error"
+                and row["error"]["type"] in {
+                    "OutOfMemoryError",
+                    "MemoryError",
+                }
+            ):
+                abort_reason = (
+                    f"{alias} failed the largest-trace capacity gate; "
+                    "the remaining evaluation calls were not attempted"
+                )
+                break
+        if abort_reason:
+            break
 
     _write_json(out / "records.json", records)
     _write_csv(
@@ -271,11 +327,18 @@ def main() -> None:
     )
     _write_json(out / "summary.json", summary)
     manifest["status"] = (
-        "completed" if summary["study_complete"] else "finished_with_errors"
+        "invalid_preflight"
+        if abort_reason
+        else "completed"
+        if summary["study_complete"]
+        else "finished_with_errors"
     )
+    manifest["abort_reason"] = abort_reason
     manifest["completed_utc"] = datetime.now(tz=UTC).isoformat()
     _write_json(out / "run_manifest.json", manifest)
     _write_integrity(out)
+    if abort_reason:
+        raise RuntimeError(abort_reason)
 
 
 def summarize(
@@ -367,6 +430,8 @@ def _execution_config_id(
     attention_backend: str,
     cache_implementation: str,
     max_new_tokens: int,
+    software_versions: dict[str, str | None] | None = None,
+    decoding_policy: str = "legacy-greedy",
 ) -> str:
     payload = json.dumps(
         {
@@ -374,11 +439,86 @@ def _execution_config_id(
             "attention_backend": attention_backend,
             "cache_implementation": cache_implementation,
             "max_new_tokens": max_new_tokens,
+            "software_versions": software_versions,
+            "decoding_policy": decoding_policy,
         },
         sort_keys=True,
         separators=(",", ":"),
     )
     return sha256(payload.encode("utf-8")).hexdigest()[:16]
+
+
+def _software_versions() -> dict[str, str | None]:
+    """Record packages that can materially change local generation."""
+    packages = (
+        "accelerate",
+        "bitsandbytes",
+        "huggingface-hub",
+        "torch",
+        "transformers",
+    )
+    versions: dict[str, str | None] = {
+        "python": platform.python_version(),
+        "platform": platform.platform(),
+    }
+    for package in packages:
+        try:
+            versions[package] = importlib.metadata.version(package)
+        except importlib.metadata.PackageNotFoundError:
+            versions[package] = None
+    return versions
+
+
+def _runtime_conformance_check(
+    client: HuggingFaceAttributor,
+    *,
+    alias: str,
+    execution_config_id: str,
+) -> dict[str, Any]:
+    """Detect a broken inference backend without using evaluation labels."""
+    expected = "CASCAD_RUNTIME_OK"
+    prompt = (
+        "Runtime conformance check only. Return exactly "
+        f"{expected} and no other text."
+    )
+    try:
+        raw = client(prompt)
+        passed = raw.strip() == expected
+        error = None
+    except Exception as exc:
+        raw = None
+        passed = False
+        error = {
+            "type": exc.__class__.__name__,
+            "message": str(exc),
+        }
+    return {
+        "model_alias": alias,
+        "model_id": client.model,
+        "resolved_revision": client.resolved_revision,
+        "execution_config_id": execution_config_id,
+        "expected_response": expected,
+        "raw_response": raw,
+        "passed": passed,
+        "call_metadata": client.last_call_metadata,
+        "error": error,
+    }
+
+
+def _capacity_first_order(
+    pending: list[str],
+    pairs: dict[str, tuple[Path, Path]],
+) -> list[str]:
+    """Run the largest raw trace pair first, then use stable ID order."""
+    ordered = sorted(pending)
+    largest = max(
+        ordered,
+        key=lambda instance_id: (
+            sum(path.stat().st_size for path in pairs[instance_id]),
+            instance_id,
+        ),
+    )
+    return [largest, *(item for item in ordered if item != largest)]
 
 
 def _trace_pairs(source: Path) -> dict[str, tuple[Path, Path]]:
@@ -420,6 +560,7 @@ def _flat_record(row: dict[str, Any]) -> dict[str, Any]:
         "output_tokens",
         "total_tokens",
         "hardware",
+        "generation_seed",
     )
     flat = {key: row.get(key) for key in keys}
     if row["status"] == "error":
