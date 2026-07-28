@@ -127,6 +127,24 @@ The repository contains a ready-to-run
 [GPU container](Dockerfile.gpu). See
 [docs/cloud_execution.md](docs/cloud_execution.md) for the exact procedure.
 
+## Research status
+
+The 200-pair V2 real-agent study is preserved as post-hoc-corrected evidence:
+its clock normalization was amended after controlled results were inspected.
+It must not be presented as an untouched confirmatory study. The
+[publication-readiness audit](docs/publication_readiness.md) records the
+supported claim boundary, and the
+[prospective V3 design](docs/confirmatory_v3_design.md) addresses sample size,
+factorial coverage, difficult attribution, and external validity.
+
+Reproduce the current evidence audit and the prospective sample-size
+calculation with:
+
+```bash
+PYTHONPATH=src uv run python scripts/audit_publication_readiness.py
+PYTHONPATH=src uv run python scripts/plan_real_agent_v3_power.py
+```
+
 The V2 controlled split was opened only after calibration and specificity
 passed. To reproduce its gated collection from `react-agent`, use:
 
