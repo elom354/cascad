@@ -1,0 +1,2 @@
+scenario,trials,deepseek_accuracy,cascad_accuracy,mediator_rate,symptom_rate,invalid_rate,mean_root_distance,unique_prompt_count,unique_trace_count,api_call_count,temperature,model,encoder_used
+cloud_distant_symptom,20,0.1,1.0,0.9,0.0,0.0,0.9,20,20,20,0.0,deepseek-chat,embedding

@@ -1,0 +1,4 @@
+method_a,method_b,paired_instances,both_correct,a_correct_b_wrong,a_wrong_b_correct,both_wrong
+deepseek_paired_raw,cascad_full,80,78,0,2,0
+deepseek_paired_calibrated,cascad_full,80,78,0,2,0
+deepseek_paired_raw,deepseek_paired_calibrated,80,76,2,2,0

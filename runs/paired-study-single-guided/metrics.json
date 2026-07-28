@@ -1,0 +1,58 @@
+{
+  "name": "cloud_distant_symptom_attribution",
+  "trials": 20,
+  "mean_depth": 0,
+  "mean_delay": 0.0,
+  "mean_breadth": 2,
+  "mean_memory_amplification": 0.0,
+  "affected_nodes_union": [
+    "notify",
+    "share"
+  ],
+  "method": "attribution",
+  "variance": {
+    "depth": {
+      "mean": 0.0,
+      "stddev": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0
+    },
+    "delay": {
+      "mean": 0.0,
+      "stddev": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0
+    },
+    "breadth": {
+      "mean": 2.0,
+      "stddev": 0.0,
+      "ci95_low": 2.0,
+      "ci95_high": 2.0
+    },
+    "memory_persistence": {
+      "mean": 0.0,
+      "stddev": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0
+    }
+  },
+  "localization_accuracy": 0.1,
+  "graph_localization_accuracy": 1.0,
+  "clean_intervention_trigger_rate": 0.0,
+  "corrupt_intervention_block_rate": 0.0,
+  "encoder_used": "embedding",
+  "encoder_reason": "all-MiniLM-L6-v2 loaded",
+  "attribution_records": null,
+  "root_accuracy": 0.1,
+  "mediator_selection_rate": 0.9,
+  "visible_symptom_selection_rate": 0.0,
+  "other_node_rate": 0.0,
+  "invalid_output_rate": 0.0,
+  "mean_root_distance": 0.9,
+  "unique_prompt_count": 20,
+  "unique_trace_count": 20,
+  "api_call_count": 20,
+  "temperature": 0.0,
+  "model": "deepseek-chat",
+  "experimental_role": "varied_instances"
+}

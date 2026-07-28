@@ -1,0 +1,29 @@
+[
+  {
+    "method_a": "deepseek_paired_raw",
+    "method_b": "cascad_full",
+    "paired_instances": 80,
+    "both_correct": 78,
+    "a_correct_b_wrong": 0,
+    "a_wrong_b_correct": 2,
+    "both_wrong": 0
+  },
+  {
+    "method_a": "deepseek_paired_calibrated",
+    "method_b": "cascad_full",
+    "paired_instances": 80,
+    "both_correct": 78,
+    "a_correct_b_wrong": 0,
+    "a_wrong_b_correct": 2,
+    "both_wrong": 0
+  },
+  {
+    "method_a": "deepseek_paired_raw",
+    "method_b": "deepseek_paired_calibrated",
+    "paired_instances": 80,
+    "both_correct": 76,
+    "a_correct_b_wrong": 2,
+    "a_wrong_b_correct": 2,
+    "both_wrong": 0
+  }
+]

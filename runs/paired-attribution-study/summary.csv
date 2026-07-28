@@ -1,0 +1,6 @@
+method,information_available,prompt_type,unique_instances,unique_prompt_count,api_call_count,root_accuracy,mediator_rate,symptom_rate,other_rate,invalid_rate,mean_root_distance,model,temperature,experimental_role
+DeepSeek single-neutral,corrupt observable trace,neutral observational,20,20,20,0.0,0.0,1.0,0.0,0.0,2.0,deepseek-chat,0.0,varied_instances
+DeepSeek single-guided,corrupt observable trace,guided root-cause,20,20,20,0.1,0.9,0.0,0.0,0.0,0.9,deepseek-chat,0.0,varied_instances
+DeepSeek paired,clean + corrupt observable traces,paired comparison,20,20,20,1.0,0.0,0.0,0.0,0.0,0.0,deepseek-chat,0.0,varied_instances
+Cascad counterfactual graph,paired traces + natural-divergence calibration + native dependencies,structured algorithm (no LLM prompt),20,0,0,1.0,0.0,0.0,0.0,0.0,0.0,,,varied_instances
+Repeated-call stability check,one identical corrupt observable trace,"guided root-cause, repeated identical input",1,1,20,0.0,1.0,0.0,0.0,0.0,1.0,deepseek-chat,0,repeated_call_stability

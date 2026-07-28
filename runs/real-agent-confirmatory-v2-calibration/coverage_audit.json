@@ -1,0 +1,6 @@
+{
+  "verdict": "PASS",
+  "required_strata": 5,
+  "available_thresholds": 45,
+  "missing": []
+}

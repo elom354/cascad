@@ -1,0 +1,2 @@
+scenario,trials,deepseek_accuracy,cascad_accuracy,encoder_used
+cloud_distant_symptom,20,0.0,1.0,embedding

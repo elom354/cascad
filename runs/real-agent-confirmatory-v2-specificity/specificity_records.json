@@ -1,0 +1,4444 @@
+[
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_arithmetic_tool--000",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0005098174935595593,
+        "threshold": 0.012500001,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_arithmetic_tool--001",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0014725184260112824,
+        "threshold": 0.012500001,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_arithmetic_tool--002",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0007299153793509132,
+        "threshold": 0.012500001,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_arithmetic_tool--003",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0033127487208524224,
+        "threshold": 0.012500001,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_arithmetic_tool--004",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0015067352010480243,
+        "threshold": 0.012500001,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_arithmetic_tool--005",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.005976782647294892,
+        "threshold": 0.012500001,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_arithmetic_tool--006",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0015876613113608958,
+        "threshold": 0.012500001,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_arithmetic_tool--007",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.00016043272960547156,
+        "threshold": 0.012500001,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_arithmetic_tool--008",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0013307228537639438,
+        "threshold": 0.012500001,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_arithmetic_tool--009",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.001603250245671667,
+        "threshold": 0.012500001,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_arithmetic_tool--010",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.001156520495323062,
+        "threshold": 0.012500001,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_arithmetic_tool--011",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0027645523900355165,
+        "threshold": 0.012500001,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_arithmetic_tool--012",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0035534295056576016,
+        "threshold": 0.012500001,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_arithmetic_tool--013",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0011331559465358743,
+        "threshold": 0.012500001,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_arithmetic_tool--014",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0044834617031407065,
+        "threshold": 0.012500001,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_time_tool--000",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0031045806619344786,
+        "threshold": 0.004435184116218156,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_time_tool--001",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0012967975901641783,
+        "threshold": 0.004435184116218156,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_time_tool--002",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0023360639685566418,
+        "threshold": 0.004435184116218156,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_time_tool--003",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0028086846202039716,
+        "threshold": 0.004435184116218156,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_time_tool--004",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0024223164100643734,
+        "threshold": 0.004435184116218156,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_time_tool--005",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0005838510261911808,
+        "threshold": 0.004435184116218156,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_time_tool--006",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.002024119989968002,
+        "threshold": 0.004435184116218156,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_time_tool--007",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0035025200198559796,
+        "threshold": 0.004435184116218156,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_time_tool--008",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0024468987378410763,
+        "threshold": 0.004435184116218156,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_time_tool--009",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.001023329994152485,
+        "threshold": 0.004435184116218156,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_time_tool--010",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.002250209522308198,
+        "threshold": 0.004435184116218156,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_time_tool--011",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0012995940994231106,
+        "threshold": 0.004435184116218156,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_time_tool--012",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0014024307088006153,
+        "threshold": 0.004435184116218156,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_time_tool--013",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.00413553174429256,
+        "threshold": 0.004435184116218156,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--full-tools-persistent-memory--local_time_tool--014",
+    "configuration_id": "full-tools-persistent-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0033391361778647654,
+        "threshold": 0.004435184116218156,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_arithmetic_tool--000",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0005954713035498494,
+        "threshold": 0.0024820220323837246,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_arithmetic_tool--001",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0006124078866921419,
+        "threshold": 0.0024820220323837246,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_arithmetic_tool--002",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0005662592675937827,
+        "threshold": 0.0024820220323837246,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_arithmetic_tool--003",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 0.0024820220323837246,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_arithmetic_tool--004",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0018371603680181498,
+        "threshold": 0.0024820220323837246,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_arithmetic_tool--005",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0003922264199750743,
+        "threshold": 0.0024820220323837246,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_arithmetic_tool--006",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0021806165178621033,
+        "threshold": 0.0024820220323837246,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_arithmetic_tool--007",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 8.326086867028368e-05,
+        "threshold": 0.0024820220323837246,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_arithmetic_tool--008",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.00017602378754632924,
+        "threshold": 0.0024820220323837246,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_arithmetic_tool--009",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0008650214732948414,
+        "threshold": 0.0024820220323837246,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_arithmetic_tool--010",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 0.0024820220323837246,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_arithmetic_tool--011",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0017878191984856701,
+        "threshold": 0.0024820220323837246,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_arithmetic_tool--012",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 7.291333154294347e-05,
+        "threshold": 0.0024820220323837246,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_arithmetic_tool--013",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0012215616829036027,
+        "threshold": 0.0024820220323837246,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_arithmetic_tool--014",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_arithmetic_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::calculate|tool_call|0",
+        "node_id": "tool::calculate",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0015795130679105134,
+        "threshold": 0.0024820220323837246,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_time_tool--000",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0017258910214382973,
+        "threshold": 0.004174519365602794,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_time_tool--001",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.002236083741846869,
+        "threshold": 0.004174519365602794,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_time_tool--002",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0028445729154900345,
+        "threshold": 0.004174519365602794,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_time_tool--003",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0024257086459066064,
+        "threshold": 0.004174519365602794,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_time_tool--004",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.003798176837994603,
+        "threshold": 0.004174519365602794,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_time_tool--005",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0015629197626690443,
+        "threshold": 0.004174519365602794,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_time_tool--006",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0024738115021495162,
+        "threshold": 0.004174519365602794,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_time_tool--007",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0028783737456528455,
+        "threshold": 0.004174519365602794,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_time_tool--008",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0008264035580899812,
+        "threshold": 0.004174519365602794,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_time_tool--009",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.003912418037559138,
+        "threshold": 0.004174519365602794,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_time_tool--010",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": true,
+    "falsely_contaminated_nodes": [
+      "call_model"
+    ],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.004462235583662893,
+        "threshold": 0.004174519365602794,
+        "exceeds_threshold": true
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_time_tool--011",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0009518801057754119,
+        "threshold": 0.004174519365602794,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_time_tool--012",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0017507640557238764,
+        "threshold": 0.004174519365602794,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_time_tool--013",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.002452594887886173,
+        "threshold": 0.004174519365602794,
+        "exceeds_threshold": false
+      }
+    ]
+  },
+  {
+    "instance_id": "specificity--local-core-no-memory--local_time_tool--014",
+    "configuration_id": "local-core-no-memory",
+    "task_family": "local_time_tool",
+    "root_accuracy": null,
+    "root_accuracy_reason": "not_applicable_clean_clean",
+    "clean_pair_false_positive": false,
+    "falsely_contaminated_nodes": [],
+    "event_threshold_results": [
+      {
+        "event_key": "load_memory|memory_read|0",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|0",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|0",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "tool::get_current_datetime|tool_call|0",
+        "node_id": "tool::get_current_datetime",
+        "event_kind": "tool_call",
+        "occurrence": 0,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "load_memory|memory_read|1",
+        "node_id": "load_memory",
+        "event_kind": "memory_read",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_request|1",
+        "node_id": "call_model",
+        "event_kind": "model_request",
+        "occurrence": 1,
+        "distance": 0.0,
+        "threshold": 1e-09,
+        "exceeds_threshold": false
+      },
+      {
+        "event_key": "call_model|model_response|1",
+        "node_id": "call_model",
+        "event_kind": "model_response",
+        "occurrence": 1,
+        "distance": 0.0035706770242208453,
+        "threshold": 0.004174519365602794,
+        "exceeds_threshold": false
+      }
+    ]
+  }
+]

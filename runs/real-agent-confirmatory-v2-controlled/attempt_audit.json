@@ -1,0 +1,55 @@
+{
+  "verdict": "PASS",
+  "attempt_records": 403,
+  "successful_execution_keys": 400,
+  "complete_pairs": 200,
+  "failed_attempts": 3,
+  "failed_attempt_records": [
+    {
+      "attempt_index": 129,
+      "instance_id": "controlled--full-tools-persistent-memory--multi_step--incorrect_numeric_value--004",
+      "condition": "perturbed",
+      "status": "failed",
+      "fault_event_count": 0,
+      "error": {
+        "type": "GraphRecursionError",
+        "message": "Recursion limit of 20 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT"
+      }
+    },
+    {
+      "attempt_index": 146,
+      "instance_id": "controlled--full-tools-persistent-memory--multi_step--incorrect_numeric_value--013",
+      "condition": "perturbed",
+      "status": "failed",
+      "fault_event_count": 0,
+      "error": {
+        "type": "GraphRecursionError",
+        "message": "Recursion limit of 20 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT"
+      }
+    },
+    {
+      "attempt_index": 149,
+      "instance_id": "controlled--full-tools-persistent-memory--multi_step--incorrect_numeric_value--014",
+      "condition": "perturbed",
+      "status": "failed",
+      "fault_event_count": 0,
+      "error": {
+        "type": "GraphRecursionError",
+        "message": "Recursion limit of 20 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT"
+      }
+    }
+  ],
+  "repeated_exposure_pairs": 8,
+  "repeated_exposure_instance_ids": [
+    "controlled--full-tools-persistent-memory--multi_step--explicit_tool_error--001",
+    "controlled--full-tools-persistent-memory--multi_step--explicit_tool_error--003",
+    "controlled--full-tools-persistent-memory--multi_step--explicit_tool_error--005",
+    "controlled--full-tools-persistent-memory--multi_step--incorrect_numeric_value--003",
+    "controlled--full-tools-persistent-memory--multi_step--malformed_tool_result--001",
+    "controlled--full-tools-persistent-memory--multi_step--malformed_tool_result--003",
+    "controlled--full-tools-persistent-memory--multi_step--malformed_tool_result--004",
+    "controlled--full-tools-persistent-memory--multi_step--malformed_tool_result--007"
+  ],
+  "excluded_pairs": 0,
+  "policy": "Use one successful clean and perturbed execution per preregistered instance; retain failed attempts and repeated target exposure."
+}

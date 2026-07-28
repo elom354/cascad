@@ -1,0 +1,347 @@
+{
+  "global": {
+    "n": 200,
+    "graph_root_correct": 200,
+    "graph_root_accuracy": 1.0,
+    "graph_root_accuracy_wilson_95": [
+      0.9811546736227335,
+      1.0
+    ],
+    "realized_propagation_rate": 0.925,
+    "absorption_rate": 0.075,
+    "persistence_rate": 0.095,
+    "final_failure_rate": 0.54,
+    "successful_recovery_rate": 0.385,
+    "mean_observed_depth": 1.06,
+    "mean_subgraph_precision": 1.0,
+    "mean_subgraph_recall": 0.905,
+    "repeated_exposure_pairs": 8
+  },
+  "by_configuration": [
+    {
+      "configuration_id": "full-tools-persistent-memory",
+      "n": 100,
+      "graph_root_correct": 100,
+      "graph_root_accuracy": 1.0,
+      "graph_root_accuracy_wilson_95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "realized_propagation_rate": 0.85,
+      "absorption_rate": 0.15,
+      "persistence_rate": 0.19,
+      "final_failure_rate": 0.24,
+      "successful_recovery_rate": 0.61,
+      "mean_observed_depth": 1.12,
+      "mean_subgraph_precision": 1.0,
+      "mean_subgraph_recall": 0.81,
+      "repeated_exposure_pairs": 8
+    },
+    {
+      "configuration_id": "local-core-no-memory",
+      "n": 100,
+      "graph_root_correct": 100,
+      "graph_root_accuracy": 1.0,
+      "graph_root_accuracy_wilson_95": [
+        0.9630065017930143,
+        1.0
+      ],
+      "realized_propagation_rate": 1.0,
+      "absorption_rate": 0.0,
+      "persistence_rate": 0.0,
+      "final_failure_rate": 0.84,
+      "successful_recovery_rate": 0.16,
+      "mean_observed_depth": 1,
+      "mean_subgraph_precision": 1.0,
+      "mean_subgraph_recall": 1.0,
+      "repeated_exposure_pairs": 0
+    }
+  ],
+  "by_task_family": [
+    {
+      "task_family": "local_arithmetic_tool",
+      "n": 120,
+      "graph_root_correct": 120,
+      "graph_root_accuracy": 1.0,
+      "graph_root_accuracy_wilson_95": [
+        0.9689808335812966,
+        1.0
+      ],
+      "realized_propagation_rate": 1.0,
+      "absorption_rate": 0.0,
+      "persistence_rate": 0.0,
+      "final_failure_rate": 0.6,
+      "successful_recovery_rate": 0.4,
+      "mean_observed_depth": 1,
+      "mean_subgraph_precision": 1.0,
+      "mean_subgraph_recall": 1.0,
+      "repeated_exposure_pairs": 0
+    },
+    {
+      "task_family": "local_time_tool",
+      "n": 40,
+      "graph_root_correct": 40,
+      "graph_root_accuracy": 1.0,
+      "graph_root_accuracy_wilson_95": [
+        0.9123783988027135,
+        1.0
+      ],
+      "realized_propagation_rate": 1.0,
+      "absorption_rate": 0.0,
+      "persistence_rate": 0.0,
+      "final_failure_rate": 0.625,
+      "successful_recovery_rate": 0.375,
+      "mean_observed_depth": 1,
+      "mean_subgraph_precision": 1.0,
+      "mean_subgraph_recall": 1.0,
+      "repeated_exposure_pairs": 0
+    },
+    {
+      "task_family": "multi_step_memory_tool",
+      "n": 40,
+      "graph_root_correct": 40,
+      "graph_root_accuracy": 1.0,
+      "graph_root_accuracy_wilson_95": [
+        0.9123783988027135,
+        1.0
+      ],
+      "realized_propagation_rate": 0.625,
+      "absorption_rate": 0.375,
+      "persistence_rate": 0.475,
+      "final_failure_rate": 0.275,
+      "successful_recovery_rate": 0.35,
+      "mean_observed_depth": 1.3,
+      "mean_subgraph_precision": 1.0,
+      "mean_subgraph_recall": 0.525,
+      "repeated_exposure_pairs": 8
+    }
+  ],
+  "by_fault_family": [
+    {
+      "fault_family": "explicit_tool_error",
+      "n": 50,
+      "graph_root_correct": 50,
+      "graph_root_accuracy": 1.0,
+      "graph_root_accuracy_wilson_95": [
+        0.9286524008666414,
+        1.0
+      ],
+      "realized_propagation_rate": 0.94,
+      "absorption_rate": 0.06,
+      "persistence_rate": 0.06,
+      "final_failure_rate": 0.56,
+      "successful_recovery_rate": 0.38,
+      "mean_observed_depth": 1,
+      "mean_subgraph_precision": 1.0,
+      "mean_subgraph_recall": 0.891,
+      "repeated_exposure_pairs": 3
+    },
+    {
+      "fault_family": "incorrect_numeric_value",
+      "n": 60,
+      "graph_root_correct": 60,
+      "graph_root_accuracy": 1.0,
+      "graph_root_accuracy_wilson_95": [
+        0.93982814785791,
+        0.9999999999999998
+      ],
+      "realized_propagation_rate": 0.85,
+      "absorption_rate": 0.15,
+      "persistence_rate": 0.16666666666666666,
+      "final_failure_rate": 0.4,
+      "successful_recovery_rate": 0.45,
+      "mean_observed_depth": 1.1333333333333333,
+      "mean_subgraph_precision": 1.0,
+      "mean_subgraph_recall": 0.8508333333333333,
+      "repeated_exposure_pairs": 1
+    },
+    {
+      "fault_family": "incorrect_time_observation",
+      "n": 40,
+      "graph_root_correct": 40,
+      "graph_root_accuracy": 1.0,
+      "graph_root_accuracy_wilson_95": [
+        0.9123783988027135,
+        1.0
+      ],
+      "realized_propagation_rate": 1.0,
+      "absorption_rate": 0.0,
+      "persistence_rate": 0.0,
+      "final_failure_rate": 0.625,
+      "successful_recovery_rate": 0.375,
+      "mean_observed_depth": 1,
+      "mean_subgraph_precision": 1.0,
+      "mean_subgraph_recall": 1.0,
+      "repeated_exposure_pairs": 0
+    },
+    {
+      "fault_family": "malformed_tool_result",
+      "n": 50,
+      "graph_root_correct": 50,
+      "graph_root_accuracy": 1.0,
+      "graph_root_accuracy_wilson_95": [
+        0.9286524008666414,
+        1.0
+      ],
+      "realized_propagation_rate": 0.94,
+      "absorption_rate": 0.06,
+      "persistence_rate": 0.12,
+      "final_failure_rate": 0.62,
+      "successful_recovery_rate": 0.32,
+      "mean_observed_depth": 1.08,
+      "mean_subgraph_precision": 1.0,
+      "mean_subgraph_recall": 0.908,
+      "repeated_exposure_pairs": 4
+    }
+  ],
+  "by_propagation_opportunity": [
+    {
+      "propagation_opportunity": "mono_step",
+      "n": 160,
+      "graph_root_correct": 160,
+      "graph_root_accuracy": 1.0,
+      "graph_root_accuracy_wilson_95": [
+        0.9765538048284949,
+        1.0
+      ],
+      "realized_propagation_rate": 1.0,
+      "absorption_rate": 0.0,
+      "persistence_rate": 0.0,
+      "final_failure_rate": 0.60625,
+      "successful_recovery_rate": 0.39375,
+      "mean_observed_depth": 1,
+      "mean_subgraph_precision": 1.0,
+      "mean_subgraph_recall": 1.0,
+      "repeated_exposure_pairs": 0
+    },
+    {
+      "propagation_opportunity": "multi_step",
+      "n": 40,
+      "graph_root_correct": 40,
+      "graph_root_accuracy": 1.0,
+      "graph_root_accuracy_wilson_95": [
+        0.9123783988027135,
+        1.0
+      ],
+      "realized_propagation_rate": 0.625,
+      "absorption_rate": 0.375,
+      "persistence_rate": 0.475,
+      "final_failure_rate": 0.275,
+      "successful_recovery_rate": 0.35,
+      "mean_observed_depth": 1.3,
+      "mean_subgraph_precision": 1.0,
+      "mean_subgraph_recall": 0.525,
+      "repeated_exposure_pairs": 8
+    }
+  ],
+  "by_realized_path_length": [
+    {
+      "realized_path_length": 1,
+      "n": 15,
+      "graph_root_correct": 15,
+      "graph_root_accuracy": 1.0,
+      "graph_root_accuracy_wilson_95": [
+        0.7961166989641515,
+        1.0
+      ],
+      "realized_propagation_rate": 0.0,
+      "absorption_rate": 1.0,
+      "persistence_rate": 0.0,
+      "final_failure_rate": 0.0,
+      "successful_recovery_rate": 0.0,
+      "mean_observed_depth": 0,
+      "mean_subgraph_precision": 1.0,
+      "mean_subgraph_recall": 0.25,
+      "repeated_exposure_pairs": 0
+    },
+    {
+      "realized_path_length": 2,
+      "n": 167,
+      "graph_root_correct": 167,
+      "graph_root_accuracy": 1.0,
+      "graph_root_accuracy_wilson_95": [
+        0.9775144812786577,
+        0.9999999999999999
+      ],
+      "realized_propagation_rate": 1.0,
+      "absorption_rate": 0.0,
+      "persistence_rate": 0.005988023952095809,
+      "final_failure_rate": 0.5808383233532934,
+      "successful_recovery_rate": 0.41916167664670656,
+      "mean_observed_depth": 1,
+      "mean_subgraph_precision": 1.0,
+      "mean_subgraph_recall": 0.9790419161676647,
+      "repeated_exposure_pairs": 0
+    },
+    {
+      "realized_path_length": 3,
+      "n": 12,
+      "graph_root_correct": 12,
+      "graph_root_accuracy": 1.0,
+      "graph_root_accuracy_wilson_95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "realized_propagation_rate": 1.0,
+      "absorption_rate": 0.0,
+      "persistence_rate": 1.0,
+      "final_failure_rate": 0.5833333333333334,
+      "successful_recovery_rate": 0.4166666666666667,
+      "mean_observed_depth": 2,
+      "mean_subgraph_precision": 1.0,
+      "mean_subgraph_recall": 0.6625,
+      "repeated_exposure_pairs": 7
+    },
+    {
+      "realized_path_length": 4,
+      "n": 3,
+      "graph_root_correct": 3,
+      "graph_root_accuracy": 1.0,
+      "graph_root_accuracy_wilson_95": [
+        0.4385029682449546,
+        1.0
+      ],
+      "realized_propagation_rate": 1.0,
+      "absorption_rate": 0.0,
+      "persistence_rate": 1.0,
+      "final_failure_rate": 0.3333333333333333,
+      "successful_recovery_rate": 0.6666666666666666,
+      "mean_observed_depth": 3,
+      "mean_subgraph_precision": 1.0,
+      "mean_subgraph_recall": 0.9333333333333333,
+      "repeated_exposure_pairs": 0
+    },
+    {
+      "realized_path_length": 5,
+      "n": 3,
+      "graph_root_correct": 3,
+      "graph_root_accuracy": 1.0,
+      "graph_root_accuracy_wilson_95": [
+        0.4385029682449546,
+        1.0
+      ],
+      "realized_propagation_rate": 1.0,
+      "absorption_rate": 0.0,
+      "persistence_rate": 1.0,
+      "final_failure_rate": 1.0,
+      "successful_recovery_rate": 0.0,
+      "mean_observed_depth": 4,
+      "mean_subgraph_precision": 1.0,
+      "mean_subgraph_recall": 1.0,
+      "repeated_exposure_pairs": 1
+    }
+  ],
+  "outcome_counts": {
+    "absorbed_by_agent": 8,
+    "detected_and_blocked": 93,
+    "no_persistence_opportunity_realized": 1,
+    "propagated_to_memory": 18,
+    "propagated_without_memory": 44,
+    "successful_recovery": 36
+  },
+  "alignment": {
+    "aligned_pairs": 189,
+    "structurally_divergent_pairs": 11,
+    "pairs_with_uncalibrated_realized_extensions": 0
+  }
+}

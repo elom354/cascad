@@ -1,0 +1,90 @@
+{
+  "calibration_split_id": "natural-noise-calibration-v1",
+  "naturally_variable_fields_by_node": {
+    "memory": [
+      "memory_summary"
+    ],
+    "notify": [
+      "receipt_id"
+    ],
+    "planner": [
+      "plan_summary"
+    ],
+    "share": [
+      "harmless_metadata"
+    ],
+    "upload": [
+      "correlation_id",
+      "resource_id"
+    ]
+  },
+  "event_kinds_observed_by_node": {
+    "input": [
+      "node_end",
+      "node_start"
+    ],
+    "memory": [
+      "memory_read",
+      "memory_write",
+      "node_end",
+      "node_start"
+    ],
+    "notify": [
+      "node_end",
+      "node_start",
+      "tool_call"
+    ],
+    "planner": [
+      "node_end",
+      "node_start",
+      "plan_created"
+    ],
+    "responder": [
+      "final_answer",
+      "node_end",
+      "node_start"
+    ],
+    "share": [
+      "node_end",
+      "node_start",
+      "tool_call"
+    ],
+    "upload": [
+      "node_end",
+      "node_start",
+      "tool_call"
+    ]
+  },
+  "natural_distance_summary_by_node": {
+    "memory": {
+      "mean": 0.0,
+      "stddev": 0.0,
+      "sample_count": 24
+    },
+    "notify": {
+      "mean": 0.0,
+      "stddev": 0.0,
+      "sample_count": 24
+    },
+    "planner": {
+      "mean": 0.0,
+      "stddev": 0.0,
+      "sample_count": 24
+    },
+    "responder": {
+      "mean": 0.0,
+      "stddev": 0.0,
+      "sample_count": 24
+    },
+    "share": {
+      "mean": 0.0,
+      "stddev": 0.0,
+      "sample_count": 24
+    },
+    "upload": {
+      "mean": 0.0,
+      "stddev": 0.0,
+      "sample_count": 24
+    }
+  }
+}

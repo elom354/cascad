@@ -1,0 +1,521 @@
+{
+  "hash_algorithm": "SHA-256",
+  "artifacts": {
+    "calibration_audit.json": {
+      "sha256": "ecfda63afbcc98b9d66c31f61a0b4d648bd0ba426d3d5eba5347ab80b11456ca",
+      "bytes": 258
+    },
+    "calibration_manifest.json": {
+      "sha256": "ebbda6b52946d3155dde6154e7a191d4104ef3656f4ca2db0cd0162c6f291d27",
+      "bytes": 314178
+    },
+    "coverage_audit.json": {
+      "sha256": "4702d3d7479161c4b64ff0fae5bf839467367a3d12882f09269500c0790d29f3",
+      "bytes": 94
+    },
+    "divergences.csv": {
+      "sha256": "cae6eb4c36cced4876b61ff2786cb9c82b6a071a9bc8c2e4ca33e7c2fe858d69",
+      "bytes": 92244
+    },
+    "divergences.json": {
+      "sha256": "2f203907bc1d1eac6c782a0bf6beebcc9cfb426f912e852b97d7290712ffb630",
+      "bytes": 182115
+    },
+    "post_collection_integrity.json": {
+      "sha256": "e4f5c790b6c5a1baefc5d09de3b3078e1b15fdc85e83acbbe6669660b4144ff2",
+      "bytes": 36102
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--000/clean_a.events.jsonl": {
+      "sha256": "ad2aba8f516f70aea0e1cdfb1046b0199d1303f2c7608747c76a9ff09ecb8b77",
+      "bytes": 14261
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--000/clean_b.events.jsonl": {
+      "sha256": "bb7f8d73ecb0f1d81177d1969da11a29191d96349f44a51836ba991c281d9fbf",
+      "bytes": 14217
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--001/clean_a.events.jsonl": {
+      "sha256": "29a9629bc50e7e5036f4f0ac7e4a0b515dcce2eb010f77d13f23475002899026",
+      "bytes": 14243
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--001/clean_b.events.jsonl": {
+      "sha256": "0e09dfae441076a2ae5aa2b00b3ed65e60bb1da0add121b1fad22c57da85a01b",
+      "bytes": 14239
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--002/clean_a.events.jsonl": {
+      "sha256": "1a5d142a1ccb08c3b9ceec25e4873a70a60cc9939de1e694a68df8bb25953e82",
+      "bytes": 14253
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--002/clean_b.events.jsonl": {
+      "sha256": "34808806832973022727adb6fd0002e69f3febe92b349cb71a41dfb92d8c2c48",
+      "bytes": 14245
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--003/clean_a.events.jsonl": {
+      "sha256": "f77ae52709d727e817867105439b441a77344122ad6d44b317d6ecf6dae6a4db",
+      "bytes": 14272
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--003/clean_b.events.jsonl": {
+      "sha256": "8ad06c9e4a7537c62bed20983587c2cff1c62cd85df71febea610ec2a84868c4",
+      "bytes": 14224
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--004/clean_a.events.jsonl": {
+      "sha256": "183b8db186ad3102abbc53f4e6417f4581c9d86201a9933aeda8a46d8427d0fc",
+      "bytes": 14265
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--004/clean_b.events.jsonl": {
+      "sha256": "c478233962a62bb1397d8682bb27bbdae40a50e2b849b308b96315bf124d3d33",
+      "bytes": 14222
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--005/clean_a.events.jsonl": {
+      "sha256": "4fbe0c7ea5b62f1fae78ccb701f139fa007436f126fcc9d3a762ed49075a3716",
+      "bytes": 14173
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--005/clean_b.events.jsonl": {
+      "sha256": "be0c8e1316ff51490fdf4a736c98014fa8806603c8d103b10beee59138b722ee",
+      "bytes": 14167
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--006/clean_a.events.jsonl": {
+      "sha256": "e92d083246c4c2acf6d0fcd184f6e4670ae105faeae2bab093370c8591f863c0",
+      "bytes": 14218
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--006/clean_b.events.jsonl": {
+      "sha256": "99c4961d0a97c7ee1b789e4bd01f926034ccfc854acb91bc344b3fb9f8b16b02",
+      "bytes": 14241
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--007/clean_a.events.jsonl": {
+      "sha256": "a4e8fd5a0e282e4d58ec765da60f94291d552180a988852a8de3af8be2ccf48d",
+      "bytes": 14254
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--007/clean_b.events.jsonl": {
+      "sha256": "5bc52cd1c4e451739d7d3e486e53c753c2b1d5679318ff60edc074a97866da1c",
+      "bytes": 14225
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--008/clean_a.events.jsonl": {
+      "sha256": "5900d6cacf450f51980451e3d7c5c955ce997b5485bdff6d3e54dbbcf214eaba",
+      "bytes": 14244
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--008/clean_b.events.jsonl": {
+      "sha256": "b2c54d359f0c7720486121059ac257c3076815bb643d990fdf7dda073b7aee80",
+      "bytes": 14318
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--009/clean_a.events.jsonl": {
+      "sha256": "48c60331427331bac13c97c6427381f81c44157533a38f2de10d88be0a1863eb",
+      "bytes": 14281
+    },
+    "raw/calibration--full-tools-persistent-memory--local_arithmetic_tool--009/clean_b.events.jsonl": {
+      "sha256": "d660512cebe686738de77422d1346ce5b5f2577aa4af8a3c5fcfed6f4b2ccc7d",
+      "bytes": 14268
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--000/clean_a.events.jsonl": {
+      "sha256": "18c777c73517aaf12347a8de66366c897fe6a7b8484a4fc454fb79a159d34614",
+      "bytes": 14468
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--000/clean_b.events.jsonl": {
+      "sha256": "15cdf45f79b2c6445c9ee566d9097996e500088c6ffa2afbda08d774065fa6dc",
+      "bytes": 14279
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--001/clean_a.events.jsonl": {
+      "sha256": "5fe2854aa662f3c79f3a8c9cf7ecdf697f9f8b77f8a8adb42ae435710970e713",
+      "bytes": 14531
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--001/clean_b.events.jsonl": {
+      "sha256": "4bf3b380bb93eec2f4d233df114ff63ca903e8ee2dc1e6e0ed150240518b34aa",
+      "bytes": 14433
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--002/clean_a.events.jsonl": {
+      "sha256": "35b63acf58eab7b3682267b2025f294b1ba85e58665cbeaec8286a7fc0c9e962",
+      "bytes": 14233
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--002/clean_b.events.jsonl": {
+      "sha256": "fc15a62c09c66ea8976d92792bd415a9f64b1d750691e8599334b3a96d2063ff",
+      "bytes": 14277
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--003/clean_a.events.jsonl": {
+      "sha256": "21392a4f29215a4e02aabe2000d9b896645780aac45477eb6172e2b1de175f24",
+      "bytes": 14589
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--003/clean_b.events.jsonl": {
+      "sha256": "501602860db0843a3339fd836c63940be5130cfa57c673491ba32c5024161a53",
+      "bytes": 14306
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--004/clean_a.events.jsonl": {
+      "sha256": "b5580ed34d3a7988539e314508aad146e6f1c675bf728b5b7579ac6a1153e6da",
+      "bytes": 14412
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--004/clean_b.events.jsonl": {
+      "sha256": "b4cf257f8282cd192e0d373f113f910932ad776e5ee8986ae5006d2a705c6bed",
+      "bytes": 14413
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--005/clean_a.events.jsonl": {
+      "sha256": "54b72c25972d39be41a71447780070171172f0ef140f449f80fe01201d3864ba",
+      "bytes": 14395
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--005/clean_b.events.jsonl": {
+      "sha256": "f36807635823451b2b0b4b7d5eb5df0e580da348faa05cb87eeb9d488c072b1c",
+      "bytes": 14266
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--006/clean_a.events.jsonl": {
+      "sha256": "86c591c4881e7ded1ac853b6a45d123bba3eb1342d60c112012321beb9b4d0b4",
+      "bytes": 14474
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--006/clean_b.events.jsonl": {
+      "sha256": "b1ba0a09ad0a76eeb10b47823cf21e781a85b497ccdf0ee382ae7c8ba2040dc3",
+      "bytes": 14235
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--007/clean_a.events.jsonl": {
+      "sha256": "b6cd204931793275c9ca437081b5983e55becd95c6f661740f3997b1e4a6d2ef",
+      "bytes": 14227
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--007/clean_b.events.jsonl": {
+      "sha256": "2eb207ccecd20b1aaaf0fb0157020d06b40a73ba8564df8e0e4d88881826d455",
+      "bytes": 14336
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--008/clean_a.events.jsonl": {
+      "sha256": "ea1c63dcb0345b444a03ef0ce91342d277b503818f2a4cdd3dcf53cf22ae579d",
+      "bytes": 14311
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--008/clean_b.events.jsonl": {
+      "sha256": "b440f150e83dde9898111d187ac3e550ab5260e90a4cae11a748ce375c0fa935",
+      "bytes": 14418
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--009/clean_a.events.jsonl": {
+      "sha256": "c762e4c031978a7f40b0442c289da896403e0f3649b6bcda890b858b2a661e11",
+      "bytes": 14428
+    },
+    "raw/calibration--full-tools-persistent-memory--local_time_tool--009/clean_b.events.jsonl": {
+      "sha256": "b600bbfc834458955415ac23a7e2800af218f143588a130a7f695dfc5316b604",
+      "bytes": 14344
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--000/clean_a.events.jsonl": {
+      "sha256": "97b1118fdb38354bc913a14bef00b8ac357acc9164000b44f90ada0e3be0bb6d",
+      "bytes": 39993
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--000/clean_b.events.jsonl": {
+      "sha256": "a9b81f706981bddcadb5979c7f563769a726ded043c0887aaa4afb435e80b7f2",
+      "bytes": 39461
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--001/clean_a.events.jsonl": {
+      "sha256": "1954862409c5d23514fd58203479251451d24dc23163a3ff9ca64746e544fbfb",
+      "bytes": 39387
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--001/clean_b.events.jsonl": {
+      "sha256": "7d18e9091c2dafdc2fba9d811f2f1f2abcf3347271c0679fb727ab0bbcd27eb7",
+      "bytes": 39291
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--002/clean_a.events.jsonl": {
+      "sha256": "a207c636a1d9924e306d9249db8b4af16425ac70d5b882365c6b9c42dd8a2948",
+      "bytes": 39185
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--002/clean_b.events.jsonl": {
+      "sha256": "09dfba4c251683d3808e7b874a286f5d082fa052b2813024e490e094d0069f1e",
+      "bytes": 39485
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--003/clean_a.events.jsonl": {
+      "sha256": "f23280a3840248790667b3dad77d3e3d813bd8074f14ac27fc269212a0d582fe",
+      "bytes": 39651
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--003/clean_b.events.jsonl": {
+      "sha256": "64c75a1b88e76b39539c21600f5bf134452060e5ce9f62afc53a51bc89a80440",
+      "bytes": 38867
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--004/clean_a.events.jsonl": {
+      "sha256": "0912f12f076dd5eb7db53dfc10829774878d1c1541d049aae0e6780ba6025918",
+      "bytes": 39734
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--004/clean_b.events.jsonl": {
+      "sha256": "c25d650c148edf9e0f35385252cdf1916adc2d4ca1d7300aee62fd143215f527",
+      "bytes": 39177
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--005/clean_a.events.jsonl": {
+      "sha256": "d4c1abe83ccf2f8f809a381870ad8a9a3530947113c5b94e907a16e442239bda",
+      "bytes": 39002
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--005/clean_b.events.jsonl": {
+      "sha256": "24f3878b6c6a2a08de6dcb2e15322390b2b90cada76f566ec07189002eba5774",
+      "bytes": 39766
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--006/clean_a.events.jsonl": {
+      "sha256": "672b2e8e3b67c13b326aa76b30c1f67e67b67741a9945fd134d908bb690b0e7f",
+      "bytes": 39494
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--006/clean_b.events.jsonl": {
+      "sha256": "17a2322cc0c3e663ca58cde50571d23df050c61753195767d4a75e55ad16ed21",
+      "bytes": 38980
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--007/clean_a.events.jsonl": {
+      "sha256": "2b7cba2938a4cc716d843048ff7942aa3227c0cc8581d9fbd34a77c7ce3d93a0",
+      "bytes": 38821
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--007/clean_b.events.jsonl": {
+      "sha256": "97fbed29092e63f7c905bba7476eee8b53af65554cacedfd79a10d3872c412b9",
+      "bytes": 39658
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--008/clean_a.events.jsonl": {
+      "sha256": "1ce5832c9a93cb68e858e9f64e2502f7ee1f6eeed9f368d56d0ab9471125c43c",
+      "bytes": 38650
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--008/clean_b.events.jsonl": {
+      "sha256": "fd7d59c21b7802110ba85a7fbe042f66bedb7873790b7eee7918495837e0be55",
+      "bytes": 39408
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--009/clean_a.events.jsonl": {
+      "sha256": "85330f22ae40cf2c7b99e9195a1e2fd6ae2d8ae1f8743f28a03c46537f97811d",
+      "bytes": 40084
+    },
+    "raw/calibration--full-tools-persistent-memory--multi_step_memory_tool--009/clean_b.events.jsonl": {
+      "sha256": "b73b2725cdd87a799e0211b300ea0b026646314ffba7729fde23b682521a3aaf",
+      "bytes": 39450
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--000/clean_a.events.jsonl": {
+      "sha256": "a83cf042047ac38bc2d969dee8f145361907ec453d8fe0e811082b8a244abf60",
+      "bytes": 13344
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--000/clean_b.events.jsonl": {
+      "sha256": "c4941e6bb12191f31c4bfad03d184fc94306245e895c2fdaad2324f18e9784b1",
+      "bytes": 13414
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--001/clean_a.events.jsonl": {
+      "sha256": "7f4929e468ecaf02e3ad133006183e5de0b21416a3c42481271cbb979cc0ccb7",
+      "bytes": 13400
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--001/clean_b.events.jsonl": {
+      "sha256": "0610cf79319a1f82574ebcd69fece6be21f51eaa4253ae16673c728cad3a08e5",
+      "bytes": 13375
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--002/clean_a.events.jsonl": {
+      "sha256": "b802e923cc4fa602a91f4b91fb713e0745ef3166161ba3c669b0090a066c26e7",
+      "bytes": 13377
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--002/clean_b.events.jsonl": {
+      "sha256": "a0f5ba6e81dab1bbf40aa6772c3e10f36c966686ca2c22a59b3a298c51bab04e",
+      "bytes": 13386
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--003/clean_a.events.jsonl": {
+      "sha256": "0fa6a80287fe8abe6ec5d6f09aea054d36e9c95bed3ac343af1ba7edd5f0c2d6",
+      "bytes": 13371
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--003/clean_b.events.jsonl": {
+      "sha256": "5df0ce63214507e62884b43caccee4aa3082a43077e2f7785afed18f4f646209",
+      "bytes": 13378
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--004/clean_a.events.jsonl": {
+      "sha256": "4376b7320f7e9061b160c966f7f7f2a73fc86b296acfbacefdc912978899bf39",
+      "bytes": 13378
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--004/clean_b.events.jsonl": {
+      "sha256": "9d6df372a0db286ffde98e2aae897dd2cc6a74f0fc6ca647891edb3b4c39d5da",
+      "bytes": 13383
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--005/clean_a.events.jsonl": {
+      "sha256": "f2c1dbe6d0bad1642f3a75d03ab7f6c930edf96f72149f9fe268af590f981551",
+      "bytes": 13293
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--005/clean_b.events.jsonl": {
+      "sha256": "f753a61e652b05d32004d538a21e8ace676021717c98689e4ad66414c363e169",
+      "bytes": 13284
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--006/clean_a.events.jsonl": {
+      "sha256": "d1b11fedc40df78c7139c82a4378f1dbc5f6bccef09e14fedd1de54ac513cb3a",
+      "bytes": 13373
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--006/clean_b.events.jsonl": {
+      "sha256": "309de8f424c1b0c39bd97b7ddaf774ee85d3b9dbb5f6c4a5c2d45a32cb39273a",
+      "bytes": 13370
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--007/clean_a.events.jsonl": {
+      "sha256": "8dd575f41d3390232b7bec03db50cfbeea7f8524b24d5384b9e2995aa8e402ee",
+      "bytes": 13383
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--007/clean_b.events.jsonl": {
+      "sha256": "a927feab531082767bff73164f24bfc3a64251cfdb50013d8bf2393497f313c3",
+      "bytes": 13390
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--008/clean_a.events.jsonl": {
+      "sha256": "c598dda810ffb4476cae9ea4e91cb911707c2ce0c607c6462ebafcf75c867cea",
+      "bytes": 13376
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--008/clean_b.events.jsonl": {
+      "sha256": "8af9ced37e34b1b2eaab9ec891b0fb416c930f5713124414b1cc5d4eaf3cf2b1",
+      "bytes": 13340
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--009/clean_a.events.jsonl": {
+      "sha256": "3209a3577366865e79c666d1fabfb35c59ad7285fe22f6b46cd96826ab5b5bb1",
+      "bytes": 13375
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--009/clean_b.events.jsonl": {
+      "sha256": "62aab1e8b4c22b5b08dff070608f4546e86dd6c4dd25af97aa3072319c0d013b",
+      "bytes": 13407
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--010/clean_a.events.jsonl": {
+      "sha256": "210dca070b8bc63c4a4da788744496009d26a7f2e4d542e9e7a70f20e9c2a904",
+      "bytes": 13350
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--010/clean_b.events.jsonl": {
+      "sha256": "3947f3e8a9c98deba099768a0bf2a2fbb05fddabb3ff303dd88bdc131a33ea59",
+      "bytes": 13385
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--011/clean_a.events.jsonl": {
+      "sha256": "1b56d209fa2bb7b3fc14a10d788dbaefe01ffa84fd32c3a8d98a00c47a2a23e4",
+      "bytes": 13381
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--011/clean_b.events.jsonl": {
+      "sha256": "6670be4070e7f10d5718a9b40bc76b778972f5e99a1492c6813e5254c86050a4",
+      "bytes": 13345
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--012/clean_a.events.jsonl": {
+      "sha256": "f4fd28f173c7518f571c223db62675e1ad48bafda188878231c035baaf458975",
+      "bytes": 13296
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--012/clean_b.events.jsonl": {
+      "sha256": "8066d5040ac4c58edb3b01a9d43a64afe743941c6c370548162906078817c3a8",
+      "bytes": 13296
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--013/clean_a.events.jsonl": {
+      "sha256": "49915793a5ad3c568d7505e4511202371192cda866e5cac5db42b6f7a1f29d44",
+      "bytes": 13377
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--013/clean_b.events.jsonl": {
+      "sha256": "3ec4cc9790fa97943cbf6484c087445dc8255850aab040580276d7d4a3528de9",
+      "bytes": 13345
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--014/clean_a.events.jsonl": {
+      "sha256": "3ee00a72d40abeb02f97d53ca44d37bc510d6b472bb5b3972efe5c658a45b5cf",
+      "bytes": 13385
+    },
+    "raw/calibration--local-core-no-memory--local_arithmetic_tool--014/clean_b.events.jsonl": {
+      "sha256": "93e443e00cadc837bbd780f0f1cde149f01a76a93049a5ae4e69e771820fc538",
+      "bytes": 13377
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--000/clean_a.events.jsonl": {
+      "sha256": "1eab44931d9eda56f572941626ddd78e7728469935f6c0171ec4a03e8f5dceaa",
+      "bytes": 13480
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--000/clean_b.events.jsonl": {
+      "sha256": "229d969d1e816444371480031f4da3546b9f41802288edc7d157ccdb82644b32",
+      "bytes": 13420
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--001/clean_a.events.jsonl": {
+      "sha256": "773b4f3e3a5415e83289a29c0484c11405189e2ee60bafd9fb7ecb07e67bf97f",
+      "bytes": 13515
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--001/clean_b.events.jsonl": {
+      "sha256": "c445e6eacbaac0f1df4c63e16c02100cd558cfddf2245a28a6187bab5bb885cd",
+      "bytes": 13553
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--002/clean_a.events.jsonl": {
+      "sha256": "e1adb17328cf540181e10e549afe8b26eb458e36b0cbfb0f83abff49d0453f9d",
+      "bytes": 13500
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--002/clean_b.events.jsonl": {
+      "sha256": "fe213726e5660e6d0f3e4c2c3a2253a2e7ef668e011f9d32ba4935f10564020e",
+      "bytes": 13509
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--003/clean_a.events.jsonl": {
+      "sha256": "a3987034ab19f5210578b51672aee9f4d8bd44f97e330a8a3eaf25caacbeac52",
+      "bytes": 13354
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--003/clean_b.events.jsonl": {
+      "sha256": "f26e8fcfe813418ff2ffdd80a85047f7b15982551ed01cc94e6647154fbb4c24",
+      "bytes": 13384
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--004/clean_a.events.jsonl": {
+      "sha256": "272c8798382f7128ff25712853aee3363e62421caa0aa3c812decd7f48403ada",
+      "bytes": 13525
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--004/clean_b.events.jsonl": {
+      "sha256": "584ca1875b6ad73ee7d9cbe5849534469bb78c9c10c386b7935e8fc2ef9f6a82",
+      "bytes": 13437
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--005/clean_a.events.jsonl": {
+      "sha256": "5481d8e5d53a2f2fa14d6e52bef03e88a177a45712d984c9c0582729d145b7db",
+      "bytes": 13528
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--005/clean_b.events.jsonl": {
+      "sha256": "07582d648adb9a40a570b063b80cdb0480fc74dd6777b847c51a554adecc742b",
+      "bytes": 13414
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--006/clean_a.events.jsonl": {
+      "sha256": "8e73f69c61dfb44384d2ee4dfecc71adfc47b43141af6a653e117569bc78887c",
+      "bytes": 13477
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--006/clean_b.events.jsonl": {
+      "sha256": "533d598ba3fefdd18dd71266dbf512de6a810681d12c1cf39d2fc5e7d16b30ec",
+      "bytes": 13490
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--007/clean_a.events.jsonl": {
+      "sha256": "9551b92fad5dd25102c66be4c09cb6979bbd314eb328fb50b6f4bc645d1f7454",
+      "bytes": 13524
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--007/clean_b.events.jsonl": {
+      "sha256": "6d42fd461b946a1a1351fe5915c9a08e255bdd3f3adf94f3910ec25a17674dce",
+      "bytes": 13647
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--008/clean_a.events.jsonl": {
+      "sha256": "177e56228af478023f5bb3eba51c9b5ce923dde2ccf8af6c0ebeaff1c94e13b7",
+      "bytes": 13361
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--008/clean_b.events.jsonl": {
+      "sha256": "80151e195fe7e5210c2aa09fea1d34aff0a41db69915f1c2fe47bde8d3936cb6",
+      "bytes": 13568
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--009/clean_a.events.jsonl": {
+      "sha256": "985eb72ebe757e43bab671e58b9710a50515e30dae7b1dc010ada82aa44b9f44",
+      "bytes": 13505
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--009/clean_b.events.jsonl": {
+      "sha256": "1273702308b77366c73e3c7eac0fd42889873ef068e0f0fe404de79f3d67ee7e",
+      "bytes": 13399
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--010/clean_a.events.jsonl": {
+      "sha256": "c29aa73758abaf0b25f3b47db42f8ee1051008f08260c4cdd1b9284a21e3b1ea",
+      "bytes": 13483
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--010/clean_b.events.jsonl": {
+      "sha256": "65e2d7e81793072a9c58424ade5520086992d7ce09878a00092722a24dcd3eb4",
+      "bytes": 13418
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--011/clean_a.events.jsonl": {
+      "sha256": "609ecc03028377875f13a99e328a23a992d6f641c5dee95f73ba803f1c0eeca5",
+      "bytes": 13485
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--011/clean_b.events.jsonl": {
+      "sha256": "d592455eeacc8f387e349ec39af14e944eb97677b2087c4d8f45a6e8de8e60d7",
+      "bytes": 13411
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--012/clean_a.events.jsonl": {
+      "sha256": "392419b3d896f074e596458b34eab63a26c493630f6af935f20cadbaf1d17132",
+      "bytes": 13532
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--012/clean_b.events.jsonl": {
+      "sha256": "cbd92e8003cd74056605b4748a420d5fb2c0df6825d82ce526cded0a05e39ba3",
+      "bytes": 13510
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--013/clean_a.events.jsonl": {
+      "sha256": "6a8ada58cb7c6f5699d10626e5ae97b58b48e5c6a2f4add1946dc3d398161c22",
+      "bytes": 13452
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--013/clean_b.events.jsonl": {
+      "sha256": "f2cc794af23e95a5b12ba1046ba18a337736aa6cafe6de3df1764d034c9d316e",
+      "bytes": 13442
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--014/clean_a.events.jsonl": {
+      "sha256": "57c4af34b8203422dee801af2f701254b8f7fa9d2e32030ced0298d0d149de53",
+      "bytes": 13355
+    },
+    "raw/calibration--local-core-no-memory--local_time_tool--014/clean_b.events.jsonl": {
+      "sha256": "20ecbe0971ccc37ff9df0c3b7267e86e3d7746856d57d951bab0cfbe6a3a53cc",
+      "bytes": 13407
+    },
+    "threshold_freeze.json": {
+      "sha256": "6b92c3c6ba60acf3e5046692d5efde1170099fde039994b82f58db529888618f",
+      "bytes": 17241
+    },
+    "thresholds.csv": {
+      "sha256": "b2519757d8f2a8f847729bc0f8fc78aa43757d860535145abbf3f951bfbd9735",
+      "bytes": 6022
+    },
+    "thresholds.json": {
+      "sha256": "2ef286e0e2182b4ac825a0e57773f7c9800d7892fcc442b809c21389786f7894",
+      "bytes": 15532
+    }
+  }
+}

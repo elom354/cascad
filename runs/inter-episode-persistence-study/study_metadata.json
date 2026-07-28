@@ -1,0 +1,14 @@
+{
+  "scenario": "inter_episode_memory_propagation",
+  "verdict": "PASS",
+  "injection_node": "tool",
+  "calibration_instances": 24,
+  "evaluation_instances": 80,
+  "api_calls": 240,
+  "unique_clean_history_hashes": 80,
+  "unique_corrupt_history_hashes": 80,
+  "unique_paired_prompts": 80,
+  "epsilon": 0.05,
+  "raw_checkpointed": true,
+  "audit_passed": true
+}

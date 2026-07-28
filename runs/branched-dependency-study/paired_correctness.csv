@@ -1,0 +1,4 @@
+method_a,method_b,paired_instances,a_lower_ibfir,equal_ibfir,a_higher_ibfir,both_root_correct
+cascad_full,cascad_no_dependencies,80,40,40,0,60
+cascad_full,cascad_no_calibration,80,0,80,0,80
+cascad_full,temporal_adjacency,80,40,40,0,60

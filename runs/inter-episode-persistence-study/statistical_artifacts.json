@@ -1,0 +1,74 @@
+{
+  "exact_mcnemar": [
+    {
+      "method_a": "cascad_full",
+      "method_b": "cascad_no_calibration",
+      "both_correct": 80,
+      "a_correct_b_wrong": 0,
+      "a_wrong_b_correct": 0,
+      "both_wrong": 0,
+      "discordant_count": 0,
+      "paired_total": 80,
+      "accuracy_difference_a_minus_b": 0.0,
+      "exact_two_sided_p_value": 1.0
+    },
+    {
+      "method_a": "cascad_full",
+      "method_b": "cascad_no_dependencies",
+      "both_correct": 80,
+      "a_correct_b_wrong": 0,
+      "a_wrong_b_correct": 0,
+      "both_wrong": 0,
+      "discordant_count": 0,
+      "paired_total": 80,
+      "accuracy_difference_a_minus_b": 0.0,
+      "exact_two_sided_p_value": 1.0
+    },
+    {
+      "method_a": "cascad_full",
+      "method_b": "naive_first_aligned_difference",
+      "both_correct": 80,
+      "a_correct_b_wrong": 0,
+      "a_wrong_b_correct": 0,
+      "both_wrong": 0,
+      "discordant_count": 0,
+      "paired_total": 80,
+      "accuracy_difference_a_minus_b": 0.0,
+      "exact_two_sided_p_value": 1.0
+    },
+    {
+      "method_a": "cascad_full",
+      "method_b": "deepseek_paired_history",
+      "both_correct": 79,
+      "a_correct_b_wrong": 1,
+      "a_wrong_b_correct": 0,
+      "both_wrong": 0,
+      "discordant_count": 1,
+      "paired_total": 80,
+      "accuracy_difference_a_minus_b": 0.0125,
+      "exact_two_sided_p_value": 1.0
+    },
+    {
+      "method_a": "deepseek_paired_history",
+      "method_b": "naive_first_aligned_difference",
+      "both_correct": 79,
+      "a_correct_b_wrong": 0,
+      "a_wrong_b_correct": 1,
+      "both_wrong": 0,
+      "discordant_count": 1,
+      "paired_total": 80,
+      "accuracy_difference_a_minus_b": -0.0125,
+      "exact_two_sided_p_value": 1.0
+    }
+  ],
+  "readability_bootstrap95": {
+    "estimate": 0.24761904761904763,
+    "low": 0.22857142857142856,
+    "high": 0.2671428571428571
+  },
+  "policy": {
+    "binary_intervals": "Wilson 95%",
+    "paired_accuracy": "exact two-sided McNemar",
+    "continuous_composite": "deterministic bootstrap 95%"
+  }
+}

@@ -1,0 +1,8 @@
+FROM pytorch/pytorch:2.5.1-cuda12.4-cudnn9-runtime
+
+WORKDIR /workspace/cascad
+COPY . .
+RUN python -m pip install --no-cache-dir -e ".[huggingface]"
+
+ENV PYTHONPATH=/workspace/cascad/src
+ENTRYPOINT ["python", "scripts/run_huggingface_attribution.py"]

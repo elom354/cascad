@@ -1,0 +1,2585 @@
+{
+  "scenario": "cloud_distant_symptom",
+  "runs": [
+    {
+      "run_id": "31fc09fe-52af-4349-9142-a7fa89c79331",
+      "seed": 0,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0000",
+      "instance_seed": 0,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "02c4cc76f7947947e267c78b5e12555ac51083a92012346ccefad4476d87eed1",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "ffed979a359a55dde562025fe7b905b350264a4e7b061bbaaef1bed3812fbad1",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0000",
+            "correlation": "corr-00017",
+            "arguments": {
+              "task": "process resource resource-0000 and send the completion notice",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "restricted",
+            "correlation": "corr-00017",
+            "arguments": {
+              "task": "process resource resource-0000 and send the completion notice",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "authorization_state": "restricted"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "authorization_state": "restricted"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the downstream action could not be completed with the persisted state",
+            "receipt": "receipt-0000",
+            "arguments": {
+              "task": "process resource resource-0000 and send the completion notice",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "The workflow could not be completed."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "memory",
+      "deepseek_parsed_node": "memory",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "mediator",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 1,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "memory",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "mediator",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0000\", \"correlation\": \"corr-00017\", \"arguments\": {\"task\": \"process resource resource-0000 and send the completion notice\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"restricted\", \"correlation\": \"corr-00017\", \"arguments\": {\"task\": \"process resource resource-0000 and send the completion notice\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"authorization_state\": \"restricted\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"authorization_state\": \"restricted\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the downstream action could not be completed with the persisted state\", \"receipt\": \"receipt-0000\", \"arguments\": {\"task\": \"process resource resource-0000 and send the completion notice\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"The workflow could not be completed.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "92542c06-b461-4785-89bc-7d78158fff2f",
+      "seed": 1,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0001",
+      "instance_seed": 1,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "6f90e4fd2a6830812b2828acf3a693ed18c41bb23dc31e3fa90b987a5cc1f43e",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "d6d5f1874da3aed4016b673e586a376914a896566f3b5492047be46a6dbb0cff",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0001",
+            "correlation": "corr-07936",
+            "arguments": {
+              "task": "complete workflow resource-0001 and inform the recipient",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "read_only",
+            "correlation": "corr-07936",
+            "arguments": {
+              "task": "complete workflow resource-0001 and inform the recipient",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "access_state": "read_only"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "access_state": "read_only"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the completion step rejected the state recovered from storage",
+            "receipt": "receipt-0001",
+            "arguments": {
+              "task": "complete workflow resource-0001 and inform the recipient",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "The requested operation did not finish."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "memory",
+      "deepseek_parsed_node": "memory",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "mediator",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 1,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "memory",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "mediator",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0001\", \"correlation\": \"corr-07936\", \"arguments\": {\"task\": \"complete workflow resource-0001 and inform the recipient\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"read_only\", \"correlation\": \"corr-07936\", \"arguments\": {\"task\": \"complete workflow resource-0001 and inform the recipient\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"access_state\": \"read_only\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"access_state\": \"read_only\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the completion step rejected the state recovered from storage\", \"receipt\": \"receipt-0001\", \"arguments\": {\"task\": \"complete workflow resource-0001 and inform the recipient\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"The requested operation did not finish.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "5e15f8b1-d3a4-4620-9cfe-3f8b6d55c35e",
+      "seed": 2,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0002",
+      "instance_seed": 2,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "b0c42c8eb243ffae9951b8628be9693c3c11684f8bd94de610d2e2744adaf1ee",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "ca702e03ce9edef8b02c2e3f81a00a69b4e9c2f63f46ebaa77a91faa899655cb",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0002",
+            "correlation": "corr-15855",
+            "arguments": {
+              "task": "handle asset resource-0002 through the delivery workflow",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "blocked",
+            "correlation": "corr-15855",
+            "arguments": {
+              "task": "handle asset resource-0002 through the delivery workflow",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "entitlement_state": "blocked"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "entitlement_state": "blocked"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the final operation could not proceed using the recorded state",
+            "receipt": "receipt-0002",
+            "arguments": {
+              "task": "handle asset resource-0002 through the delivery workflow",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "Completion could not be confirmed."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "share",
+      "deepseek_parsed_node": "share",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "root",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 0,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "share",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0002\", \"correlation\": \"corr-15855\", \"arguments\": {\"task\": \"handle asset resource-0002 through the delivery workflow\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"blocked\", \"correlation\": \"corr-15855\", \"arguments\": {\"task\": \"handle asset resource-0002 through the delivery workflow\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"entitlement_state\": \"blocked\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"entitlement_state\": \"blocked\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the final operation could not proceed using the recorded state\", \"receipt\": \"receipt-0002\", \"arguments\": {\"task\": \"handle asset resource-0002 through the delivery workflow\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Completion could not be confirmed.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "c91b287e-4d80-4daa-9f37-82e1da43b0b4",
+      "seed": 3,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0003",
+      "instance_seed": 3,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "856b880974a851c1d7d5ffed25dfb3c3c8ce712fa425ec64a6f4cb8621acef7d",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "d82bff7e103f2f1d17c1c146cb60919d34a616853410b559d5016974db9bc7f7",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0003",
+            "correlation": "corr-23774",
+            "arguments": {
+              "task": "execute the access workflow for item resource-0003",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "limited",
+            "correlation": "corr-23774",
+            "arguments": {
+              "task": "execute the access workflow for item resource-0003",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "policy_state": "limited"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "policy_state": "limited"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the recipient operation stopped after reading the stored state",
+            "receipt": "receipt-0003",
+            "arguments": {
+              "task": "execute the access workflow for item resource-0003",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "The delivery workflow ended without success."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "memory",
+      "deepseek_parsed_node": "memory",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "mediator",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 1,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "memory",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "mediator",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0003\", \"correlation\": \"corr-23774\", \"arguments\": {\"task\": \"execute the access workflow for item resource-0003\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"limited\", \"correlation\": \"corr-23774\", \"arguments\": {\"task\": \"execute the access workflow for item resource-0003\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"policy_state\": \"limited\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"policy_state\": \"limited\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the recipient operation stopped after reading the stored state\", \"receipt\": \"receipt-0003\", \"arguments\": {\"task\": \"execute the access workflow for item resource-0003\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"The delivery workflow ended without success.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "e37d02dd-922b-43d1-b452-c51b17f207d8",
+      "seed": 4,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0004",
+      "instance_seed": 4,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "8b4df2056b30ec15ee9a6250a79d37fd4f28ee90a712afca77b4058e47c0a9e6",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "47cad05483eca211d3f34d857cecbcecf1fd3cba76a7dfb2a335fb2e3c15e0c7",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0004",
+            "correlation": "corr-31693",
+            "arguments": {
+              "task": "finish processing object resource-0004 and report completion",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "restricted",
+            "correlation": "corr-31693",
+            "arguments": {
+              "task": "finish processing object resource-0004 and report completion",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "authorization_state": "restricted"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "authorization_state": "restricted"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the completion request was declined using the retained state",
+            "receipt": "receipt-0004",
+            "arguments": {
+              "task": "finish processing object resource-0004 and report completion",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "The final operation was not completed."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "memory",
+      "deepseek_parsed_node": "memory",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "mediator",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 1,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "memory",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "mediator",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0004\", \"correlation\": \"corr-31693\", \"arguments\": {\"task\": \"finish processing object resource-0004 and report completion\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"restricted\", \"correlation\": \"corr-31693\", \"arguments\": {\"task\": \"finish processing object resource-0004 and report completion\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"authorization_state\": \"restricted\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"authorization_state\": \"restricted\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the completion request was declined using the retained state\", \"receipt\": \"receipt-0004\", \"arguments\": {\"task\": \"finish processing object resource-0004 and report completion\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"The final operation was not completed.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "0d5ec6ea-9af4-4055-bdde-5c3fc8d7f0f6",
+      "seed": 5,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0005",
+      "instance_seed": 5,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "b66415f8f1f3599545f85d65bbf274979ccce0010fe888e261a00adb65634988",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "c5b0621b95ec7c30bdbc02d2e98f602de4b4f9a19db5f1d202645e6a0a5c6cbe",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0005",
+            "correlation": "corr-39612",
+            "arguments": {
+              "task": "process resource resource-0005 and send the completion notice",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "read_only",
+            "correlation": "corr-39612",
+            "arguments": {
+              "task": "process resource resource-0005 and send the completion notice",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "access_state": "read_only"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "access_state": "read_only"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the downstream action could not be completed with the persisted state",
+            "receipt": "receipt-0005",
+            "arguments": {
+              "task": "process resource resource-0005 and send the completion notice",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "The workflow could not be completed."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "memory",
+      "deepseek_parsed_node": "memory",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "mediator",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 1,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "memory",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "mediator",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0005\", \"correlation\": \"corr-39612\", \"arguments\": {\"task\": \"process resource resource-0005 and send the completion notice\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"read_only\", \"correlation\": \"corr-39612\", \"arguments\": {\"task\": \"process resource resource-0005 and send the completion notice\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"access_state\": \"read_only\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"access_state\": \"read_only\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the downstream action could not be completed with the persisted state\", \"receipt\": \"receipt-0005\", \"arguments\": {\"task\": \"process resource resource-0005 and send the completion notice\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"The workflow could not be completed.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "8bc52671-0803-4e3c-a914-1bc5f100916f",
+      "seed": 6,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0006",
+      "instance_seed": 6,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "618b7ab49216c810bd32ddae5c6c0c89381bab4f19bb2165c7a97a61f8026a57",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "e3ce0d762fc931886bd6727dd4da0875392268e498c0ebe38999b5c28e13881a",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0006",
+            "correlation": "corr-47531",
+            "arguments": {
+              "task": "complete workflow resource-0006 and inform the recipient",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "blocked",
+            "correlation": "corr-47531",
+            "arguments": {
+              "task": "complete workflow resource-0006 and inform the recipient",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "entitlement_state": "blocked"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "entitlement_state": "blocked"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the completion step rejected the state recovered from storage",
+            "receipt": "receipt-0006",
+            "arguments": {
+              "task": "complete workflow resource-0006 and inform the recipient",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "The requested operation did not finish."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "memory",
+      "deepseek_parsed_node": "memory",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "mediator",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 1,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "memory",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "mediator",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0006\", \"correlation\": \"corr-47531\", \"arguments\": {\"task\": \"complete workflow resource-0006 and inform the recipient\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"blocked\", \"correlation\": \"corr-47531\", \"arguments\": {\"task\": \"complete workflow resource-0006 and inform the recipient\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"entitlement_state\": \"blocked\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"entitlement_state\": \"blocked\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the completion step rejected the state recovered from storage\", \"receipt\": \"receipt-0006\", \"arguments\": {\"task\": \"complete workflow resource-0006 and inform the recipient\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"The requested operation did not finish.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "cfc94d46-5fb2-42e5-b227-b2422980aff4",
+      "seed": 7,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0007",
+      "instance_seed": 7,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "03d4c3c8054dfda1e50eed87478d7fb02ffb818de4bd9489ca014de8d603c2d5",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "1540105b5a1e7b3d4a106ed77f280301dac59abbb588e1c47002d54de5fb50b8",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0007",
+            "correlation": "corr-55450",
+            "arguments": {
+              "task": "handle asset resource-0007 through the delivery workflow",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "limited",
+            "correlation": "corr-55450",
+            "arguments": {
+              "task": "handle asset resource-0007 through the delivery workflow",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "policy_state": "limited"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "policy_state": "limited"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the final operation could not proceed using the recorded state",
+            "receipt": "receipt-0007",
+            "arguments": {
+              "task": "handle asset resource-0007 through the delivery workflow",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "Completion could not be confirmed."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "memory",
+      "deepseek_parsed_node": "memory",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "mediator",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 1,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "memory",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "mediator",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0007\", \"correlation\": \"corr-55450\", \"arguments\": {\"task\": \"handle asset resource-0007 through the delivery workflow\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"limited\", \"correlation\": \"corr-55450\", \"arguments\": {\"task\": \"handle asset resource-0007 through the delivery workflow\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"policy_state\": \"limited\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"policy_state\": \"limited\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the final operation could not proceed using the recorded state\", \"receipt\": \"receipt-0007\", \"arguments\": {\"task\": \"handle asset resource-0007 through the delivery workflow\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Completion could not be confirmed.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "b062b6e9-b7a3-4daa-937b-db18e08c8168",
+      "seed": 8,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0008",
+      "instance_seed": 8,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "8552a3042cb2a797ead031f81b330b881a0b1fd171914161abc92d6f55668877",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "14e00d4cfff7db4f0ce57fe5d47fb8a610f0e7e6fb558a2e1503025b85e6bb2e",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0008",
+            "correlation": "corr-63369",
+            "arguments": {
+              "task": "execute the access workflow for item resource-0008",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "restricted",
+            "correlation": "corr-63369",
+            "arguments": {
+              "task": "execute the access workflow for item resource-0008",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "authorization_state": "restricted"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "authorization_state": "restricted"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the recipient operation stopped after reading the stored state",
+            "receipt": "receipt-0008",
+            "arguments": {
+              "task": "execute the access workflow for item resource-0008",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "The delivery workflow ended without success."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "memory",
+      "deepseek_parsed_node": "memory",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "mediator",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 1,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "memory",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "mediator",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0008\", \"correlation\": \"corr-63369\", \"arguments\": {\"task\": \"execute the access workflow for item resource-0008\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"restricted\", \"correlation\": \"corr-63369\", \"arguments\": {\"task\": \"execute the access workflow for item resource-0008\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"authorization_state\": \"restricted\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"authorization_state\": \"restricted\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the recipient operation stopped after reading the stored state\", \"receipt\": \"receipt-0008\", \"arguments\": {\"task\": \"execute the access workflow for item resource-0008\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"The delivery workflow ended without success.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "e2a3fdbe-dc6e-42ed-b24f-e8f6de381d64",
+      "seed": 9,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0009",
+      "instance_seed": 9,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "48b35ad8b4b1df5832972e981a7219b6de53ab2527aac375a84bacc7cbd2412f",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "3ba4e3d0a2543fa054f9af10dc53bfc5415305c73b8e214f46927bc330237960",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0009",
+            "correlation": "corr-71288",
+            "arguments": {
+              "task": "finish processing object resource-0009 and report completion",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "read_only",
+            "correlation": "corr-71288",
+            "arguments": {
+              "task": "finish processing object resource-0009 and report completion",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "access_state": "read_only"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "access_state": "read_only"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the completion request was declined using the retained state",
+            "receipt": "receipt-0009",
+            "arguments": {
+              "task": "finish processing object resource-0009 and report completion",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "The final operation was not completed."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "memory",
+      "deepseek_parsed_node": "memory",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "mediator",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 1,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "memory",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "mediator",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0009\", \"correlation\": \"corr-71288\", \"arguments\": {\"task\": \"finish processing object resource-0009 and report completion\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"read_only\", \"correlation\": \"corr-71288\", \"arguments\": {\"task\": \"finish processing object resource-0009 and report completion\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"access_state\": \"read_only\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"access_state\": \"read_only\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the completion request was declined using the retained state\", \"receipt\": \"receipt-0009\", \"arguments\": {\"task\": \"finish processing object resource-0009 and report completion\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"The final operation was not completed.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "ac09e1f6-8fce-4460-9c2e-2184e576055b",
+      "seed": 10,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0010",
+      "instance_seed": 10,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "67b2f5474090c78063b6ffb75c0ec9420ff2f3bf910121c1e7ca8c408766ff6f",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "d47340d796bf10cc80110ec140e25b2a31d31f52d4f2c189f4357b0265ea83dd",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0010",
+            "correlation": "corr-79207",
+            "arguments": {
+              "task": "process resource resource-0010 and send the completion notice",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "blocked",
+            "correlation": "corr-79207",
+            "arguments": {
+              "task": "process resource resource-0010 and send the completion notice",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "entitlement_state": "blocked"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "entitlement_state": "blocked"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the downstream action could not be completed with the persisted state",
+            "receipt": "receipt-0010",
+            "arguments": {
+              "task": "process resource resource-0010 and send the completion notice",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "The workflow could not be completed."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "memory",
+      "deepseek_parsed_node": "memory",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "mediator",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 1,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "memory",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "mediator",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0010\", \"correlation\": \"corr-79207\", \"arguments\": {\"task\": \"process resource resource-0010 and send the completion notice\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"blocked\", \"correlation\": \"corr-79207\", \"arguments\": {\"task\": \"process resource resource-0010 and send the completion notice\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"entitlement_state\": \"blocked\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"entitlement_state\": \"blocked\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the downstream action could not be completed with the persisted state\", \"receipt\": \"receipt-0010\", \"arguments\": {\"task\": \"process resource resource-0010 and send the completion notice\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"The workflow could not be completed.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "b59c4820-4dd7-4ce2-9088-0a3f4109b3cb",
+      "seed": 11,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0011",
+      "instance_seed": 11,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "d8dc652f80673042ed6840dae6ace02d1257b71448125295760df26884ca322f",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "6d2b79f2d7d80c4c279da0d91e32d05b1f7298cd842d49de44fa434c670dbd1d",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0011",
+            "correlation": "corr-87126",
+            "arguments": {
+              "task": "complete workflow resource-0011 and inform the recipient",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "limited",
+            "correlation": "corr-87126",
+            "arguments": {
+              "task": "complete workflow resource-0011 and inform the recipient",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "policy_state": "limited"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "policy_state": "limited"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the completion step rejected the state recovered from storage",
+            "receipt": "receipt-0011",
+            "arguments": {
+              "task": "complete workflow resource-0011 and inform the recipient",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "The requested operation did not finish."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "memory",
+      "deepseek_parsed_node": "memory",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "mediator",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 1,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "memory",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "mediator",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0011\", \"correlation\": \"corr-87126\", \"arguments\": {\"task\": \"complete workflow resource-0011 and inform the recipient\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"limited\", \"correlation\": \"corr-87126\", \"arguments\": {\"task\": \"complete workflow resource-0011 and inform the recipient\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"policy_state\": \"limited\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"policy_state\": \"limited\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the completion step rejected the state recovered from storage\", \"receipt\": \"receipt-0011\", \"arguments\": {\"task\": \"complete workflow resource-0011 and inform the recipient\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"The requested operation did not finish.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "41c5829f-d58c-4557-a7db-7e7a980c3f05",
+      "seed": 12,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0012",
+      "instance_seed": 12,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "be9838ab089e007eddf4e7087a9bc6a4cebe7e0eb229a4a151cb1717cf19e668",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "951d5546706f1081823223f83543f66d8a46b0972e112afed4bbefd8c305745a",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0012",
+            "correlation": "corr-95045",
+            "arguments": {
+              "task": "handle asset resource-0012 through the delivery workflow",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "restricted",
+            "correlation": "corr-95045",
+            "arguments": {
+              "task": "handle asset resource-0012 through the delivery workflow",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "authorization_state": "restricted"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "authorization_state": "restricted"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the final operation could not proceed using the recorded state",
+            "receipt": "receipt-0012",
+            "arguments": {
+              "task": "handle asset resource-0012 through the delivery workflow",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "Completion could not be confirmed."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "memory",
+      "deepseek_parsed_node": "memory",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "mediator",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 1,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "memory",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "mediator",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0012\", \"correlation\": \"corr-95045\", \"arguments\": {\"task\": \"handle asset resource-0012 through the delivery workflow\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"restricted\", \"correlation\": \"corr-95045\", \"arguments\": {\"task\": \"handle asset resource-0012 through the delivery workflow\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"authorization_state\": \"restricted\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"authorization_state\": \"restricted\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the final operation could not proceed using the recorded state\", \"receipt\": \"receipt-0012\", \"arguments\": {\"task\": \"handle asset resource-0012 through the delivery workflow\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Completion could not be confirmed.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "fcafec58-efd3-4cf4-b2b5-ab5eda44796d",
+      "seed": 13,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0013",
+      "instance_seed": 13,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "fe252502c348c8d2cbef7c34d2560c04c919bdfa857834fe58fcc302875ac383",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "4eb511ef3ad69986f31a04ebf50ad461f9fe90aa89aff01aab4e10889e6bbdfe",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0013",
+            "correlation": "corr-02964",
+            "arguments": {
+              "task": "execute the access workflow for item resource-0013",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "read_only",
+            "correlation": "corr-02964",
+            "arguments": {
+              "task": "execute the access workflow for item resource-0013",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "access_state": "read_only"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "access_state": "read_only"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the recipient operation stopped after reading the stored state",
+            "receipt": "receipt-0013",
+            "arguments": {
+              "task": "execute the access workflow for item resource-0013",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "The delivery workflow ended without success."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "memory",
+      "deepseek_parsed_node": "memory",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "mediator",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 1,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "memory",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "mediator",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0013\", \"correlation\": \"corr-02964\", \"arguments\": {\"task\": \"execute the access workflow for item resource-0013\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"read_only\", \"correlation\": \"corr-02964\", \"arguments\": {\"task\": \"execute the access workflow for item resource-0013\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"access_state\": \"read_only\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"access_state\": \"read_only\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the recipient operation stopped after reading the stored state\", \"receipt\": \"receipt-0013\", \"arguments\": {\"task\": \"execute the access workflow for item resource-0013\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"The delivery workflow ended without success.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "34944c35-e6d8-42e5-bee8-746af8354933",
+      "seed": 14,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0014",
+      "instance_seed": 14,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "c0a22d57b5e0e0069f5a2c19a7c18d959f726daa3dbfcae84713f65913936bf8",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "b89849601718544623d54d5af85daca03101902965545ab305d3a1c85e4adf8f",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0014",
+            "correlation": "corr-10883",
+            "arguments": {
+              "task": "finish processing object resource-0014 and report completion",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "blocked",
+            "correlation": "corr-10883",
+            "arguments": {
+              "task": "finish processing object resource-0014 and report completion",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "entitlement_state": "blocked"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "entitlement_state": "blocked"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the completion request was declined using the retained state",
+            "receipt": "receipt-0014",
+            "arguments": {
+              "task": "finish processing object resource-0014 and report completion",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "The final operation was not completed."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "memory",
+      "deepseek_parsed_node": "memory",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "mediator",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 1,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "memory",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "mediator",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0014\", \"correlation\": \"corr-10883\", \"arguments\": {\"task\": \"finish processing object resource-0014 and report completion\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"blocked\", \"correlation\": \"corr-10883\", \"arguments\": {\"task\": \"finish processing object resource-0014 and report completion\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"entitlement_state\": \"blocked\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"entitlement_state\": \"blocked\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the completion request was declined using the retained state\", \"receipt\": \"receipt-0014\", \"arguments\": {\"task\": \"finish processing object resource-0014 and report completion\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"The final operation was not completed.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "91ad040a-9bd2-491a-a52c-a09e48c1b781",
+      "seed": 15,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0015",
+      "instance_seed": 15,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "c1e935ae3531f87f303143bed97c6657bbf742f909901e651248426a34a0fe66",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "b348d47ea0d05fe56b8ea6768c8c89e5f1cdde51880efe4839aeb54402cba39d",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0015",
+            "correlation": "corr-18802",
+            "arguments": {
+              "task": "process resource resource-0015 and send the completion notice",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "limited",
+            "correlation": "corr-18802",
+            "arguments": {
+              "task": "process resource resource-0015 and send the completion notice",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "policy_state": "limited"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "policy_state": "limited"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the downstream action could not be completed with the persisted state",
+            "receipt": "receipt-0015",
+            "arguments": {
+              "task": "process resource resource-0015 and send the completion notice",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "The workflow could not be completed."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "memory",
+      "deepseek_parsed_node": "memory",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "mediator",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 1,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "memory",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "mediator",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0015\", \"correlation\": \"corr-18802\", \"arguments\": {\"task\": \"process resource resource-0015 and send the completion notice\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"limited\", \"correlation\": \"corr-18802\", \"arguments\": {\"task\": \"process resource resource-0015 and send the completion notice\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"policy_state\": \"limited\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"policy_state\": \"limited\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the downstream action could not be completed with the persisted state\", \"receipt\": \"receipt-0015\", \"arguments\": {\"task\": \"process resource resource-0015 and send the completion notice\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"The workflow could not be completed.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "43e75009-430f-4bdd-8414-c13e5010b48c",
+      "seed": 16,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0016",
+      "instance_seed": 16,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "83a761bf96a8227c6eca4bec0ccbfa34338a83e04810c986e87e352e76abe3b4",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "87830ae015129970b817f11230fb3166c631da20cee2ab2682857e8dcd1b8803",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0016",
+            "correlation": "corr-26721",
+            "arguments": {
+              "task": "complete workflow resource-0016 and inform the recipient",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "restricted",
+            "correlation": "corr-26721",
+            "arguments": {
+              "task": "complete workflow resource-0016 and inform the recipient",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "authorization_state": "restricted"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "authorization_state": "restricted"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the completion step rejected the state recovered from storage",
+            "receipt": "receipt-0016",
+            "arguments": {
+              "task": "complete workflow resource-0016 and inform the recipient",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "The requested operation did not finish."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "memory",
+      "deepseek_parsed_node": "memory",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "mediator",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 1,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "memory",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "mediator",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0016\", \"correlation\": \"corr-26721\", \"arguments\": {\"task\": \"complete workflow resource-0016 and inform the recipient\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"restricted\", \"correlation\": \"corr-26721\", \"arguments\": {\"task\": \"complete workflow resource-0016 and inform the recipient\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"authorization_state\": \"restricted\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"authorization_state\": \"restricted\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the completion step rejected the state recovered from storage\", \"receipt\": \"receipt-0016\", \"arguments\": {\"task\": \"complete workflow resource-0016 and inform the recipient\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"The requested operation did not finish.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "2cb5c0fc-dddd-45f1-9b6b-ca04e8473366",
+      "seed": 17,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0017",
+      "instance_seed": 17,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "f11751d944ec133bfe91acb01db9ead76e635b5dcb38efe0587029b5c994dedf",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "6b2c92dded05d4cbca77cdac56d885292d2ee93338ae30635c1dd6e583f7a933",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0017",
+            "correlation": "corr-34640",
+            "arguments": {
+              "task": "handle asset resource-0017 through the delivery workflow",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "read_only",
+            "correlation": "corr-34640",
+            "arguments": {
+              "task": "handle asset resource-0017 through the delivery workflow",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "access_state": "read_only"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "access_state": "read_only"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the final operation could not proceed using the recorded state",
+            "receipt": "receipt-0017",
+            "arguments": {
+              "task": "handle asset resource-0017 through the delivery workflow",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "Completion could not be confirmed."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "memory",
+      "deepseek_parsed_node": "memory",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "mediator",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 1,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "memory",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "mediator",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0017\", \"correlation\": \"corr-34640\", \"arguments\": {\"task\": \"handle asset resource-0017 through the delivery workflow\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"read_only\", \"correlation\": \"corr-34640\", \"arguments\": {\"task\": \"handle asset resource-0017 through the delivery workflow\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"access_state\": \"read_only\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"access_state\": \"read_only\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the final operation could not proceed using the recorded state\", \"receipt\": \"receipt-0017\", \"arguments\": {\"task\": \"handle asset resource-0017 through the delivery workflow\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Completion could not be confirmed.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "bd44279d-c9ef-4174-a0ce-a0e0dedc733c",
+      "seed": 18,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0018",
+      "instance_seed": 18,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "15b03a31c32de4cb64e59dc6e0e842cdf2d33e6677ffdd1f59fe8018bdd46d2f",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "6aa116bd04283732e0c0e92e504c02f9c20c7708ee7f0122bff7ee0b7d4c1e12",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0018",
+            "correlation": "corr-42559",
+            "arguments": {
+              "task": "execute the access workflow for item resource-0018",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "blocked",
+            "correlation": "corr-42559",
+            "arguments": {
+              "task": "execute the access workflow for item resource-0018",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "entitlement_state": "blocked"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "entitlement_state": "blocked"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the recipient operation stopped after reading the stored state",
+            "receipt": "receipt-0018",
+            "arguments": {
+              "task": "execute the access workflow for item resource-0018",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "The delivery workflow ended without success."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "share",
+      "deepseek_parsed_node": "share",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "root",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 0,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "share",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0018\", \"correlation\": \"corr-42559\", \"arguments\": {\"task\": \"execute the access workflow for item resource-0018\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"blocked\", \"correlation\": \"corr-42559\", \"arguments\": {\"task\": \"execute the access workflow for item resource-0018\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"entitlement_state\": \"blocked\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"entitlement_state\": \"blocked\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the recipient operation stopped after reading the stored state\", \"receipt\": \"receipt-0018\", \"arguments\": {\"task\": \"execute the access workflow for item resource-0018\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"The delivery workflow ended without success.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    },
+    {
+      "run_id": "164e5572-9127-43ee-9b2b-9ea10665cea7",
+      "seed": 19,
+      "scenario": "cloud_distant_symptom",
+      "instance_id": "cloud-distant-0019",
+      "instance_seed": 19,
+      "attribution_mode": "deepseek_single_guided",
+      "model": "deepseek-chat",
+      "temperature": 0.0,
+      "prompt_sha256": "02931790faa2f660fd1ce59afb6551cdeab26d31abf552f7b0eb7842fc4935ad",
+      "clean_trace_sha256": null,
+      "corrupt_trace_sha256": "274f36dc86ddfbdca57682ce932c5f2a6e8d0501685706ec588771ca5b17ecdf",
+      "clean_observable_trace": null,
+      "corrupt_observable_trace": [
+        {
+          "node_id": "planner",
+          "event_kind": "plan_created",
+          "payload": {
+            "plan": [
+              "upload",
+              "share",
+              "memory",
+              "notify",
+              "responder"
+            ]
+          }
+        },
+        {
+          "node_id": "upload",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "file_id": "resource-0019",
+            "correlation": "corr-50478",
+            "arguments": {
+              "task": "finish processing object resource-0019 and report completion",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "share",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": true,
+            "permission": "limited",
+            "correlation": "corr-50478",
+            "arguments": {
+              "task": "finish processing object resource-0019 and report completion",
+              "memory": false
+            }
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_read",
+          "payload": {
+            "memories": [
+              {
+                "policy_state": "limited"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "memory",
+          "event_kind": "memory_write",
+          "payload": {
+            "memories": [
+              {
+                "policy_state": "limited"
+              }
+            ]
+          }
+        },
+        {
+          "node_id": "notify",
+          "event_kind": "tool_call",
+          "payload": {
+            "ok": false,
+            "notified": false,
+            "error": "the completion request was declined using the retained state",
+            "receipt": "receipt-0019",
+            "arguments": {
+              "task": "finish processing object resource-0019 and report completion",
+              "memory": true
+            }
+          }
+        },
+        {
+          "node_id": "responder",
+          "event_kind": "final_answer",
+          "payload": {
+            "answer": "The final operation was not completed."
+          }
+        }
+      ],
+      "candidate_nodes": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "deepseek_raw_response": "memory",
+      "deepseek_parsed_node": "memory",
+      "parse_valid": true,
+      "ground_truth_root": "share",
+      "propagation_mediator": "memory",
+      "visible_symptom": "notify",
+      "prediction_type": "mediator",
+      "cascad_prediction": "share",
+      "cascad_prediction_type": "root",
+      "deepseek_confidence": null,
+      "graph_distance_to_root": 1,
+      "leaked_terms": [],
+      "privileged_metadata_present": false,
+      "clean_trace_present": false,
+      "corrupt_trace_present": true,
+      "experimental_role": "varied_instances",
+      "deepseek_predicted_node": "memory",
+      "injection_node": "share",
+      "visible_failure_node": "notify",
+      "graph_predicted_node": "share",
+      "deepseek_prediction_type": "mediator",
+      "graph_prediction_type": "root_cause",
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"upload\", \"share\", \"memory\", \"notify\", \"responder\"]}}, {\"node_id\": \"upload\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"file_id\": \"resource-0019\", \"correlation\": \"corr-50478\", \"arguments\": {\"task\": \"finish processing object resource-0019 and report completion\", \"memory\": false}}}, {\"node_id\": \"share\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"permission\": \"limited\", \"correlation\": \"corr-50478\", \"arguments\": {\"task\": \"finish processing object resource-0019 and report completion\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [{\"policy_state\": \"limited\"}]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [{\"policy_state\": \"limited\"}]}}, {\"node_id\": \"notify\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"notified\": false, \"error\": \"the completion request was declined using the retained state\", \"receipt\": \"receipt-0019\", \"arguments\": {\"task\": \"finish processing object resource-0019 and report completion\", \"memory\": true}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"The final operation was not completed.\"}}]\nCandidate node_ids: ['memory', 'notify', 'planner', 'responder', 'share', 'upload']"
+    }
+  ]
+}

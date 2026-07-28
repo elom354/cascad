@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<text x="450" y="28" text-anchor="middle" font-family="sans-serif" font-size="18">Independent Branch False Inclusion Rate</text>
+<path d="M 80 55 V 415 H 840" fill="none" stroke="currentColor"/>
+<circle cx="80.0" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<circle cx="333.3" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<circle cx="586.7" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<circle cx="840.0" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<polyline points="80.0,415.0 333.3,415.0 586.7,415.0 840.0,415.0" fill="none" stroke="currentColor"/>
+<text x="848" y="65" font-family="sans-serif" font-size="10">cascad_full</text>
+<circle cx="80.0" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<circle cx="333.3" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<circle cx="586.7" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<circle cx="840.0" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<polyline points="80.0,415.0 333.3,415.0 586.7,415.0 840.0,415.0" fill="none" stroke="currentColor" stroke-dasharray="3,3"/>
+<text x="848" y="80" font-family="sans-serif" font-size="10">cascad_no_calibration</text>
+<circle cx="80.0" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<circle cx="333.3" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<circle cx="586.7" cy="55.0" r="3" fill="none" stroke="currentColor"/>
+<circle cx="840.0" cy="55.0" r="3" fill="none" stroke="currentColor"/>
+<polyline points="80.0,415.0 333.3,415.0 586.7,55.0 840.0,55.0" fill="none" stroke="currentColor" stroke-dasharray="4,4"/>
+<text x="848" y="95" font-family="sans-serif" font-size="10">cascad_no_dependencies</text>
+<circle cx="80.0" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<circle cx="333.3" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<circle cx="586.7" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<circle cx="840.0" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<polyline points="80.0,415.0 333.3,415.0 586.7,415.0 840.0,415.0" fill="none" stroke="currentColor" stroke-dasharray="5,5"/>
+<text x="848" y="110" font-family="sans-serif" font-size="10">maximum_raw_divergence</text>
+<circle cx="80.0" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<circle cx="333.3" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<circle cx="586.7" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<circle cx="840.0" cy="235.0" r="3" fill="none" stroke="currentColor"/>
+<polyline points="80.0,415.0 333.3,415.0 586.7,415.0 840.0,235.0" fill="none" stroke="currentColor" stroke-dasharray="6,6"/>
+<text x="848" y="125" font-family="sans-serif" font-size="10">naive_first_raw_difference</text>
+<circle cx="80.0" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<circle cx="333.3" cy="415.0" r="3" fill="none" stroke="currentColor"/>
+<circle cx="586.7" cy="55.0" r="3" fill="none" stroke="currentColor"/>
+<circle cx="840.0" cy="55.0" r="3" fill="none" stroke="currentColor"/>
+<polyline points="80.0,415.0 333.3,415.0 586.7,55.0 840.0,55.0" fill="none" stroke="currentColor" stroke-dasharray="7,7"/>
+<text x="848" y="140" font-family="sans-serif" font-size="10">temporal_adjacency</text>
+<text x="80.0" y="440" text-anchor="middle" font-family="sans-serif">B0</text>
+<text x="333.3" y="440" text-anchor="middle" font-family="sans-serif">B1</text>
+<text x="586.7" y="440" text-anchor="middle" font-family="sans-serif">B2</text>
+<text x="840.0" y="440" text-anchor="middle" font-family="sans-serif">B3</text>
+</svg>

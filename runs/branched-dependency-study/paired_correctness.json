@@ -1,0 +1,29 @@
+[
+  {
+    "method_a": "cascad_full",
+    "method_b": "cascad_no_dependencies",
+    "paired_instances": 80,
+    "a_lower_ibfir": 40,
+    "equal_ibfir": 40,
+    "a_higher_ibfir": 0,
+    "both_root_correct": 60
+  },
+  {
+    "method_a": "cascad_full",
+    "method_b": "cascad_no_calibration",
+    "paired_instances": 80,
+    "a_lower_ibfir": 0,
+    "equal_ibfir": 80,
+    "a_higher_ibfir": 0,
+    "both_root_correct": 80
+  },
+  {
+    "method_a": "cascad_full",
+    "method_b": "temporal_adjacency",
+    "paired_instances": 80,
+    "a_lower_ibfir": 40,
+    "equal_ibfir": 40,
+    "a_higher_ibfir": 0,
+    "both_root_correct": 60
+  }
+]

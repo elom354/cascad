@@ -1,0 +1,866 @@
+[
+  {
+    "method": "cascad_full",
+    "noise_level": "B0",
+    "metric": "root_accuracy",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_full",
+    "noise_level": "B0",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_full",
+    "noise_level": "B0",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_full",
+    "noise_level": "B0",
+    "metric": "subgraph_recall",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_full",
+    "noise_level": "B1",
+    "metric": "root_accuracy",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_full",
+    "noise_level": "B1",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_full",
+    "noise_level": "B1",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_full",
+    "noise_level": "B1",
+    "metric": "subgraph_recall",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_full",
+    "noise_level": "B2",
+    "metric": "root_accuracy",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_full",
+    "noise_level": "B2",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_full",
+    "noise_level": "B2",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_full",
+    "noise_level": "B2",
+    "metric": "subgraph_recall",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_full",
+    "noise_level": "B3",
+    "metric": "root_accuracy",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_full",
+    "noise_level": "B3",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_full",
+    "noise_level": "B3",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_full",
+    "noise_level": "B3",
+    "metric": "subgraph_recall",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_calibration",
+    "noise_level": "B0",
+    "metric": "root_accuracy",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_calibration",
+    "noise_level": "B0",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_calibration",
+    "noise_level": "B0",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_calibration",
+    "noise_level": "B0",
+    "metric": "subgraph_recall",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_calibration",
+    "noise_level": "B1",
+    "metric": "root_accuracy",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_calibration",
+    "noise_level": "B1",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_calibration",
+    "noise_level": "B1",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_calibration",
+    "noise_level": "B1",
+    "metric": "subgraph_recall",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_calibration",
+    "noise_level": "B2",
+    "metric": "root_accuracy",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_calibration",
+    "noise_level": "B2",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_calibration",
+    "noise_level": "B2",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_calibration",
+    "noise_level": "B2",
+    "metric": "subgraph_recall",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_calibration",
+    "noise_level": "B3",
+    "metric": "root_accuracy",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_calibration",
+    "noise_level": "B3",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_calibration",
+    "noise_level": "B3",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_calibration",
+    "noise_level": "B3",
+    "metric": "subgraph_recall",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "noise_level": "B0",
+    "metric": "root_accuracy",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "noise_level": "B0",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "noise_level": "B0",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "noise_level": "B0",
+    "metric": "subgraph_recall",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "noise_level": "B1",
+    "metric": "root_accuracy",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "noise_level": "B1",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "noise_level": "B1",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "noise_level": "B1",
+    "metric": "subgraph_recall",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "noise_level": "B2",
+    "metric": "root_accuracy",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "noise_level": "B2",
+    "metric": "ibfir",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "noise_level": "B2",
+    "metric": "subgraph_precision",
+    "estimate": 0.8,
+    "ci95_low": 0.8,
+    "ci95_high": 0.8,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "noise_level": "B2",
+    "metric": "subgraph_recall",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "noise_level": "B3",
+    "metric": "root_accuracy",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "noise_level": "B3",
+    "metric": "ibfir",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "noise_level": "B3",
+    "metric": "subgraph_precision",
+    "estimate": 0.6666666666666666,
+    "ci95_low": 0.6666666666666666,
+    "ci95_high": 0.6666666666666666,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "noise_level": "B3",
+    "metric": "subgraph_recall",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "noise_level": "B0",
+    "metric": "root_accuracy",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "noise_level": "B0",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "noise_level": "B0",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "noise_level": "B0",
+    "metric": "subgraph_recall",
+    "estimate": 0.25,
+    "ci95_low": 0.25,
+    "ci95_high": 0.25,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "noise_level": "B1",
+    "metric": "root_accuracy",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "noise_level": "B1",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "noise_level": "B1",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "noise_level": "B1",
+    "metric": "subgraph_recall",
+    "estimate": 0.25,
+    "ci95_low": 0.25,
+    "ci95_high": 0.25,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "noise_level": "B2",
+    "metric": "root_accuracy",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "noise_level": "B2",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "noise_level": "B2",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "noise_level": "B2",
+    "metric": "subgraph_recall",
+    "estimate": 0.25,
+    "ci95_low": 0.25,
+    "ci95_high": 0.25,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "noise_level": "B3",
+    "metric": "root_accuracy",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "noise_level": "B3",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "noise_level": "B3",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "noise_level": "B3",
+    "metric": "subgraph_recall",
+    "estimate": 0.25,
+    "ci95_low": 0.25,
+    "ci95_high": 0.25,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "naive_first_raw_difference",
+    "noise_level": "B0",
+    "metric": "root_accuracy",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "naive_first_raw_difference",
+    "noise_level": "B0",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "naive_first_raw_difference",
+    "noise_level": "B0",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "naive_first_raw_difference",
+    "noise_level": "B0",
+    "metric": "subgraph_recall",
+    "estimate": 0.25,
+    "ci95_low": 0.25,
+    "ci95_high": 0.25,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "naive_first_raw_difference",
+    "noise_level": "B1",
+    "metric": "root_accuracy",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "naive_first_raw_difference",
+    "noise_level": "B1",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "naive_first_raw_difference",
+    "noise_level": "B1",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "naive_first_raw_difference",
+    "noise_level": "B1",
+    "metric": "subgraph_recall",
+    "estimate": 0.25,
+    "ci95_low": 0.25,
+    "ci95_high": 0.25,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "naive_first_raw_difference",
+    "noise_level": "B2",
+    "metric": "root_accuracy",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "naive_first_raw_difference",
+    "noise_level": "B2",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "naive_first_raw_difference",
+    "noise_level": "B2",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "naive_first_raw_difference",
+    "noise_level": "B2",
+    "metric": "subgraph_recall",
+    "estimate": 0.25,
+    "ci95_low": 0.25,
+    "ci95_high": 0.25,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "naive_first_raw_difference",
+    "noise_level": "B3",
+    "metric": "root_accuracy",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "naive_first_raw_difference",
+    "noise_level": "B3",
+    "metric": "ibfir",
+    "estimate": 0.5,
+    "ci95_low": 0.5,
+    "ci95_high": 0.5,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "naive_first_raw_difference",
+    "noise_level": "B3",
+    "metric": "subgraph_precision",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "naive_first_raw_difference",
+    "noise_level": "B3",
+    "metric": "subgraph_recall",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "temporal_adjacency",
+    "noise_level": "B0",
+    "metric": "root_accuracy",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "temporal_adjacency",
+    "noise_level": "B0",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "temporal_adjacency",
+    "noise_level": "B0",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "temporal_adjacency",
+    "noise_level": "B0",
+    "metric": "subgraph_recall",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "temporal_adjacency",
+    "noise_level": "B1",
+    "metric": "root_accuracy",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "temporal_adjacency",
+    "noise_level": "B1",
+    "metric": "ibfir",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "temporal_adjacency",
+    "noise_level": "B1",
+    "metric": "subgraph_precision",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "temporal_adjacency",
+    "noise_level": "B1",
+    "metric": "subgraph_recall",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "temporal_adjacency",
+    "noise_level": "B2",
+    "metric": "root_accuracy",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "temporal_adjacency",
+    "noise_level": "B2",
+    "metric": "ibfir",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "temporal_adjacency",
+    "noise_level": "B2",
+    "metric": "subgraph_precision",
+    "estimate": 0.8,
+    "ci95_low": 0.8,
+    "ci95_high": 0.8,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "temporal_adjacency",
+    "noise_level": "B2",
+    "metric": "subgraph_recall",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "temporal_adjacency",
+    "noise_level": "B3",
+    "metric": "root_accuracy",
+    "estimate": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "temporal_adjacency",
+    "noise_level": "B3",
+    "metric": "ibfir",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "temporal_adjacency",
+    "noise_level": "B3",
+    "metric": "subgraph_precision",
+    "estimate": 0.6666666666666666,
+    "ci95_low": 0.6666666666666666,
+    "ci95_high": 0.6666666666666666,
+    "bootstrap_samples": 2000
+  },
+  {
+    "method": "temporal_adjacency",
+    "noise_level": "B3",
+    "metric": "subgraph_recall",
+    "estimate": 1.0,
+    "ci95_low": 1.0,
+    "ci95_high": 1.0,
+    "bootstrap_samples": 2000
+  }
+]

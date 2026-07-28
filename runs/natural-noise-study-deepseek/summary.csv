@@ -1,0 +1,9 @@
+method,noise_level,instances,root_accuracy,benign_noise_node_selection_rate,mediator_selection_rate,symptom_selection_rate,invalid_output_rate,mean_graph_distance_to_root,api_calls,mean_latency_seconds,observed_cost_usd,unique_prompt_count,unique_trace_pair_count
+deepseek_paired_calibrated,N0,20,1.0,0.0,0.0,0.0,0.0,0,20,2.0546072948505754,,20,20
+deepseek_paired_calibrated,N1,20,1.0,0.0,0.0,0.0,0.0,0,20,1.6557840010013023,,20,20
+deepseek_paired_calibrated,N2,20,1.0,0.0,0.0,0.0,0.0,0,20,1.66547745769858,,20,20
+deepseek_paired_calibrated,N3,20,0.9,0.0,0.05,0.05,0.0,0.15,20,1.721959199448611,,20,20
+deepseek_paired_raw,N0,20,1.0,0.0,0.0,0.0,0.0,0,20,1.8715755706485653,,20,20
+deepseek_paired_raw,N1,20,1.0,0.0,0.0,0.0,0.0,0,20,1.693715399447683,,20,20
+deepseek_paired_raw,N2,20,1.0,0.0,0.0,0.0,0.0,0,20,1.6632306702485948,,20,20
+deepseek_paired_raw,N3,20,0.9,0.0,0.0,0.1,0.0,0.2,20,1.7137787343490345,,20,20

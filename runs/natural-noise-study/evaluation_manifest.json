@@ -1,0 +1,4551 @@
+{
+  "instances": [
+    {
+      "instance_id": "evaluation-n0-00000",
+      "seed": 0,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00001",
+      "seed": 1,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00002",
+      "seed": 2,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00003",
+      "seed": 3,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00004",
+      "seed": 4,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00005",
+      "seed": 5,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00006",
+      "seed": 6,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00007",
+      "seed": 7,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00008",
+      "seed": 8,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00009",
+      "seed": 9,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00010",
+      "seed": 10,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00011",
+      "seed": 11,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00012",
+      "seed": 12,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00013",
+      "seed": 13,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00014",
+      "seed": 14,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00015",
+      "seed": 15,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00016",
+      "seed": 16,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00017",
+      "seed": 17,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00018",
+      "seed": 18,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n0-00019",
+      "seed": 19,
+      "split": "evaluation",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10000",
+      "seed": 10000,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10001",
+      "seed": 10001,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10002",
+      "seed": 10002,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-01"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10003",
+      "seed": 10003,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10004",
+      "seed": 10004,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10005",
+      "seed": 10005,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-01"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10006",
+      "seed": 10006,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10007",
+      "seed": 10007,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10008",
+      "seed": 10008,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-01"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10009",
+      "seed": 10009,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10010",
+      "seed": 10010,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10011",
+      "seed": 10011,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-01"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10012",
+      "seed": 10012,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10013",
+      "seed": 10013,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10014",
+      "seed": 10014,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-01"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10015",
+      "seed": 10015,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10016",
+      "seed": 10016,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10017",
+      "seed": 10017,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-01"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10018",
+      "seed": 10018,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n1-10019",
+      "seed": 10019,
+      "split": "evaluation",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "eval-sem-plan-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20000",
+      "seed": 20000,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-03",
+        "eval-struct-upload-01",
+        "eval-sem-memory-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-01",
+          "rationale": "The identifier is declared non-causal and not read downstream."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-02",
+          "rationale": "The field is an unconsumed summary."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20001",
+      "seed": 20001,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-01",
+        "eval-struct-upload-02",
+        "eval-sem-memory-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-02",
+          "rationale": "This tracing token is ignored by execution logic."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-03",
+          "rationale": "This display-only sentence cannot affect the outcome."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20002",
+      "seed": 20002,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-02",
+        "eval-struct-upload-03",
+        "eval-sem-memory-01"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "upload",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-03",
+          "rationale": "Optional transport metadata is never consumed."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-01",
+          "rationale": "The executable authorization field is left untouched."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20003",
+      "seed": 20003,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-03",
+        "eval-struct-upload-01",
+        "eval-sem-memory-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-01",
+          "rationale": "The identifier is declared non-causal and not read downstream."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-02",
+          "rationale": "The field is an unconsumed summary."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20004",
+      "seed": 20004,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-01",
+        "eval-struct-upload-02",
+        "eval-sem-memory-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-02",
+          "rationale": "This tracing token is ignored by execution logic."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-03",
+          "rationale": "This display-only sentence cannot affect the outcome."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20005",
+      "seed": 20005,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-02",
+        "eval-struct-upload-03",
+        "eval-sem-memory-01"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "upload",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-03",
+          "rationale": "Optional transport metadata is never consumed."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-01",
+          "rationale": "The executable authorization field is left untouched."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20006",
+      "seed": 20006,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-03",
+        "eval-struct-upload-01",
+        "eval-sem-memory-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-01",
+          "rationale": "The identifier is declared non-causal and not read downstream."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-02",
+          "rationale": "The field is an unconsumed summary."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20007",
+      "seed": 20007,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-01",
+        "eval-struct-upload-02",
+        "eval-sem-memory-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-02",
+          "rationale": "This tracing token is ignored by execution logic."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-03",
+          "rationale": "This display-only sentence cannot affect the outcome."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20008",
+      "seed": 20008,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-02",
+        "eval-struct-upload-03",
+        "eval-sem-memory-01"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "upload",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-03",
+          "rationale": "Optional transport metadata is never consumed."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-01",
+          "rationale": "The executable authorization field is left untouched."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20009",
+      "seed": 20009,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-03",
+        "eval-struct-upload-01",
+        "eval-sem-memory-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-01",
+          "rationale": "The identifier is declared non-causal and not read downstream."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-02",
+          "rationale": "The field is an unconsumed summary."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20010",
+      "seed": 20010,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-01",
+        "eval-struct-upload-02",
+        "eval-sem-memory-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-02",
+          "rationale": "This tracing token is ignored by execution logic."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-03",
+          "rationale": "This display-only sentence cannot affect the outcome."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20011",
+      "seed": 20011,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-02",
+        "eval-struct-upload-03",
+        "eval-sem-memory-01"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "upload",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-03",
+          "rationale": "Optional transport metadata is never consumed."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-01",
+          "rationale": "The executable authorization field is left untouched."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20012",
+      "seed": 20012,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-03",
+        "eval-struct-upload-01",
+        "eval-sem-memory-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-01",
+          "rationale": "The identifier is declared non-causal and not read downstream."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-02",
+          "rationale": "The field is an unconsumed summary."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20013",
+      "seed": 20013,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-01",
+        "eval-struct-upload-02",
+        "eval-sem-memory-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-02",
+          "rationale": "This tracing token is ignored by execution logic."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-03",
+          "rationale": "This display-only sentence cannot affect the outcome."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20014",
+      "seed": 20014,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-02",
+        "eval-struct-upload-03",
+        "eval-sem-memory-01"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "upload",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-03",
+          "rationale": "Optional transport metadata is never consumed."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-01",
+          "rationale": "The executable authorization field is left untouched."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20015",
+      "seed": 20015,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-03",
+        "eval-struct-upload-01",
+        "eval-sem-memory-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-01",
+          "rationale": "The identifier is declared non-causal and not read downstream."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-02",
+          "rationale": "The field is an unconsumed summary."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20016",
+      "seed": 20016,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-01",
+        "eval-struct-upload-02",
+        "eval-sem-memory-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-02",
+          "rationale": "This tracing token is ignored by execution logic."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-03",
+          "rationale": "This display-only sentence cannot affect the outcome."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20017",
+      "seed": 20017,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-02",
+        "eval-struct-upload-03",
+        "eval-sem-memory-01"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "upload",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-03",
+          "rationale": "Optional transport metadata is never consumed."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-01",
+          "rationale": "The executable authorization field is left untouched."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20018",
+      "seed": 20018,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-03",
+        "eval-struct-upload-01",
+        "eval-sem-memory-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-01",
+          "rationale": "The identifier is declared non-causal and not read downstream."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-02",
+          "rationale": "The field is an unconsumed summary."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n2-20019",
+      "seed": 20019,
+      "split": "evaluation",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "eval-sem-plan-01",
+        "eval-struct-upload-02",
+        "eval-sem-memory-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-02",
+          "rationale": "This tracing token is ignored by execution logic."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-03",
+          "rationale": "This display-only sentence cannot affect the outcome."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30000",
+      "seed": 30000,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-01",
+        "eval-struct-upload-02",
+        "eval-sem-memory-03",
+        "eval-struct-share-01",
+        "eval-struct-notify-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-02",
+          "rationale": "This tracing token is ignored by execution logic."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-03",
+          "rationale": "This display-only sentence cannot affect the outcome."
+        },
+        {
+          "node": "share",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-01",
+          "rationale": "Encoding metadata is independent of permission logic."
+        },
+        {
+          "node": "notify",
+          "field": "timestamp",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-02",
+          "rationale": "Only an equivalent display format changes."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30001",
+      "seed": 30001,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-02",
+        "eval-struct-upload-03",
+        "eval-sem-memory-01",
+        "eval-struct-share-02",
+        "eval-struct-notify-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "upload",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-03",
+          "rationale": "Optional transport metadata is never consumed."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-01",
+          "rationale": "The executable authorization field is left untouched."
+        },
+        {
+          "node": "share",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-02",
+          "rationale": "This value is observability-only."
+        },
+        {
+          "node": "notify",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-03",
+          "rationale": "The locale metadata is never read by the simulator."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30002",
+      "seed": 30002,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-03",
+        "eval-struct-upload-01",
+        "eval-sem-memory-02",
+        "eval-struct-share-03",
+        "eval-struct-notify-01"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-01",
+          "rationale": "The identifier is declared non-causal and not read downstream."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-02",
+          "rationale": "The field is an unconsumed summary."
+        },
+        {
+          "node": "share",
+          "field": "timestamp",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-03",
+          "rationale": "The timestamp representation is not consumed."
+        },
+        {
+          "node": "notify",
+          "field": "receipt_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-01",
+          "rationale": "Receipt text cannot change success or failure."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30003",
+      "seed": 30003,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-01",
+        "eval-struct-upload-02",
+        "eval-sem-memory-03",
+        "eval-struct-share-01",
+        "eval-struct-notify-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-02",
+          "rationale": "This tracing token is ignored by execution logic."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-03",
+          "rationale": "This display-only sentence cannot affect the outcome."
+        },
+        {
+          "node": "share",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-01",
+          "rationale": "Encoding metadata is independent of permission logic."
+        },
+        {
+          "node": "notify",
+          "field": "timestamp",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-02",
+          "rationale": "Only an equivalent display format changes."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30004",
+      "seed": 30004,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-02",
+        "eval-struct-upload-03",
+        "eval-sem-memory-01",
+        "eval-struct-share-02",
+        "eval-struct-notify-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "upload",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-03",
+          "rationale": "Optional transport metadata is never consumed."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-01",
+          "rationale": "The executable authorization field is left untouched."
+        },
+        {
+          "node": "share",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-02",
+          "rationale": "This value is observability-only."
+        },
+        {
+          "node": "notify",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-03",
+          "rationale": "The locale metadata is never read by the simulator."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30005",
+      "seed": 30005,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-03",
+        "eval-struct-upload-01",
+        "eval-sem-memory-02",
+        "eval-struct-share-03",
+        "eval-struct-notify-01"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-01",
+          "rationale": "The identifier is declared non-causal and not read downstream."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-02",
+          "rationale": "The field is an unconsumed summary."
+        },
+        {
+          "node": "share",
+          "field": "timestamp",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-03",
+          "rationale": "The timestamp representation is not consumed."
+        },
+        {
+          "node": "notify",
+          "field": "receipt_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-01",
+          "rationale": "Receipt text cannot change success or failure."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30006",
+      "seed": 30006,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-01",
+        "eval-struct-upload-02",
+        "eval-sem-memory-03",
+        "eval-struct-share-01",
+        "eval-struct-notify-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-02",
+          "rationale": "This tracing token is ignored by execution logic."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-03",
+          "rationale": "This display-only sentence cannot affect the outcome."
+        },
+        {
+          "node": "share",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-01",
+          "rationale": "Encoding metadata is independent of permission logic."
+        },
+        {
+          "node": "notify",
+          "field": "timestamp",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-02",
+          "rationale": "Only an equivalent display format changes."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30007",
+      "seed": 30007,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-02",
+        "eval-struct-upload-03",
+        "eval-sem-memory-01",
+        "eval-struct-share-02",
+        "eval-struct-notify-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "upload",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-03",
+          "rationale": "Optional transport metadata is never consumed."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-01",
+          "rationale": "The executable authorization field is left untouched."
+        },
+        {
+          "node": "share",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-02",
+          "rationale": "This value is observability-only."
+        },
+        {
+          "node": "notify",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-03",
+          "rationale": "The locale metadata is never read by the simulator."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30008",
+      "seed": 30008,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-03",
+        "eval-struct-upload-01",
+        "eval-sem-memory-02",
+        "eval-struct-share-03",
+        "eval-struct-notify-01"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-01",
+          "rationale": "The identifier is declared non-causal and not read downstream."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-02",
+          "rationale": "The field is an unconsumed summary."
+        },
+        {
+          "node": "share",
+          "field": "timestamp",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-03",
+          "rationale": "The timestamp representation is not consumed."
+        },
+        {
+          "node": "notify",
+          "field": "receipt_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-01",
+          "rationale": "Receipt text cannot change success or failure."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30009",
+      "seed": 30009,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-01",
+        "eval-struct-upload-02",
+        "eval-sem-memory-03",
+        "eval-struct-share-01",
+        "eval-struct-notify-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-02",
+          "rationale": "This tracing token is ignored by execution logic."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-03",
+          "rationale": "This display-only sentence cannot affect the outcome."
+        },
+        {
+          "node": "share",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-01",
+          "rationale": "Encoding metadata is independent of permission logic."
+        },
+        {
+          "node": "notify",
+          "field": "timestamp",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-02",
+          "rationale": "Only an equivalent display format changes."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30010",
+      "seed": 30010,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-02",
+        "eval-struct-upload-03",
+        "eval-sem-memory-01",
+        "eval-struct-share-02",
+        "eval-struct-notify-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "upload",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-03",
+          "rationale": "Optional transport metadata is never consumed."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-01",
+          "rationale": "The executable authorization field is left untouched."
+        },
+        {
+          "node": "share",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-02",
+          "rationale": "This value is observability-only."
+        },
+        {
+          "node": "notify",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-03",
+          "rationale": "The locale metadata is never read by the simulator."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30011",
+      "seed": 30011,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-03",
+        "eval-struct-upload-01",
+        "eval-sem-memory-02",
+        "eval-struct-share-03",
+        "eval-struct-notify-01"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-01",
+          "rationale": "The identifier is declared non-causal and not read downstream."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-02",
+          "rationale": "The field is an unconsumed summary."
+        },
+        {
+          "node": "share",
+          "field": "timestamp",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-03",
+          "rationale": "The timestamp representation is not consumed."
+        },
+        {
+          "node": "notify",
+          "field": "receipt_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-01",
+          "rationale": "Receipt text cannot change success or failure."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30012",
+      "seed": 30012,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-01",
+        "eval-struct-upload-02",
+        "eval-sem-memory-03",
+        "eval-struct-share-01",
+        "eval-struct-notify-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-02",
+          "rationale": "This tracing token is ignored by execution logic."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-03",
+          "rationale": "This display-only sentence cannot affect the outcome."
+        },
+        {
+          "node": "share",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-01",
+          "rationale": "Encoding metadata is independent of permission logic."
+        },
+        {
+          "node": "notify",
+          "field": "timestamp",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-02",
+          "rationale": "Only an equivalent display format changes."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30013",
+      "seed": 30013,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-02",
+        "eval-struct-upload-03",
+        "eval-sem-memory-01",
+        "eval-struct-share-02",
+        "eval-struct-notify-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "upload",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-03",
+          "rationale": "Optional transport metadata is never consumed."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-01",
+          "rationale": "The executable authorization field is left untouched."
+        },
+        {
+          "node": "share",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-02",
+          "rationale": "This value is observability-only."
+        },
+        {
+          "node": "notify",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-03",
+          "rationale": "The locale metadata is never read by the simulator."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30014",
+      "seed": 30014,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-03",
+        "eval-struct-upload-01",
+        "eval-sem-memory-02",
+        "eval-struct-share-03",
+        "eval-struct-notify-01"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-01",
+          "rationale": "The identifier is declared non-causal and not read downstream."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-02",
+          "rationale": "The field is an unconsumed summary."
+        },
+        {
+          "node": "share",
+          "field": "timestamp",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-03",
+          "rationale": "The timestamp representation is not consumed."
+        },
+        {
+          "node": "notify",
+          "field": "receipt_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-01",
+          "rationale": "Receipt text cannot change success or failure."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30015",
+      "seed": 30015,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-01",
+        "eval-struct-upload-02",
+        "eval-sem-memory-03",
+        "eval-struct-share-01",
+        "eval-struct-notify-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-02",
+          "rationale": "This tracing token is ignored by execution logic."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-03",
+          "rationale": "This display-only sentence cannot affect the outcome."
+        },
+        {
+          "node": "share",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-01",
+          "rationale": "Encoding metadata is independent of permission logic."
+        },
+        {
+          "node": "notify",
+          "field": "timestamp",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-02",
+          "rationale": "Only an equivalent display format changes."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30016",
+      "seed": 30016,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-02",
+        "eval-struct-upload-03",
+        "eval-sem-memory-01",
+        "eval-struct-share-02",
+        "eval-struct-notify-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "upload",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-03",
+          "rationale": "Optional transport metadata is never consumed."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-01",
+          "rationale": "The executable authorization field is left untouched."
+        },
+        {
+          "node": "share",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-02",
+          "rationale": "This value is observability-only."
+        },
+        {
+          "node": "notify",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-03",
+          "rationale": "The locale metadata is never read by the simulator."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30017",
+      "seed": 30017,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-03",
+        "eval-struct-upload-01",
+        "eval-sem-memory-02",
+        "eval-struct-share-03",
+        "eval-struct-notify-01"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-03",
+          "rationale": "Only the observable surface changes."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-01",
+          "rationale": "The identifier is declared non-causal and not read downstream."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-02",
+          "rationale": "The field is an unconsumed summary."
+        },
+        {
+          "node": "share",
+          "field": "timestamp",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-03",
+          "rationale": "The timestamp representation is not consumed."
+        },
+        {
+          "node": "notify",
+          "field": "receipt_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-01",
+          "rationale": "Receipt text cannot change success or failure."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30018",
+      "seed": 30018,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-01",
+        "eval-struct-upload-02",
+        "eval-sem-memory-03",
+        "eval-struct-share-01",
+        "eval-struct-notify-02"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-01",
+          "rationale": "The phrase describes but does not alter the executable plan."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-02",
+          "rationale": "This tracing token is ignored by execution logic."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-03",
+          "rationale": "This display-only sentence cannot affect the outcome."
+        },
+        {
+          "node": "share",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-01",
+          "rationale": "Encoding metadata is independent of permission logic."
+        },
+        {
+          "node": "notify",
+          "field": "timestamp",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-02",
+          "rationale": "Only an equivalent display format changes."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    },
+    {
+      "instance_id": "evaluation-n3-30019",
+      "seed": 30019,
+      "split": "evaluation",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "eval-sem-plan-02",
+        "eval-struct-upload-03",
+        "eval-sem-memory-01",
+        "eval-struct-share-02",
+        "eval-struct-notify-03"
+      ],
+      "contains_fault": true,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-plan-02",
+          "rationale": "No node, argument, or control decision reads this prose."
+        },
+        {
+          "node": "upload",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-upload-03",
+          "rationale": "Optional transport metadata is never consumed."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-sem-memory-01",
+          "rationale": "The executable authorization field is left untouched."
+        },
+        {
+          "node": "share",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-share-02",
+          "rationale": "This value is observability-only."
+        },
+        {
+          "node": "notify",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "eval-struct-notify-03",
+          "rationale": "The locale metadata is never read by the simulator."
+        },
+        {
+          "node": "share",
+          "field": "permission",
+          "category": "injected_root_divergence",
+          "template_id": "causal-root-v1",
+          "rationale": "First changed executable authorization state."
+        },
+        {
+          "node": "memory",
+          "field": "memories",
+          "category": "downstream_contamination",
+          "template_id": "causal-memory-v1",
+          "rationale": "Persists the changed authorization state."
+        },
+        {
+          "node": "notify",
+          "field": "ok",
+          "category": "visible_failure",
+          "template_id": "causal-symptom-v1",
+          "rationale": "First explicit externally observable failure."
+        },
+        {
+          "node": "responder",
+          "field": "answer",
+          "category": "downstream_contamination",
+          "template_id": "causal-response-v1",
+          "rationale": "Reports the failed downstream outcome."
+        }
+      ]
+    }
+  ],
+  "split_overlap_check": {
+    "instance_id_overlap": [],
+    "noise_template_overlap": [],
+    "calibration_contains_fault": false,
+    "evaluation_missing_fault": false,
+    "passed": true
+  }
+}

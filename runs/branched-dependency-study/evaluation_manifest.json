@@ -1,0 +1,947 @@
+{
+  "instances": [
+    {
+      "instance_id": "branched-evaluation-b0-00000",
+      "seed": 0,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00001",
+      "seed": 1,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00002",
+      "seed": 2,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00003",
+      "seed": 3,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00004",
+      "seed": 4,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00005",
+      "seed": 5,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00006",
+      "seed": 6,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00007",
+      "seed": 7,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00008",
+      "seed": 8,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00009",
+      "seed": 9,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00010",
+      "seed": 10,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00011",
+      "seed": 11,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00012",
+      "seed": 12,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00013",
+      "seed": 13,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00014",
+      "seed": 14,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00015",
+      "seed": 15,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00016",
+      "seed": 16,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00017",
+      "seed": 17,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00018",
+      "seed": 18,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b0-00019",
+      "seed": 19,
+      "split": "evaluation",
+      "noise_level": "B0",
+      "noise_template_ids": [],
+      "independent_divergent_nodes": []
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10000",
+      "seed": 10000,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10001",
+      "seed": 10001,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10002",
+      "seed": 10002,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10003",
+      "seed": 10003,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10004",
+      "seed": 10004,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10005",
+      "seed": 10005,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10006",
+      "seed": 10006,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10007",
+      "seed": 10007,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10008",
+      "seed": 10008,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10009",
+      "seed": 10009,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10010",
+      "seed": 10010,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10011",
+      "seed": 10011,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10012",
+      "seed": 10012,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10013",
+      "seed": 10013,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10014",
+      "seed": 10014,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10015",
+      "seed": 10015,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10016",
+      "seed": 10016,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10017",
+      "seed": 10017,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10018",
+      "seed": 10018,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b1-10019",
+      "seed": 10019,
+      "split": "evaluation",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-eval-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20000",
+      "seed": 20000,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20001",
+      "seed": 20001,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20002",
+      "seed": 20002,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20003",
+      "seed": 20003,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20004",
+      "seed": 20004,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20005",
+      "seed": 20005,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20006",
+      "seed": 20006,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20007",
+      "seed": 20007,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20008",
+      "seed": 20008,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20009",
+      "seed": 20009,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20010",
+      "seed": 20010,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20011",
+      "seed": 20011,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20012",
+      "seed": 20012,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20013",
+      "seed": 20013,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20014",
+      "seed": 20014,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20015",
+      "seed": 20015,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20016",
+      "seed": 20016,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20017",
+      "seed": 20017,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20018",
+      "seed": 20018,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b2-20019",
+      "seed": 20019,
+      "split": "evaluation",
+      "noise_level": "B2",
+      "noise_template_ids": [
+        "branch-eval-destination-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30000",
+      "seed": 30000,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30001",
+      "seed": 30001,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30002",
+      "seed": 30002,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30003",
+      "seed": 30003,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30004",
+      "seed": 30004,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30005",
+      "seed": 30005,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30006",
+      "seed": 30006,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30007",
+      "seed": 30007,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30008",
+      "seed": 30008,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30009",
+      "seed": 30009,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30010",
+      "seed": 30010,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30011",
+      "seed": 30011,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30012",
+      "seed": 30012,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30013",
+      "seed": 30013,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30014",
+      "seed": 30014,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30015",
+      "seed": 30015,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30016",
+      "seed": 30016,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30017",
+      "seed": 30017,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30018",
+      "seed": 30018,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-evaluation-b3-30019",
+      "seed": 30019,
+      "split": "evaluation",
+      "noise_level": "B3",
+      "noise_template_ids": [
+        "branch-eval-destination-02",
+        "branch-eval-scope-01"
+      ],
+      "independent_divergent_nodes": [
+        "audit_log",
+        "metrics_export"
+      ]
+    }
+  ],
+  "salient_divergence_specification": {
+    "frozen_before_evaluation": true,
+    "B2": {
+      "node": "audit_log",
+      "field": "destination",
+      "clean_surface": "regional-records",
+      "comparison_surface": "external-compliance-stream",
+      "rationale": "Destination is independent of authorization and notification state."
+    },
+    "B3": {
+      "audit_log": {
+        "field": "destination",
+        "clean_surface": "regional-records",
+        "comparison_surface": "long-term-governance-ledger"
+      },
+      "metrics_export": {
+        "field": "aggregation_scope",
+        "clean_surface": "daily-resource",
+        "comparison_surface": "cross-region-quarterly"
+      },
+      "rationale": "Neither field is read by the main branch."
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "verdict": "PASS",
+  "protocol_sha256": "72b6b95e3571ddaaeef92757028e374016d941356db6e5a78a5bb49305e0fb85",
+  "controlled_pairs": 200,
+  "excluded_pairs": 0,
+  "failed_attempts_retained": 3,
+  "repeated_exposure_pairs_retained": 8,
+  "structurally_divergent_pairs_retained": 11,
+  "threshold_source": "v2_calibration_only",
+  "structural_divergence_policy": "presence/absence of an observable event is a categorical trajectory divergence; matched extensions without a frozen key are flagged as uncalibrated rather than silently thresholded"
+}

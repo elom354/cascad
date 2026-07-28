@@ -1,0 +1,695 @@
+{
+  "instances": [
+    {
+      "instance_id": "calibration-n0-100000",
+      "seed": 100000,
+      "split": "calibration",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": false,
+      "annotations": []
+    },
+    {
+      "instance_id": "calibration-n1-100001",
+      "seed": 100001,
+      "split": "calibration",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "cal-sem-plan-02"
+      ],
+      "contains_fault": false,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-plan-02",
+          "rationale": "The wording is descriptive only and is not consumed by execution."
+        }
+      ]
+    },
+    {
+      "instance_id": "calibration-n2-100002",
+      "seed": 100002,
+      "split": "calibration",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "cal-sem-plan-01",
+        "cal-struct-upload-02",
+        "cal-sem-memory-01"
+      ],
+      "contains_fault": false,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-plan-01",
+          "rationale": "This restates the fixed plan without changing its nodes or order."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-upload-02",
+          "rationale": "The correlation value is observability metadata only."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-memory-01",
+          "rationale": "The summary is not read by workflow logic; the original state remains unchanged."
+        }
+      ]
+    },
+    {
+      "instance_id": "calibration-n3-100003",
+      "seed": 100003,
+      "split": "calibration",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "cal-sem-plan-02",
+        "cal-struct-upload-01",
+        "cal-sem-memory-02",
+        "cal-struct-share-01",
+        "cal-struct-notify-02"
+      ],
+      "contains_fault": false,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-plan-02",
+          "rationale": "The wording is descriptive only and is not consumed by execution."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-upload-01",
+          "rationale": "The simulator never reads this post-execution display identifier."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-memory-02",
+          "rationale": "This is a semantically equivalent display summary."
+        },
+        {
+          "node": "share",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-share-01",
+          "rationale": "Formatting metadata is not used to compute authorization."
+        },
+        {
+          "node": "notify",
+          "field": "receipt_id",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-notify-02",
+          "rationale": "Receipt formatting has no effect on notification success."
+        }
+      ]
+    },
+    {
+      "instance_id": "calibration-n0-100004",
+      "seed": 100004,
+      "split": "calibration",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": false,
+      "annotations": []
+    },
+    {
+      "instance_id": "calibration-n1-100005",
+      "seed": 100005,
+      "split": "calibration",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "cal-sem-plan-02"
+      ],
+      "contains_fault": false,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-plan-02",
+          "rationale": "The wording is descriptive only and is not consumed by execution."
+        }
+      ]
+    },
+    {
+      "instance_id": "calibration-n2-100006",
+      "seed": 100006,
+      "split": "calibration",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "cal-sem-plan-01",
+        "cal-struct-upload-02",
+        "cal-sem-memory-01"
+      ],
+      "contains_fault": false,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-plan-01",
+          "rationale": "This restates the fixed plan without changing its nodes or order."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-upload-02",
+          "rationale": "The correlation value is observability metadata only."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-memory-01",
+          "rationale": "The summary is not read by workflow logic; the original state remains unchanged."
+        }
+      ]
+    },
+    {
+      "instance_id": "calibration-n3-100007",
+      "seed": 100007,
+      "split": "calibration",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "cal-sem-plan-02",
+        "cal-struct-upload-01",
+        "cal-sem-memory-02",
+        "cal-struct-share-01",
+        "cal-struct-notify-02"
+      ],
+      "contains_fault": false,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-plan-02",
+          "rationale": "The wording is descriptive only and is not consumed by execution."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-upload-01",
+          "rationale": "The simulator never reads this post-execution display identifier."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-memory-02",
+          "rationale": "This is a semantically equivalent display summary."
+        },
+        {
+          "node": "share",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-share-01",
+          "rationale": "Formatting metadata is not used to compute authorization."
+        },
+        {
+          "node": "notify",
+          "field": "receipt_id",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-notify-02",
+          "rationale": "Receipt formatting has no effect on notification success."
+        }
+      ]
+    },
+    {
+      "instance_id": "calibration-n0-100008",
+      "seed": 100008,
+      "split": "calibration",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": false,
+      "annotations": []
+    },
+    {
+      "instance_id": "calibration-n1-100009",
+      "seed": 100009,
+      "split": "calibration",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "cal-sem-plan-02"
+      ],
+      "contains_fault": false,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-plan-02",
+          "rationale": "The wording is descriptive only and is not consumed by execution."
+        }
+      ]
+    },
+    {
+      "instance_id": "calibration-n2-100010",
+      "seed": 100010,
+      "split": "calibration",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "cal-sem-plan-01",
+        "cal-struct-upload-02",
+        "cal-sem-memory-01"
+      ],
+      "contains_fault": false,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-plan-01",
+          "rationale": "This restates the fixed plan without changing its nodes or order."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-upload-02",
+          "rationale": "The correlation value is observability metadata only."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-memory-01",
+          "rationale": "The summary is not read by workflow logic; the original state remains unchanged."
+        }
+      ]
+    },
+    {
+      "instance_id": "calibration-n3-100011",
+      "seed": 100011,
+      "split": "calibration",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "cal-sem-plan-02",
+        "cal-struct-upload-01",
+        "cal-sem-memory-02",
+        "cal-struct-share-01",
+        "cal-struct-notify-02"
+      ],
+      "contains_fault": false,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-plan-02",
+          "rationale": "The wording is descriptive only and is not consumed by execution."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-upload-01",
+          "rationale": "The simulator never reads this post-execution display identifier."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-memory-02",
+          "rationale": "This is a semantically equivalent display summary."
+        },
+        {
+          "node": "share",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-share-01",
+          "rationale": "Formatting metadata is not used to compute authorization."
+        },
+        {
+          "node": "notify",
+          "field": "receipt_id",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-notify-02",
+          "rationale": "Receipt formatting has no effect on notification success."
+        }
+      ]
+    },
+    {
+      "instance_id": "calibration-n0-100012",
+      "seed": 100012,
+      "split": "calibration",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": false,
+      "annotations": []
+    },
+    {
+      "instance_id": "calibration-n1-100013",
+      "seed": 100013,
+      "split": "calibration",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "cal-sem-plan-02"
+      ],
+      "contains_fault": false,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-plan-02",
+          "rationale": "The wording is descriptive only and is not consumed by execution."
+        }
+      ]
+    },
+    {
+      "instance_id": "calibration-n2-100014",
+      "seed": 100014,
+      "split": "calibration",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "cal-sem-plan-01",
+        "cal-struct-upload-02",
+        "cal-sem-memory-01"
+      ],
+      "contains_fault": false,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-plan-01",
+          "rationale": "This restates the fixed plan without changing its nodes or order."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-upload-02",
+          "rationale": "The correlation value is observability metadata only."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-memory-01",
+          "rationale": "The summary is not read by workflow logic; the original state remains unchanged."
+        }
+      ]
+    },
+    {
+      "instance_id": "calibration-n3-100015",
+      "seed": 100015,
+      "split": "calibration",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "cal-sem-plan-02",
+        "cal-struct-upload-01",
+        "cal-sem-memory-02",
+        "cal-struct-share-01",
+        "cal-struct-notify-02"
+      ],
+      "contains_fault": false,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-plan-02",
+          "rationale": "The wording is descriptive only and is not consumed by execution."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-upload-01",
+          "rationale": "The simulator never reads this post-execution display identifier."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-memory-02",
+          "rationale": "This is a semantically equivalent display summary."
+        },
+        {
+          "node": "share",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-share-01",
+          "rationale": "Formatting metadata is not used to compute authorization."
+        },
+        {
+          "node": "notify",
+          "field": "receipt_id",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-notify-02",
+          "rationale": "Receipt formatting has no effect on notification success."
+        }
+      ]
+    },
+    {
+      "instance_id": "calibration-n0-100016",
+      "seed": 100016,
+      "split": "calibration",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": false,
+      "annotations": []
+    },
+    {
+      "instance_id": "calibration-n1-100017",
+      "seed": 100017,
+      "split": "calibration",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "cal-sem-plan-02"
+      ],
+      "contains_fault": false,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-plan-02",
+          "rationale": "The wording is descriptive only and is not consumed by execution."
+        }
+      ]
+    },
+    {
+      "instance_id": "calibration-n2-100018",
+      "seed": 100018,
+      "split": "calibration",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "cal-sem-plan-01",
+        "cal-struct-upload-02",
+        "cal-sem-memory-01"
+      ],
+      "contains_fault": false,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-plan-01",
+          "rationale": "This restates the fixed plan without changing its nodes or order."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-upload-02",
+          "rationale": "The correlation value is observability metadata only."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-memory-01",
+          "rationale": "The summary is not read by workflow logic; the original state remains unchanged."
+        }
+      ]
+    },
+    {
+      "instance_id": "calibration-n3-100019",
+      "seed": 100019,
+      "split": "calibration",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "cal-sem-plan-02",
+        "cal-struct-upload-01",
+        "cal-sem-memory-02",
+        "cal-struct-share-01",
+        "cal-struct-notify-02"
+      ],
+      "contains_fault": false,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-plan-02",
+          "rationale": "The wording is descriptive only and is not consumed by execution."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-upload-01",
+          "rationale": "The simulator never reads this post-execution display identifier."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-memory-02",
+          "rationale": "This is a semantically equivalent display summary."
+        },
+        {
+          "node": "share",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-share-01",
+          "rationale": "Formatting metadata is not used to compute authorization."
+        },
+        {
+          "node": "notify",
+          "field": "receipt_id",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-notify-02",
+          "rationale": "Receipt formatting has no effect on notification success."
+        }
+      ]
+    },
+    {
+      "instance_id": "calibration-n0-100020",
+      "seed": 100020,
+      "split": "calibration",
+      "noise_level": "N0",
+      "noise_template_ids": [],
+      "contains_fault": false,
+      "annotations": []
+    },
+    {
+      "instance_id": "calibration-n1-100021",
+      "seed": 100021,
+      "split": "calibration",
+      "noise_level": "N1",
+      "noise_template_ids": [
+        "cal-sem-plan-02"
+      ],
+      "contains_fault": false,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-plan-02",
+          "rationale": "The wording is descriptive only and is not consumed by execution."
+        }
+      ]
+    },
+    {
+      "instance_id": "calibration-n2-100022",
+      "seed": 100022,
+      "split": "calibration",
+      "noise_level": "N2",
+      "noise_template_ids": [
+        "cal-sem-plan-01",
+        "cal-struct-upload-02",
+        "cal-sem-memory-01"
+      ],
+      "contains_fault": false,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-plan-01",
+          "rationale": "This restates the fixed plan without changing its nodes or order."
+        },
+        {
+          "node": "upload",
+          "field": "correlation_id",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-upload-02",
+          "rationale": "The correlation value is observability metadata only."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-memory-01",
+          "rationale": "The summary is not read by workflow logic; the original state remains unchanged."
+        }
+      ]
+    },
+    {
+      "instance_id": "calibration-n3-100023",
+      "seed": 100023,
+      "split": "calibration",
+      "noise_level": "N3",
+      "noise_template_ids": [
+        "cal-sem-plan-02",
+        "cal-struct-upload-01",
+        "cal-sem-memory-02",
+        "cal-struct-share-01",
+        "cal-struct-notify-02"
+      ],
+      "contains_fault": false,
+      "annotations": [
+        {
+          "node": "planner",
+          "field": "plan_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-plan-02",
+          "rationale": "The wording is descriptive only and is not consumed by execution."
+        },
+        {
+          "node": "upload",
+          "field": "resource_id",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-upload-01",
+          "rationale": "The simulator never reads this post-execution display identifier."
+        },
+        {
+          "node": "memory",
+          "field": "memory_summary",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-sem-memory-02",
+          "rationale": "This is a semantically equivalent display summary."
+        },
+        {
+          "node": "share",
+          "field": "harmless_metadata",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-share-01",
+          "rationale": "Formatting metadata is not used to compute authorization."
+        },
+        {
+          "node": "notify",
+          "field": "receipt_id",
+          "category": "benign_natural_divergence",
+          "template_id": "cal-struct-notify-02",
+          "rationale": "Receipt formatting has no effect on notification success."
+        }
+      ]
+    }
+  ],
+  "split_overlap_check": {
+    "instance_id_overlap": [],
+    "noise_template_overlap": [],
+    "calibration_contains_fault": false,
+    "evaluation_missing_fault": false,
+    "passed": true
+  }
+}

@@ -1,0 +1,785 @@
+{
+  "instances": [
+    {
+      "instance_id": "inter-calibration-e3-k10-300000",
+      "seed": 300000,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300000",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "22622e41137c6b3141ee0c7103158c28abd799536abe7b01651559a610e09dff",
+      "corrupt_history_sha256": "e04ff8bafaf5911726f4cb491d360440d91d050405add05851eb1b20d85a5605",
+      "paired_prompt_sha256": "6db5039d4b4454470528363b8dcc0f4dda041351d27b59403d8144130506fdcf",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300001",
+      "seed": 300001,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300001",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "a3703bba6305ccd90c95aa68c2ceab4ac0e8735e46f3358194e2a948918ee920",
+      "corrupt_history_sha256": "e5fb6bc2c0ba215d0abf49a1c340c1e3c0a3dabeeedbb079b3e01300a902aabc",
+      "paired_prompt_sha256": "f9a42af693edefc60d28275b463f744aebd2a885f85bdcdf36bbd08eede4ffda",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300002",
+      "seed": 300002,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300002",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "4a796d96414665f3580af216edd1f820c196e02ae13e44440f922e612e7e64c6",
+      "corrupt_history_sha256": "8b53a8cd841b51e6b8f259fc56f5f4ec3aa445ea86340ba3794764e56648460c",
+      "paired_prompt_sha256": "d8b24aad5301c8ce73b84f47e1ab345160918dc01e28b015ebbaeb704368761c",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300003",
+      "seed": 300003,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300003",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "e7ed4ad02236d2ca31d9cb713f58750141e43fec2817dd89c75949c8d13735b5",
+      "corrupt_history_sha256": "3a47aeca13e98fb26552302c76386a5136253d389982a853b3dca114928f3829",
+      "paired_prompt_sha256": "49ae423d2fc767c22158c3fc606f762423d5e00ece5898569405397b221652c5",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300004",
+      "seed": 300004,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300004",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "69c8ddec1bb9aad431c51e0d69d21a6f504863a04f29265942082525a75028c1",
+      "corrupt_history_sha256": "7c46cbd553bf7573657756c08ec4f3db3e0e3bf61df405ff8f601d5721aaec1b",
+      "paired_prompt_sha256": "b7250d75ff39a91aca46fa8a632867e15cc7f6ef0aa3a75979ea9fdc09810d79",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300005",
+      "seed": 300005,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300005",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "ec694d9e31802c140ceecaffd2fd47aff791ce5abddbecca4052e950faec449c",
+      "corrupt_history_sha256": "0beef4d3eb5a42752eeb393dfc1c11046e69d2901ede821ba0d02b9b6e5fddab",
+      "paired_prompt_sha256": "9ab88b11ef35bdd15925823363ac8f376b67c74fa3e16b9592b6f5d845de02a2",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300006",
+      "seed": 300006,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300006",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "0f171196e227f4bda8fdebe9f792ad69f411a502d15c99a0c090c95545f6e4e4",
+      "corrupt_history_sha256": "2225e5ecbf97a106e57c0ef3f397c7210f6582c1e1d2193350dedc470e05f743",
+      "paired_prompt_sha256": "50d7caafed3bf622b8236951cdc893eaf065fb0028ec03603d1c872fc1f5d4bc",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300007",
+      "seed": 300007,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300007",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "fc073bd760020cafdb14078d1f89d298594682eac4194662ffab312d0760e168",
+      "corrupt_history_sha256": "1dd12a81d08a933722b7ebe6d4d9cd3554972ef3c63352292f5224a8e811f3be",
+      "paired_prompt_sha256": "3d634cfe4ffa4f542e7dfb4fed4b03e6471ffb7c40d9b3edcb7bec2cbb2e908f",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300008",
+      "seed": 300008,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300008",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "b4f63400392a5b2beab70cc335f5bb5d5cb567211bc88bccea336a7e876bc84c",
+      "corrupt_history_sha256": "0d9a1343f19315e26a67e26a870eead8cb94eec01e0959292c0458433f76f688",
+      "paired_prompt_sha256": "a4301e65fa460b4ad59c03e7f8402c2e31d2bcef6cd078444342740ac1be87a8",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300009",
+      "seed": 300009,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300009",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "a07d6f8189b6846f4ef036a51cc559d60215e568b2da2973cced4e2fbc4ebe88",
+      "corrupt_history_sha256": "2a82f772cac1dd4d17e421f02fd40594fbc920e8a026b29d3f115f040beeb30c",
+      "paired_prompt_sha256": "f15b2228a17c33cf87916f5fc5ef02a466b85a3cd8c70581bbb94ab7258305e6",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300010",
+      "seed": 300010,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300010",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "59bec4b4d0f6e9a0df8bd878d395ca464e6db59b5ee244b4e7f4aaa31fe31b94",
+      "corrupt_history_sha256": "c4b4f28d79fa1a916d1c8257c7fdbf2c8b01da9dc142e6a47b58c3c756f52e60",
+      "paired_prompt_sha256": "aa993612209937dee4ad20c72f1612173d9104294e34ef6868bd23c65f89a047",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300011",
+      "seed": 300011,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300011",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "378b8d20f0b325179285a3714bb00055ea389820bb9df0ac2577a7c4315ef5b0",
+      "corrupt_history_sha256": "9775d4c3a55c00df2ccca4c0766fb593bcb53695ef81166d2c273dfad4f6c102",
+      "paired_prompt_sha256": "0ec4527e4cb8ac25b98d2a4cef6cbc09ba2be405233283eaeb699c708fd37f68",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300012",
+      "seed": 300012,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300012",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "1a75f7dcc880c8212176aab5b131f6e03233c3c8032e2c2c6a23dd3f635806f5",
+      "corrupt_history_sha256": "3b927aaf8ba86e920ce3f288cf01b05509f50a14ad72a552f44f750dc15f1dfd",
+      "paired_prompt_sha256": "4272c76440fee3430294f157bcf84f294b11c3fe96d5140021d11fc5db1e2d4f",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300013",
+      "seed": 300013,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300013",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "20530263ebf40444cc7c85820ecff648eb9c2f60c8d4a93b9430f07e86c68faa",
+      "corrupt_history_sha256": "51a4e84d573bf92af2d4c815d5f09c52dd9cff97ce23399953b57631fe14cdcf",
+      "paired_prompt_sha256": "5715db8c6b0340e71432cc8aab98aebf3e23912cb67ebf4d94e4b655f5483a13",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300014",
+      "seed": 300014,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300014",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "e1966f93a0c1bdb73fe2263566952c379a28f37cebb979aaadec1352a710245b",
+      "corrupt_history_sha256": "7efaae03d454ced565adba316d5e3b69abcc0cbbef28132a88e4cb60cc00cc74",
+      "paired_prompt_sha256": "7be5aa0f4a5dcbda4ad58a901a5097adcb36992cfbd6a246f4ebf2f069677b5e",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300015",
+      "seed": 300015,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300015",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "8c8501e46fa47449833dae865b5c2d80773f595c19fb1f1928fd53a0dccf381b",
+      "corrupt_history_sha256": "e429c0f3392c4dac61ce01b9a6a0e606ebeefd82ae5f702e1a08aa8687edda92",
+      "paired_prompt_sha256": "5292da4b775a668af45122422f08e87b6215dfc7d822e822e9d518d36a0cc9d0",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300016",
+      "seed": 300016,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300016",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "a1b3981c225f19fd4ee557880421bb2862193c2dfcc7d90ad6669893187a3a45",
+      "corrupt_history_sha256": "faec061ec37a7591ba42f16480f967936fdb65a1a41e56347e0cad227a7a898d",
+      "paired_prompt_sha256": "d334bcba07ed890d08db2a7a795b4e936cdbd9c26c12971a7d41f7a096fbf14b",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300017",
+      "seed": 300017,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300017",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "f89b7ca490872209ef8e6c0cf6241762807b9198ca72bf80a8d9a0f339edd637",
+      "corrupt_history_sha256": "2b8e6d223de09de65c54f0fa76f000b67c01a68a2fa7ec0103e2063609b9c389",
+      "paired_prompt_sha256": "ebe0a6b5e31fb137b1af2d3d9578b34fd4323bea29a490b1fd15e7e0886fed2b",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300018",
+      "seed": 300018,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300018",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "a38e3257effb942f82c550a9cc754da86f5fb33b33ad1a887d5a532e4194e820",
+      "corrupt_history_sha256": "101967f580f53cface93997bae565c3b05af3135d6dc07a28547fe24d46a325f",
+      "paired_prompt_sha256": "3995fe77577d3692935dbf891167d9ad4676c19ad2bfe6c2d3923e2b77ec7a07",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300019",
+      "seed": 300019,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300019",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "ba2bd9c02deaaaad596e95ec9097027e6823cc3440862743d71dc6681a51fb32",
+      "corrupt_history_sha256": "3a7f4cb4ac5510e1bea544d5fc385a3a6c2cd627a0a70db4e1c4940e08074ee0",
+      "paired_prompt_sha256": "169b459cbf4cdea077275bd5fb8d8103ccfc2f1972e77ad8f1423c45b347c40e",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300020",
+      "seed": 300020,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300020",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "c15cb88c7e01d6b50006a9f84189ef68999a5599ac3dba97f85efd4e1c8e4514",
+      "corrupt_history_sha256": "6ec7986085453f23fc0be799c8efd788c3c59be124afc13b25223185c3704267",
+      "paired_prompt_sha256": "221832d1c0ce21c7e36e26cfee79e30afe423cc7f515c5f666ec30c28a0a50bc",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300021",
+      "seed": 300021,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300021",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "9fecb0a50737c74ff198df6088aac060e34de96380831890cc7e0faf7752d5ec",
+      "corrupt_history_sha256": "e6da4b573cb4efe6d9ff5392c80884d99f837334b96d3917091b5462dacbde41",
+      "paired_prompt_sha256": "6b4c5b5e88956806aa5ea0862fb7175c2d18efa9e44a8b07b698e45f3a4c7e50",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300022",
+      "seed": 300022,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300022",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "7c3342b4a6f63f73776d6af074608dcfd3eb74c000f00b786afdff52f6b0b72f",
+      "corrupt_history_sha256": "964ca033bd10a8549b9199c979bd64e2d015bdb13804e09d8b8d8d436ef8be7c",
+      "paired_prompt_sha256": "93d51e11d1d392ac2a73a66e57c7d8f7f6ffb9ce232ee706d73f5a968f2a70db",
+      "injection_node": null
+    },
+    {
+      "instance_id": "inter-calibration-e3-k10-300023",
+      "seed": 300023,
+      "split": "calibration",
+      "difficulty": "E3",
+      "horizon": 10,
+      "episode_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "memory_object_id": "calibration-memory-e3-10-300023",
+      "template_ids": [
+        "inter-cal-plan-01",
+        "inter-cal-memory-01",
+        "inter-cal-metadata-01",
+        "inter-cal-answer-01"
+      ],
+      "clean_history_sha256": "f0a019fccacf4f96802958f98ece95a4f69414031fefeee235771feafffce9ce",
+      "corrupt_history_sha256": "1f9bbe69eebeb57cef7e99f1773a307f6194b07ab32caa1ffe9202fe92c16f3b",
+      "paired_prompt_sha256": "5e83973469b7441a2bda80b1ce69b74db5139bacbd909e91e0f4ee8fb5cf8ab5",
+      "injection_node": null
+    }
+  ],
+  "profile": {
+    "split_id": "inter-episode-calibration-v1",
+    "instance_ids": [
+      "inter-calibration-e3-k10-300000",
+      "inter-calibration-e3-k10-300001",
+      "inter-calibration-e3-k10-300002",
+      "inter-calibration-e3-k10-300003",
+      "inter-calibration-e3-k10-300004",
+      "inter-calibration-e3-k10-300005",
+      "inter-calibration-e3-k10-300006",
+      "inter-calibration-e3-k10-300007",
+      "inter-calibration-e3-k10-300008",
+      "inter-calibration-e3-k10-300009",
+      "inter-calibration-e3-k10-300010",
+      "inter-calibration-e3-k10-300011",
+      "inter-calibration-e3-k10-300012",
+      "inter-calibration-e3-k10-300013",
+      "inter-calibration-e3-k10-300014",
+      "inter-calibration-e3-k10-300015",
+      "inter-calibration-e3-k10-300016",
+      "inter-calibration-e3-k10-300017",
+      "inter-calibration-e3-k10-300018",
+      "inter-calibration-e3-k10-300019",
+      "inter-calibration-e3-k10-300020",
+      "inter-calibration-e3-k10-300021",
+      "inter-calibration-e3-k10-300022",
+      "inter-calibration-e3-k10-300023"
+    ],
+    "template_ids": [
+      "inter-cal-answer-01",
+      "inter-cal-memory-01",
+      "inter-cal-metadata-01",
+      "inter-cal-plan-01"
+    ],
+    "variable_fields": {
+      "planner": [
+        "plan_wording"
+      ],
+      "memory": [
+        "memory_object_id",
+        "memory_summary",
+        "timestamp"
+      ],
+      "action": [
+        "receipt_id"
+      ],
+      "responder": [
+        "answer_style"
+      ]
+    },
+    "node_thresholds": {
+      "action": 0.0,
+      "memory": 0.0,
+      "planner": 0.0,
+      "responder": 0.0,
+      "tool": 0.0,
+      "verifier": 0.0
+    },
+    "threshold_formula": "D > D_natural[node] + epsilon",
+    "epsilon": 0.05
+  }
+}

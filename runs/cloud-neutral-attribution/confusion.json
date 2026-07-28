@@ -1,0 +1,202 @@
+[
+  {
+    "scenario": "cloud_neutral",
+    "seed": 0,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 1,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 2,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 3,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 4,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 5,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 6,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 7,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 8,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 9,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 10,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 11,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 12,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 13,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 14,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 15,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 16,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 17,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 18,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  },
+  {
+    "scenario": "cloud_neutral",
+    "seed": 19,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root_cause",
+    "cascad_prediction_type": "root_cause"
+  }
+]

@@ -1,0 +1,405 @@
+{
+  "scenario": "support_neutral",
+  "runs": [
+    {
+      "run_id": "8d155e64-6df1-4446-9035-7bb6909c2efa",
+      "seed": 0,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "443ccc6c-b276-4eba-a798-0e51823e7d43",
+      "seed": 1,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "648a511f-61df-453d-a137-423104094707",
+      "seed": 2,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "70431bb7-d8cb-4bb4-853e-0fe8ca0eec9c",
+      "seed": 3,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "66c67388-9c29-46d7-8a15-4e951d7963ae",
+      "seed": 4,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "b2b6ece0-774e-45a6-9ba7-6461d52a5e14",
+      "seed": 5,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "d03d66ac-668d-4c70-8a93-80dd02ed1f0e",
+      "seed": 6,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "6f207906-4cf1-4c5b-b154-89b249f00e68",
+      "seed": 7,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "1297e3dd-e992-465d-9325-2bb4c4992472",
+      "seed": 8,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "b06963bc-e4ef-4412-990c-81ea03478a8a",
+      "seed": 9,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "0566fa2d-4797-46ea-be14-a59ced596846",
+      "seed": 10,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "3141088a-dc16-4dbb-9cca-5387425fde5f",
+      "seed": 11,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "d8671759-8445-40ba-af4a-8e895c7bf7df",
+      "seed": 12,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "21f17c02-79cf-4d83-800b-b625a8600073",
+      "seed": 13,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "f6ea9723-5fb9-471e-b87a-45327b968a97",
+      "seed": 14,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "bc5d0257-23a3-46de-a0e0-4a55aed675a2",
+      "seed": 15,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "677b5351-7706-40df-a50c-3027930c35fb",
+      "seed": 16,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "b43a4187-7643-4e68-b68d-a7f36d986c07",
+      "seed": 17,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "28fcfc2b-06cb-4c36-8ba1-f433b12df5c5",
+      "seed": 18,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    },
+    {
+      "run_id": "bed90970-081a-4e16-bfe2-1518431b4256",
+      "seed": 19,
+      "scenario": "support_neutral",
+      "deepseek_predicted_node": "refund_api",
+      "deepseek_raw_response": "refund_api",
+      "deepseek_confidence": null,
+      "injection_node": "refund_api",
+      "visible_failure_node": "refund_api",
+      "graph_predicted_node": "refund_api",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "memory",
+        "planner",
+        "refund_api",
+        "responder"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"refund_api\", \"memory\", \"responder\"]}}, {\"node_id\": \"refund_api\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"eligible\": false, \"error\": \"the workflow produced an inconsistent decision state during execution\", \"arguments\": {\"task\": \"process a customer refund\", \"memory\": false}}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_read\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"memory\", \"event_kind\": \"memory_write\", \"payload\": {\"memories\": [\"recipient_prefers_pdf\"]}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['memory', 'planner', 'refund_api', 'responder']"
+    }
+  ]
+}

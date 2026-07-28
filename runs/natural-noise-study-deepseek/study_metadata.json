@@ -1,0 +1,12 @@
+{
+  "api_calls": 160,
+  "unique_prompt_count": 160,
+  "unique_trace_pair_count": 80,
+  "methods": [
+    "deepseek_paired_calibrated",
+    "deepseek_paired_raw"
+  ],
+  "model": "deepseek-chat",
+  "temperature": 0.0,
+  "freeze_verified": true
+}

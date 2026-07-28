@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "failures": [],
+  "split_overlap": {
+    "instance_ids": [],
+    "template_ids": []
+  },
+  "leakage": {
+    "passed": true,
+    "failures": [],
+    "fault_events_hidden": true,
+    "role_labels_hidden": true,
+    "intervention_decisions_hidden": true
+  },
+  "same_pairs_for_equal_information_methods": true,
+  "information_windows_enforced": true,
+  "identical_candidate_sets": true,
+  "verifier_blocking_opportunity": true,
+  "false_negative_distinct_from_tool_fault": true,
+  "uniqueness": {
+    "instance_ids": 80,
+    "memory_object_ids": 80,
+    "clean_trace_hashes": 80,
+    "corrupt_trace_hashes": 80,
+    "paired_prompts": 80
+  }
+}

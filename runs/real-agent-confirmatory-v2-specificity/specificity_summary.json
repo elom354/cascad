@@ -1,0 +1,148 @@
+{
+  "root_accuracy": "not_applicable_clean_clean",
+  "global": {
+    "false_positive_pairs": 1,
+    "denominator_pairs": 60,
+    "rate": 0.016666666666666666,
+    "wilson_95": [
+      0.0029481597947862495,
+      0.08855129727590061
+    ]
+  },
+  "by_configuration": [
+    {
+      "configuration_id": "full-tools-persistent-memory",
+      "false_positive_pairs": 0,
+      "denominator_pairs": 30,
+      "rate": 0.0,
+      "wilson_95": [
+        0.0,
+        0.11351339317396876
+      ]
+    },
+    {
+      "configuration_id": "local-core-no-memory",
+      "false_positive_pairs": 1,
+      "denominator_pairs": 30,
+      "rate": 0.03333333333333333,
+      "wilson_95": [
+        0.005908590381612455,
+        0.16670390991409173
+      ]
+    }
+  ],
+  "by_application_family": [
+    {
+      "task_family": "local_arithmetic_tool",
+      "false_positive_pairs": 0,
+      "denominator_pairs": 30,
+      "rate": 0.0,
+      "wilson_95": [
+        0.0,
+        0.11351339317396876
+      ]
+    },
+    {
+      "task_family": "local_time_tool",
+      "false_positive_pairs": 1,
+      "denominator_pairs": 30,
+      "rate": 0.03333333333333333,
+      "wilson_95": [
+        0.005908590381612455,
+        0.16670390991409173
+      ]
+    }
+  ],
+  "by_event_key": [
+    {
+      "event_key": "call_model|model_request|0",
+      "false_positive_events": 0,
+      "denominator_events": 60,
+      "rate": 0.0,
+      "wilson_95": [
+        0.0,
+        0.06017185214208986
+      ]
+    },
+    {
+      "event_key": "call_model|model_request|1",
+      "false_positive_events": 0,
+      "denominator_events": 60,
+      "rate": 0.0,
+      "wilson_95": [
+        0.0,
+        0.06017185214208986
+      ]
+    },
+    {
+      "event_key": "call_model|model_response|0",
+      "false_positive_events": 0,
+      "denominator_events": 60,
+      "rate": 0.0,
+      "wilson_95": [
+        0.0,
+        0.06017185214208986
+      ]
+    },
+    {
+      "event_key": "call_model|model_response|1",
+      "false_positive_events": 1,
+      "denominator_events": 60,
+      "rate": 0.016666666666666666,
+      "wilson_95": [
+        0.0029481597947862495,
+        0.08855129727590061
+      ]
+    },
+    {
+      "event_key": "load_memory|memory_read|0",
+      "false_positive_events": 0,
+      "denominator_events": 60,
+      "rate": 0.0,
+      "wilson_95": [
+        0.0,
+        0.06017185214208986
+      ]
+    },
+    {
+      "event_key": "load_memory|memory_read|1",
+      "false_positive_events": 0,
+      "denominator_events": 60,
+      "rate": 0.0,
+      "wilson_95": [
+        0.0,
+        0.06017185214208986
+      ]
+    },
+    {
+      "event_key": "tool::calculate|tool_call|0",
+      "false_positive_events": 0,
+      "denominator_events": 30,
+      "rate": 0.0,
+      "wilson_95": [
+        0.0,
+        0.11351339317396876
+      ]
+    },
+    {
+      "event_key": "tool::get_current_datetime|tool_call|0",
+      "false_positive_events": 0,
+      "denominator_events": 30,
+      "rate": 0.0,
+      "wilson_95": [
+        0.0,
+        0.11351339317396876
+      ]
+    }
+  ],
+  "false_subgraph_pair_rate": {
+    "false_positive_pairs": 1,
+    "denominator_pairs": 60,
+    "rate": 0.016666666666666666,
+    "wilson_95": [
+      0.0029481597947862495,
+      0.08855129727590061
+    ]
+  },
+  "mean_falsely_contaminated_nodes": 0.016666666666666666
+}

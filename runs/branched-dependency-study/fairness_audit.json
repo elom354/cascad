@@ -1,0 +1,850 @@
+{
+  "passed": true,
+  "failures": [],
+  "same_trace_pairs_for_all_methods": true,
+  "native_edges_supplied_to_deepseek": false,
+  "split_integrity": {
+    "instance_overlap": [],
+    "template_overlap": [],
+    "passed": true
+  },
+  "topology": {
+    "required_edges": [
+      [
+        "planner",
+        "share"
+      ],
+      [
+        "share",
+        "memory"
+      ],
+      [
+        "memory",
+        "notify"
+      ],
+      [
+        "notify",
+        "responder"
+      ],
+      [
+        "planner",
+        "audit_log"
+      ],
+      [
+        "audit_log",
+        "metrics_export"
+      ]
+    ],
+    "actual_edges": [
+      [
+        "audit_log",
+        "metrics_export"
+      ],
+      [
+        "memory",
+        "notify"
+      ],
+      [
+        "notify",
+        "responder"
+      ],
+      [
+        "planner",
+        "audit_log"
+      ],
+      [
+        "planner",
+        "share"
+      ],
+      [
+        "share",
+        "memory"
+      ]
+    ],
+    "missing_edges": [],
+    "extra_edges": [],
+    "forbidden_edges_present": [],
+    "share_reaches_audit_log": false,
+    "share_reaches_metrics_export": false,
+    "passed": true
+  },
+  "threshold_classes": {
+    "rows": [
+      {
+        "instance_id": "branched-evaluation-b1-10000",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10001",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10002",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10003",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10004",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10005",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10006",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10007",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10008",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10009",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10010",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10011",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10012",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10013",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10014",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10015",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10016",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10017",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10018",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b1-10019",
+        "level": "B1",
+        "node": "metrics_export",
+        "canonical_distance": 0.0,
+        "threshold": 0.05,
+        "within_range": true,
+        "expected_class": "calibrated_benign"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20000",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.12825690599350054,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20001",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.1267082160660142,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20002",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.13224801383513926,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20003",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.13063139240229404,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20004",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.12858261464884538,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20005",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.13018869993513824,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20006",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.13128704154613952,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20007",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.13507469433956698,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20008",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.12971759331517072,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20009",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.1312012399079367,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20010",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.13402141727524589,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20011",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.13047336906167034,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20012",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.13479115680127177,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20013",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.13552041242416082,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20014",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.13393457599054134,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20015",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.13573437103683217,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20016",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.1335784429780036,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20017",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.1375156625435142,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20018",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.13628692409432375,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b2-20019",
+        "level": "B2",
+        "node": "audit_log",
+        "canonical_distance": 0.13535419221778144,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30000",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.11560985278367918,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30000",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.17360681179631027,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30001",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.11680605111135396,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30001",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.1724550852186213,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30002",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.12041425362767445,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30002",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.17566308423332033,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30003",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.11565846032836091,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30003",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.16950026929716722,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30004",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.11889158748752227,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30004",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.17694281640154094,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30005",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.11972814430614649,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30005",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.17919335022723254,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30006",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.11955786186911062,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30006",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.1771187967181883,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30007",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.12205042118179416,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30007",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.1806177456079313,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30008",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.12141376489989253,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30008",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.17519961306552678,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30009",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.11698385789219101,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30009",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.17032365887254194,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30010",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.12160265919598974,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30010",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.19168484413634448,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30011",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.12038856737925163,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30011",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.18626197687512774,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30012",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.12334997696379124,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30012",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.18494182983702911,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30013",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.11782365714022582,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30013",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.17957160148962187,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30014",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.12320009192819666,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30014",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.18487439773005798,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30015",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.11960948049530966,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30015",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.18043052133830761,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30016",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.12144594716117285,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30016",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.18586779885054483,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30017",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.1205120530649864,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30017",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.188173677804563,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30018",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.12329087745037581,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30018",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.1874431224434949,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30019",
+        "level": "B3",
+        "node": "audit_log",
+        "canonical_distance": 0.12035461361692001,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      },
+      {
+        "instance_id": "branched-evaluation-b3-30019",
+        "level": "B3",
+        "node": "metrics_export",
+        "canonical_distance": 0.18305839969101328,
+        "threshold": 0.05,
+        "within_range": false,
+        "expected_class": "salient_non_causal"
+      }
+    ],
+    "class_1_within_range": true,
+    "class_2_above_threshold": true
+  },
+  "salient_specification": {
+    "frozen_before_evaluation": true,
+    "B2": {
+      "node": "audit_log",
+      "field": "destination",
+      "clean_surface": "regional-records",
+      "comparison_surface": "external-compliance-stream",
+      "rationale": "Destination is independent of authorization and notification state."
+    },
+    "B3": {
+      "audit_log": {
+        "field": "destination",
+        "clean_surface": "regional-records",
+        "comparison_surface": "long-term-governance-ledger"
+      },
+      "metrics_export": {
+        "field": "aggregation_scope",
+        "clean_surface": "daily-resource",
+        "comparison_surface": "cross-region-quarterly"
+      },
+      "rationale": "Neither field is read by the main branch."
+    }
+  },
+  "main_outcome_branch_removal": [
+    {
+      "seed": 0,
+      "clean_equal": true,
+      "corrupt_equal": true
+    },
+    {
+      "seed": 1,
+      "clean_equal": true,
+      "corrupt_equal": true
+    },
+    {
+      "seed": 2,
+      "clean_equal": true,
+      "corrupt_equal": true
+    },
+    {
+      "seed": 3,
+      "clean_equal": true,
+      "corrupt_equal": true
+    },
+    {
+      "seed": 4,
+      "clean_equal": true,
+      "corrupt_equal": true
+    }
+  ],
+  "evaluator_terms_in_model_traces": [],
+  "calibration_instances": 24,
+  "evaluation_instances": 80
+}

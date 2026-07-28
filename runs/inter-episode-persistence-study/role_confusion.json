@@ -1,0 +1,422 @@
+[
+  {
+    "method": "cascad_full",
+    "ground_truth_source": "tool",
+    "predicted_role": "source",
+    "count": 80
+  },
+  {
+    "method": "cascad_full",
+    "ground_truth_source": "tool",
+    "predicted_role": "failed_safeguard",
+    "count": 0
+  },
+  {
+    "method": "cascad_full",
+    "ground_truth_source": "tool",
+    "predicted_role": "persistence_mediator",
+    "count": 0
+  },
+  {
+    "method": "cascad_full",
+    "ground_truth_source": "tool",
+    "predicted_role": "visible_symptom",
+    "count": 0
+  },
+  {
+    "method": "cascad_full",
+    "ground_truth_source": "tool",
+    "predicted_role": "final_manifestation",
+    "count": 0
+  },
+  {
+    "method": "cascad_full",
+    "ground_truth_source": "tool",
+    "predicted_role": "invalid",
+    "count": 0
+  },
+  {
+    "method": "cascad_full",
+    "ground_truth_source": "tool",
+    "predicted_role": "other",
+    "count": 0
+  },
+  {
+    "method": "cascad_no_calibration",
+    "ground_truth_source": "tool",
+    "predicted_role": "source",
+    "count": 80
+  },
+  {
+    "method": "cascad_no_calibration",
+    "ground_truth_source": "tool",
+    "predicted_role": "failed_safeguard",
+    "count": 0
+  },
+  {
+    "method": "cascad_no_calibration",
+    "ground_truth_source": "tool",
+    "predicted_role": "persistence_mediator",
+    "count": 0
+  },
+  {
+    "method": "cascad_no_calibration",
+    "ground_truth_source": "tool",
+    "predicted_role": "visible_symptom",
+    "count": 0
+  },
+  {
+    "method": "cascad_no_calibration",
+    "ground_truth_source": "tool",
+    "predicted_role": "final_manifestation",
+    "count": 0
+  },
+  {
+    "method": "cascad_no_calibration",
+    "ground_truth_source": "tool",
+    "predicted_role": "invalid",
+    "count": 0
+  },
+  {
+    "method": "cascad_no_calibration",
+    "ground_truth_source": "tool",
+    "predicted_role": "other",
+    "count": 0
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "ground_truth_source": "tool",
+    "predicted_role": "source",
+    "count": 80
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "ground_truth_source": "tool",
+    "predicted_role": "failed_safeguard",
+    "count": 0
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "ground_truth_source": "tool",
+    "predicted_role": "persistence_mediator",
+    "count": 0
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "ground_truth_source": "tool",
+    "predicted_role": "visible_symptom",
+    "count": 0
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "ground_truth_source": "tool",
+    "predicted_role": "final_manifestation",
+    "count": 0
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "ground_truth_source": "tool",
+    "predicted_role": "invalid",
+    "count": 0
+  },
+  {
+    "method": "cascad_no_dependencies",
+    "ground_truth_source": "tool",
+    "predicted_role": "other",
+    "count": 0
+  },
+  {
+    "method": "deepseek_corrupt_full_history",
+    "ground_truth_source": "tool",
+    "predicted_role": "source",
+    "count": 74
+  },
+  {
+    "method": "deepseek_corrupt_full_history",
+    "ground_truth_source": "tool",
+    "predicted_role": "failed_safeguard",
+    "count": 0
+  },
+  {
+    "method": "deepseek_corrupt_full_history",
+    "ground_truth_source": "tool",
+    "predicted_role": "persistence_mediator",
+    "count": 0
+  },
+  {
+    "method": "deepseek_corrupt_full_history",
+    "ground_truth_source": "tool",
+    "predicted_role": "visible_symptom",
+    "count": 0
+  },
+  {
+    "method": "deepseek_corrupt_full_history",
+    "ground_truth_source": "tool",
+    "predicted_role": "final_manifestation",
+    "count": 0
+  },
+  {
+    "method": "deepseek_corrupt_full_history",
+    "ground_truth_source": "tool",
+    "predicted_role": "invalid",
+    "count": 6
+  },
+  {
+    "method": "deepseek_corrupt_full_history",
+    "ground_truth_source": "tool",
+    "predicted_role": "other",
+    "count": 0
+  },
+  {
+    "method": "deepseek_paired_history",
+    "ground_truth_source": "tool",
+    "predicted_role": "source",
+    "count": 79
+  },
+  {
+    "method": "deepseek_paired_history",
+    "ground_truth_source": "tool",
+    "predicted_role": "failed_safeguard",
+    "count": 0
+  },
+  {
+    "method": "deepseek_paired_history",
+    "ground_truth_source": "tool",
+    "predicted_role": "persistence_mediator",
+    "count": 0
+  },
+  {
+    "method": "deepseek_paired_history",
+    "ground_truth_source": "tool",
+    "predicted_role": "visible_symptom",
+    "count": 0
+  },
+  {
+    "method": "deepseek_paired_history",
+    "ground_truth_source": "tool",
+    "predicted_role": "final_manifestation",
+    "count": 0
+  },
+  {
+    "method": "deepseek_paired_history",
+    "ground_truth_source": "tool",
+    "predicted_role": "invalid",
+    "count": 1
+  },
+  {
+    "method": "deepseek_paired_history",
+    "ground_truth_source": "tool",
+    "predicted_role": "other",
+    "count": 0
+  },
+  {
+    "method": "deepseek_symptom_episode",
+    "ground_truth_source": "tool",
+    "predicted_role": "source",
+    "count": 20
+  },
+  {
+    "method": "deepseek_symptom_episode",
+    "ground_truth_source": "tool",
+    "predicted_role": "failed_safeguard",
+    "count": 0
+  },
+  {
+    "method": "deepseek_symptom_episode",
+    "ground_truth_source": "tool",
+    "predicted_role": "persistence_mediator",
+    "count": 60
+  },
+  {
+    "method": "deepseek_symptom_episode",
+    "ground_truth_source": "tool",
+    "predicted_role": "visible_symptom",
+    "count": 0
+  },
+  {
+    "method": "deepseek_symptom_episode",
+    "ground_truth_source": "tool",
+    "predicted_role": "final_manifestation",
+    "count": 0
+  },
+  {
+    "method": "deepseek_symptom_episode",
+    "ground_truth_source": "tool",
+    "predicted_role": "invalid",
+    "count": 0
+  },
+  {
+    "method": "deepseek_symptom_episode",
+    "ground_truth_source": "tool",
+    "predicted_role": "other",
+    "count": 0
+  },
+  {
+    "method": "last_visible_failure",
+    "ground_truth_source": "tool",
+    "predicted_role": "source",
+    "count": 0
+  },
+  {
+    "method": "last_visible_failure",
+    "ground_truth_source": "tool",
+    "predicted_role": "failed_safeguard",
+    "count": 0
+  },
+  {
+    "method": "last_visible_failure",
+    "ground_truth_source": "tool",
+    "predicted_role": "persistence_mediator",
+    "count": 0
+  },
+  {
+    "method": "last_visible_failure",
+    "ground_truth_source": "tool",
+    "predicted_role": "visible_symptom",
+    "count": 55
+  },
+  {
+    "method": "last_visible_failure",
+    "ground_truth_source": "tool",
+    "predicted_role": "final_manifestation",
+    "count": 25
+  },
+  {
+    "method": "last_visible_failure",
+    "ground_truth_source": "tool",
+    "predicted_role": "invalid",
+    "count": 0
+  },
+  {
+    "method": "last_visible_failure",
+    "ground_truth_source": "tool",
+    "predicted_role": "other",
+    "count": 0
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "ground_truth_source": "tool",
+    "predicted_role": "source",
+    "count": 0
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "ground_truth_source": "tool",
+    "predicted_role": "failed_safeguard",
+    "count": 10
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "ground_truth_source": "tool",
+    "predicted_role": "persistence_mediator",
+    "count": 5
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "ground_truth_source": "tool",
+    "predicted_role": "visible_symptom",
+    "count": 55
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "ground_truth_source": "tool",
+    "predicted_role": "final_manifestation",
+    "count": 10
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "ground_truth_source": "tool",
+    "predicted_role": "invalid",
+    "count": 0
+  },
+  {
+    "method": "maximum_raw_divergence",
+    "ground_truth_source": "tool",
+    "predicted_role": "other",
+    "count": 0
+  },
+  {
+    "method": "naive_first_aligned_difference",
+    "ground_truth_source": "tool",
+    "predicted_role": "source",
+    "count": 80
+  },
+  {
+    "method": "naive_first_aligned_difference",
+    "ground_truth_source": "tool",
+    "predicted_role": "failed_safeguard",
+    "count": 0
+  },
+  {
+    "method": "naive_first_aligned_difference",
+    "ground_truth_source": "tool",
+    "predicted_role": "persistence_mediator",
+    "count": 0
+  },
+  {
+    "method": "naive_first_aligned_difference",
+    "ground_truth_source": "tool",
+    "predicted_role": "visible_symptom",
+    "count": 0
+  },
+  {
+    "method": "naive_first_aligned_difference",
+    "ground_truth_source": "tool",
+    "predicted_role": "final_manifestation",
+    "count": 0
+  },
+  {
+    "method": "naive_first_aligned_difference",
+    "ground_truth_source": "tool",
+    "predicted_role": "invalid",
+    "count": 0
+  },
+  {
+    "method": "naive_first_aligned_difference",
+    "ground_truth_source": "tool",
+    "predicted_role": "other",
+    "count": 0
+  },
+  {
+    "method": "temporal_adjacency",
+    "ground_truth_source": "tool",
+    "predicted_role": "source",
+    "count": 0
+  },
+  {
+    "method": "temporal_adjacency",
+    "ground_truth_source": "tool",
+    "predicted_role": "failed_safeguard",
+    "count": 0
+  },
+  {
+    "method": "temporal_adjacency",
+    "ground_truth_source": "tool",
+    "predicted_role": "persistence_mediator",
+    "count": 80
+  },
+  {
+    "method": "temporal_adjacency",
+    "ground_truth_source": "tool",
+    "predicted_role": "visible_symptom",
+    "count": 0
+  },
+  {
+    "method": "temporal_adjacency",
+    "ground_truth_source": "tool",
+    "predicted_role": "final_manifestation",
+    "count": 0
+  },
+  {
+    "method": "temporal_adjacency",
+    "ground_truth_source": "tool",
+    "predicted_role": "invalid",
+    "count": 0
+  },
+  {
+    "method": "temporal_adjacency",
+    "ground_truth_source": "tool",
+    "predicted_role": "other",
+    "count": 0
+  }
+]

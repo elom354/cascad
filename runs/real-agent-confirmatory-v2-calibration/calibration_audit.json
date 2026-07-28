@@ -1,0 +1,10 @@
+{
+  "verdict": "PASS",
+  "errors": [],
+  "protocol_sha256": "72b6b95e3571ddaaeef92757028e374016d941356db6e5a78a5bb49305e0fb85",
+  "execution_records": 120,
+  "complete_pairs": 60,
+  "hash_failures": [],
+  "fault_events": 0,
+  "heldout_data_accessed": false
+}

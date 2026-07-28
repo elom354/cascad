@@ -1,0 +1,7 @@
+{
+  "verdict": "PASS",
+  "protocol_sha256": "72b6b95e3571ddaaeef92757028e374016d941356db6e5a78a5bb49305e0fb85",
+  "threshold_source": "v2_calibration_only",
+  "root_accuracy_computed": false,
+  "specificity_pairs": 60
+}

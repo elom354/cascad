@@ -1,0 +1,46 @@
+[project]
+name = "cascad"
+version = "0.1.0"
+description = "Causal error propagation tracing framework for AI agent instances."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Cascad Research" }]
+license = "MIT"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+# PyTorch 2.13 has no macOS Intel wheel. The bounded version keeps the local
+# MiniLM audit runnable on the Intel macOS research machine (with Python 3.12).
+semantic = [
+    "sentence-transformers==3.4.1",
+    "transformers>=4.46,<4.58",
+    "torch>=2.2,<2.3; sys_platform == 'darwin' and platform_machine == 'x86_64'",
+    "numpy<2",
+]
+huggingface = [
+    "transformers>=4.51,<5",
+    "accelerate>=1.4,<2",
+    "huggingface-hub>=0.30,<1",
+    "safetensors>=0.5,<1",
+    "bitsandbytes>=0.45,<1; sys_platform == 'linux' and platform_machine == 'x86_64'",
+]
+
+[project.scripts]
+cascad = "cascad.cli:main"
+
+[build-system]
+requires = ["setuptools>=73.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 88
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

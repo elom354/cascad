@@ -1,0 +1,425 @@
+{
+  "scenario": "document_neutral",
+  "runs": [
+    {
+      "run_id": "9a4a6e20-fc14-4c1c-a531-a612f4e6857f",
+      "seed": 0,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "fcd5bd61-cb1c-4f0f-9514-998f87090d30",
+      "seed": 1,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "643f1311-9dc2-4ec6-bddf-5dba4017c3fb",
+      "seed": 2,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "8a381911-5fa9-4d8d-bf29-0a76462f1552",
+      "seed": 3,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "c112b43f-5a82-4ca1-bf5a-c05c809158e5",
+      "seed": 4,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "13c83393-c4c6-4b72-bb56-9f004be38149",
+      "seed": 5,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "4a36e05e-15e4-470b-84f9-0eb54b573c56",
+      "seed": 6,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "1f2736eb-4a0e-4460-909f-5c7f758f786a",
+      "seed": 7,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "c6bbbad2-cda9-4f2c-a958-a4d54164b9be",
+      "seed": 8,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "0c87e959-52da-41a2-9c4c-782964aa3430",
+      "seed": 9,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "16524abf-e50f-407b-8a1e-edd106d320bc",
+      "seed": 10,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "47ce1876-667d-456a-a78e-d77e4c6745dd",
+      "seed": 11,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "aab8b0cc-ca83-4180-9611-2ec6b4948a33",
+      "seed": 12,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "23e3c0f2-3be0-4407-9b9f-d0e823ee4f4f",
+      "seed": 13,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "c4300e79-ad55-4eb5-9e3a-c010f103aa0d",
+      "seed": 14,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "34e94c58-8c80-4184-b7a4-36dc35ba76c7",
+      "seed": 15,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "9ee8fae7-682f-4346-9d7c-cb35f45bd606",
+      "seed": 16,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "dad2d996-49ad-4dc9-9298-aa6cabf1fcbe",
+      "seed": 17,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "6b9060c4-21a6-4c96-83c7-5a90c548b968",
+      "seed": 18,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    },
+    {
+      "run_id": "c70b9bfc-ae01-4abf-b5fa-c4af4d16da4e",
+      "seed": 19,
+      "scenario": "document_neutral",
+      "deepseek_predicted_node": "generate_report",
+      "deepseek_raw_response": "generate_report",
+      "deepseek_confidence": null,
+      "injection_node": "generate_report",
+      "visible_failure_node": "generate_report",
+      "graph_predicted_node": "generate_report",
+      "deepseek_prediction_type": "root_cause",
+      "graph_prediction_type": "root_cause",
+      "candidate_nodes": [
+        "generate_report",
+        "planner",
+        "responder",
+        "retrieve_doc",
+        "summarize"
+      ],
+      "prompt": "Given this complete observable agent trace, identify the root-cause node, not merely the node where a downstream symptom became visible. Return only one exact node_id.\n[{\"node_id\": \"planner\", \"event_kind\": \"plan_created\", \"payload\": {\"plan\": [\"retrieve_doc\", \"summarize\", \"generate_report\", \"responder\"]}}, {\"node_id\": \"retrieve_doc\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"document_id\": \"doc-001\", \"author\": \"verified\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"summarize\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": true, \"summary\": \"source summary\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"generate_report\", \"event_kind\": \"tool_call\", \"payload\": {\"ok\": false, \"file\": null, \"error\": \"the workflow produced an inconsistent artifact state during execution\", \"arguments\": {\"task\": \"generate a documented report\", \"memory\": false}}}, {\"node_id\": \"responder\", \"event_kind\": \"final_answer\", \"payload\": {\"answer\": \"Delivery failed.\"}}]\nCandidate node_ids: ['generate_report', 'planner', 'responder', 'retrieve_doc', 'summarize']"
+    }
+  ]
+}

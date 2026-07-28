@@ -1,0 +1,26 @@
+[
+  {
+    "comparison": "DeepSeek single-neutral vs Cascad",
+    "paired_instances": 20,
+    "both_correct": 0,
+    "deepseek_only_correct": 0,
+    "cascad_only_correct": 20,
+    "both_wrong": 0
+  },
+  {
+    "comparison": "DeepSeek single-guided vs Cascad",
+    "paired_instances": 20,
+    "both_correct": 2,
+    "deepseek_only_correct": 0,
+    "cascad_only_correct": 18,
+    "both_wrong": 0
+  },
+  {
+    "comparison": "DeepSeek paired vs Cascad",
+    "paired_instances": 20,
+    "both_correct": 20,
+    "deepseek_only_correct": 0,
+    "cascad_only_correct": 0,
+    "both_wrong": 0
+  }
+]

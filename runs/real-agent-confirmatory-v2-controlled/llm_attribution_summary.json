@@ -1,0 +1,29 @@
+{
+  "methods": {
+    "deepseek": {
+      "model": "deepseek-v4-flash",
+      "n": 200,
+      "correct": 190,
+      "root_accuracy": 0.95,
+      "wilson_95": [
+        0.9104218518612239,
+        0.972617354399236
+      ],
+      "symptom_selection_rate": 0.015,
+      "mean_latency_ms": 5822.289121545182,
+      "graph_vs_llm_paired": {
+        "both_correct": 190,
+        "a_correct_b_wrong": 10,
+        "a_wrong_b_correct": 0,
+        "both_wrong": 0,
+        "discordant_count": 10,
+        "paired_total": 200,
+        "accuracy_difference_a_minus_b": 0.05,
+        "exact_two_sided_p_value": 0.001953125
+      }
+    }
+  },
+  "error_calls": 0,
+  "deepseek_vs_openai_paired": null,
+  "paired_instance_count": 0
+}

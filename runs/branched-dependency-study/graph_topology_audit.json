@@ -1,0 +1,60 @@
+{
+  "required_edges": [
+    [
+      "planner",
+      "share"
+    ],
+    [
+      "share",
+      "memory"
+    ],
+    [
+      "memory",
+      "notify"
+    ],
+    [
+      "notify",
+      "responder"
+    ],
+    [
+      "planner",
+      "audit_log"
+    ],
+    [
+      "audit_log",
+      "metrics_export"
+    ]
+  ],
+  "actual_edges": [
+    [
+      "audit_log",
+      "metrics_export"
+    ],
+    [
+      "memory",
+      "notify"
+    ],
+    [
+      "notify",
+      "responder"
+    ],
+    [
+      "planner",
+      "audit_log"
+    ],
+    [
+      "planner",
+      "share"
+    ],
+    [
+      "share",
+      "memory"
+    ]
+  ],
+  "missing_edges": [],
+  "extra_edges": [],
+  "forbidden_edges_present": [],
+  "share_reaches_audit_log": false,
+  "share_reaches_metrics_export": false,
+  "passed": true
+}

@@ -1,0 +1,4 @@
+comparison,paired_instances,both_correct,deepseek_only_correct,cascad_only_correct,both_wrong
+DeepSeek single-neutral vs Cascad,20,0,0,20,0
+DeepSeek single-guided vs Cascad,20,2,0,18,0
+DeepSeek paired vs Cascad,20,20,0,0,0

@@ -1,0 +1,24 @@
+{
+  "scenario": "cloud_branched_dependency",
+  "encoder": {
+    "encoder_used": "embedding",
+    "reason": "all-MiniLM-L6-v2 loaded"
+  },
+  "calibration_instances": 24,
+  "evaluation_instances": 80,
+  "split_integrity": {
+    "instance_overlap": [],
+    "template_overlap": [],
+    "passed": true
+  },
+  "uniqueness": {
+    "instances": 80,
+    "unique_instance_ids": 80,
+    "unique_clean_trace_hashes": 80,
+    "unique_corrupt_trace_hashes": 80,
+    "unique_prompt_hashes": 80,
+    "passed": true
+  },
+  "salient_specification_frozen": true,
+  "api_calls": 0
+}

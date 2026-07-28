@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520">
+<text x="450" y="28" text-anchor="middle" font-family="sans-serif">Unrecovered contaminated-memory curve</text>
+<path d="M80 55V415H840" fill="none" stroke="currentColor"/>
+<polyline points="80.0,415.0 175.0,415.0 270.0,415.0 365.0,415.0 460.0,415.0 555.0,415.0 650.0,415.0 745.0,415.0 840.0,415.0" fill="none" stroke="currentColor"/>
+<text x="845" y="60" font-family="sans-serif" font-size="9">delayed_correction:c2</text>
+<polyline points="80.0,55.0 175.0,415.0 270.0,415.0 365.0,415.0 460.0,415.0 555.0,415.0 650.0,415.0 745.0,415.0 840.0,415.0" fill="none" stroke="currentColor" stroke-dasharray="3,3"/>
+<text x="845" y="74" font-family="sans-serif" font-size="9">delayed_correction:c3</text>
+<polyline points="80.0,55.0 175.0,55.0 270.0,55.0 365.0,415.0 460.0,415.0 555.0,415.0 650.0,415.0 745.0,415.0 840.0,415.0" fill="none" stroke="currentColor" stroke-dasharray="4,4"/>
+<text x="845" y="88" font-family="sans-serif" font-size="9">delayed_correction:c5</text>
+<polyline points="80.0,55.0 175.0,55.0 270.0,55.0 365.0,55.0 460.0,55.0 555.0,55.0 650.0,55.0 745.0,55.0 840.0,55.0" fill="none" stroke="currentColor" stroke-dasharray="5,5"/>
+<text x="845" y="102" font-family="sans-serif" font-size="9">none</text>
+<polyline points="80.0,415.0 175.0,415.0 270.0,415.0 365.0,415.0 460.0,415.0 555.0,415.0 650.0,415.0 745.0,415.0 840.0,415.0" fill="none" stroke="currentColor" stroke-dasharray="6,6"/>
+<text x="845" y="116" font-family="sans-serif" font-size="9">prewrite_quarantine</text>
+</svg>

@@ -1,0 +1,5 @@
+scenario,runs,root_cause,visible_symptom,deepseek_accuracy,cascad_accuracy,deepseek_distribution,cascad_distribution
+support_neutral,20,refund_api,refund_api,1.0,1.0,{'refund_api': 20},{'refund_api': 20}
+document_neutral,20,generate_report,generate_report,1.0,1.0,{'generate_report': 20},{'generate_report': 20}
+cloud_neutral,20,share,share,1.0,1.0,{'share': 20},{'share': 20}
+cloud_distant_symptom,20,share,notify,0.0,1.0,{'memory': 20},{'share': 20}

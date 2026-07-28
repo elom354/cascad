@@ -1,0 +1,58 @@
+[
+  {
+    "scenario": "support_neutral",
+    "runs": 20,
+    "root_cause": "refund_api",
+    "visible_symptom": "refund_api",
+    "deepseek_accuracy": 1.0,
+    "cascad_accuracy": 1.0,
+    "deepseek_distribution": {
+      "refund_api": 20
+    },
+    "cascad_distribution": {
+      "refund_api": 20
+    }
+  },
+  {
+    "scenario": "document_neutral",
+    "runs": 20,
+    "root_cause": "generate_report",
+    "visible_symptom": "generate_report",
+    "deepseek_accuracy": 1.0,
+    "cascad_accuracy": 1.0,
+    "deepseek_distribution": {
+      "generate_report": 20
+    },
+    "cascad_distribution": {
+      "generate_report": 20
+    }
+  },
+  {
+    "scenario": "cloud_neutral",
+    "runs": 20,
+    "root_cause": "share",
+    "visible_symptom": "share",
+    "deepseek_accuracy": 1.0,
+    "cascad_accuracy": 1.0,
+    "deepseek_distribution": {
+      "share": 20
+    },
+    "cascad_distribution": {
+      "share": 20
+    }
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "runs": 20,
+    "root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_accuracy": 0.0,
+    "cascad_accuracy": 1.0,
+    "deepseek_distribution": {
+      "memory": 20
+    },
+    "cascad_distribution": {
+      "share": 20
+    }
+  }
+]

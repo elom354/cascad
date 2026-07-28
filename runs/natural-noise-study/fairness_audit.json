@@ -1,0 +1,1943 @@
+{
+  "passed": true,
+  "failures": [],
+  "checks": {
+    "same_traces_for_paired_methods": true,
+    "calibrated_context_clean_only": true,
+    "identical_candidate_sets": true,
+    "no_evaluator_metadata": true,
+    "no_fault_events": true
+  },
+  "instances": [
+    {
+      "instance_id": "evaluation-n0-00000",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00001",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00002",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00003",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00004",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00005",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00006",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00007",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00008",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00009",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00010",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00011",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00012",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00013",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00014",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00015",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00016",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00017",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00018",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n0-00019",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10000",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10001",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10002",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10003",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10004",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10005",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10006",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10007",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10008",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10009",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10010",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10011",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10012",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10013",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10014",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10015",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10016",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10017",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10018",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n1-10019",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20000",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20001",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20002",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20003",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20004",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20005",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20006",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20007",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20008",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20009",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20010",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20011",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20012",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20013",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20014",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20015",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20016",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20017",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20018",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n2-20019",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30000",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30001",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30002",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30003",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30004",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30005",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30006",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30007",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30008",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30009",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30010",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30011",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30012",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30013",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30014",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30015",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30016",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30017",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30018",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    },
+    {
+      "instance_id": "evaluation-n3-30019",
+      "candidate_nodes_raw": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "candidate_nodes_calibrated": [
+        "memory",
+        "notify",
+        "planner",
+        "responder",
+        "share",
+        "upload"
+      ],
+      "same_evaluation_traces": true,
+      "evaluator_terms_found": [],
+      "fault_event_present": false,
+      "calibration_source": "natural-noise-calibration-v1"
+    }
+  ],
+  "calibration_context_exact": {
+    "calibration_split_id": "natural-noise-calibration-v1",
+    "naturally_variable_fields_by_node": {
+      "memory": [
+        "memory_summary"
+      ],
+      "notify": [
+        "receipt_id"
+      ],
+      "planner": [
+        "plan_summary"
+      ],
+      "share": [
+        "harmless_metadata"
+      ],
+      "upload": [
+        "correlation_id",
+        "resource_id"
+      ]
+    },
+    "event_kinds_observed_by_node": {
+      "input": [
+        "node_end",
+        "node_start"
+      ],
+      "memory": [
+        "memory_read",
+        "memory_write",
+        "node_end",
+        "node_start"
+      ],
+      "notify": [
+        "node_end",
+        "node_start",
+        "tool_call"
+      ],
+      "planner": [
+        "node_end",
+        "node_start",
+        "plan_created"
+      ],
+      "responder": [
+        "final_answer",
+        "node_end",
+        "node_start"
+      ],
+      "share": [
+        "node_end",
+        "node_start",
+        "tool_call"
+      ],
+      "upload": [
+        "node_end",
+        "node_start",
+        "tool_call"
+      ]
+    },
+    "natural_distance_summary_by_node": {
+      "memory": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "sample_count": 24
+      },
+      "notify": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "sample_count": 24
+      },
+      "planner": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "sample_count": 24
+      },
+      "responder": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "sample_count": 24
+      },
+      "share": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "sample_count": 24
+      },
+      "upload": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "sample_count": 24
+      }
+    }
+  }
+}

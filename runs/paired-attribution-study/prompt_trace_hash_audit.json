@@ -1,0 +1,23 @@
+[
+  {
+    "attribution_mode": "deepseek_single_neutral",
+    "number_of_instances": 20,
+    "unique_prompt_count": 20,
+    "unique_trace_count": 20,
+    "status": "PASS"
+  },
+  {
+    "attribution_mode": "deepseek_single_guided",
+    "number_of_instances": 20,
+    "unique_prompt_count": 20,
+    "unique_trace_count": 20,
+    "status": "PASS"
+  },
+  {
+    "attribution_mode": "deepseek_paired",
+    "number_of_instances": 20,
+    "unique_prompt_count": 20,
+    "unique_trace_count": 20,
+    "status": "PASS"
+  }
+]

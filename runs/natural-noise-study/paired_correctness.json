@@ -1,0 +1,47 @@
+[
+  {
+    "method_a": "cascad_full",
+    "method_b": "canonicalized_first_difference",
+    "paired_instances": 80,
+    "both_correct": 20,
+    "a_correct_b_wrong": 60,
+    "a_wrong_b_correct": 0,
+    "both_wrong": 0
+  },
+  {
+    "method_a": "cascad_full",
+    "method_b": "cascad_no_calibration",
+    "paired_instances": 80,
+    "both_correct": 20,
+    "a_correct_b_wrong": 60,
+    "a_wrong_b_correct": 0,
+    "both_wrong": 0
+  },
+  {
+    "method_a": "cascad_full",
+    "method_b": "cascad_no_dependencies",
+    "paired_instances": 80,
+    "both_correct": 80,
+    "a_correct_b_wrong": 0,
+    "a_wrong_b_correct": 0,
+    "both_wrong": 0
+  },
+  {
+    "method_a": "cascad_full",
+    "method_b": "maximum_raw_divergence",
+    "paired_instances": 80,
+    "both_correct": 0,
+    "a_correct_b_wrong": 80,
+    "a_wrong_b_correct": 0,
+    "both_wrong": 0
+  },
+  {
+    "method_a": "cascad_full",
+    "method_b": "naive_first_raw_difference",
+    "paired_instances": 80,
+    "both_correct": 20,
+    "a_correct_b_wrong": 60,
+    "a_wrong_b_correct": 0,
+    "both_wrong": 0
+  }
+]

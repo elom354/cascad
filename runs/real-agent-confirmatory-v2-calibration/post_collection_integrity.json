@@ -1,0 +1,482 @@
+[
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_arithmetic_tool--000",
+    "instance_spec_sha256": "f480ab8ba18c636cd97de4f26b3fca3d602812b21e054bd1d6a492dd8c9466d7",
+    "raw_clean_a_trace_sha256": "ad2aba8f516f70aea0e1cdfb1046b0199d1303f2c7608747c76a9ff09ecb8b77",
+    "raw_clean_b_trace_sha256": "bb7f8d73ecb0f1d81177d1969da11a29191d96349f44a51836ba991c281d9fbf",
+    "canonical_clean_a_trace_sha256": "6f473f4499ce9e20a46553ce200ab5082294bb5379ac83ee8f5d5f39d14303a5",
+    "canonical_clean_b_trace_sha256": "efb5449ee3dc1bf77760eb8feaa63483a3953c031b4ab080ae42b18fad84959f"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_arithmetic_tool--001",
+    "instance_spec_sha256": "32b698db12420e6abe08c23ff586735b344c2715987c0ec61b2120f47217305b",
+    "raw_clean_a_trace_sha256": "29a9629bc50e7e5036f4f0ac7e4a0b515dcce2eb010f77d13f23475002899026",
+    "raw_clean_b_trace_sha256": "0e09dfae441076a2ae5aa2b00b3ed65e60bb1da0add121b1fad22c57da85a01b",
+    "canonical_clean_a_trace_sha256": "5aad3c0424b5710ee2883d5d81212f56f495552344edbc69dbcbc572ffaf652b",
+    "canonical_clean_b_trace_sha256": "7cc657650ab01b60db272a3bba5de3cf60ef6708349edd6ff6f2c3bce80f3a15"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_arithmetic_tool--002",
+    "instance_spec_sha256": "543bd149c4c6cc7f3772ca93fba65de1eadaca4274b3ac9550d35d9423f20d67",
+    "raw_clean_a_trace_sha256": "1a5d142a1ccb08c3b9ceec25e4873a70a60cc9939de1e694a68df8bb25953e82",
+    "raw_clean_b_trace_sha256": "34808806832973022727adb6fd0002e69f3febe92b349cb71a41dfb92d8c2c48",
+    "canonical_clean_a_trace_sha256": "995b343157bf4593cc72f008da2003e60f37877c6137626b3920914aff2c95c5",
+    "canonical_clean_b_trace_sha256": "7546db951f8c0bace7dd041d9ba9aacc6f6b40251c90c87af14e1b3ad9da6daa"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_arithmetic_tool--003",
+    "instance_spec_sha256": "9d02a1f9dc00a36be69ffd8d5a01e0f61ede5731913f23dd137a69399eca9e03",
+    "raw_clean_a_trace_sha256": "f77ae52709d727e817867105439b441a77344122ad6d44b317d6ecf6dae6a4db",
+    "raw_clean_b_trace_sha256": "8ad06c9e4a7537c62bed20983587c2cff1c62cd85df71febea610ec2a84868c4",
+    "canonical_clean_a_trace_sha256": "887597fe9aa4f3f484654c5304902f71e757361f3cf7bb68c2b06b430da733c1",
+    "canonical_clean_b_trace_sha256": "9ea7fd5832537ed62675e3e2652f71f01dd86ca52aac0ba93db0633140f83763"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_arithmetic_tool--004",
+    "instance_spec_sha256": "5497f0d12d19e8a2a11deebae0f3543bd2beff26ded7315c3222a2850b4af815",
+    "raw_clean_a_trace_sha256": "183b8db186ad3102abbc53f4e6417f4581c9d86201a9933aeda8a46d8427d0fc",
+    "raw_clean_b_trace_sha256": "c478233962a62bb1397d8682bb27bbdae40a50e2b849b308b96315bf124d3d33",
+    "canonical_clean_a_trace_sha256": "61d7f5ec5cf8c6cdf0c0a7623b304547665fadb1b21f2266c5d8697f484e8719",
+    "canonical_clean_b_trace_sha256": "494efba2ed69a637e403249563fdd5ac2d50768493139bd1630d20ccd454147f"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_arithmetic_tool--005",
+    "instance_spec_sha256": "e966acd6180384a4eb535a194fa0cde2dbe1366497e7e21d1ab986b9ba4671e8",
+    "raw_clean_a_trace_sha256": "4fbe0c7ea5b62f1fae78ccb701f139fa007436f126fcc9d3a762ed49075a3716",
+    "raw_clean_b_trace_sha256": "be0c8e1316ff51490fdf4a736c98014fa8806603c8d103b10beee59138b722ee",
+    "canonical_clean_a_trace_sha256": "e7eb6d9ad4403f8774d9dc64179d58514be52493fa6b1ca3964e1376793d4ca7",
+    "canonical_clean_b_trace_sha256": "8a1de8133c9d9fb79f1d141219dbfaff61c1b75494302c85e05f990a4a7e3ed9"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_arithmetic_tool--006",
+    "instance_spec_sha256": "50060cd64860c42470f7501d34d36df6a6e9278cfd3369a3aef9ba3ba57f7f3c",
+    "raw_clean_a_trace_sha256": "e92d083246c4c2acf6d0fcd184f6e4670ae105faeae2bab093370c8591f863c0",
+    "raw_clean_b_trace_sha256": "99c4961d0a97c7ee1b789e4bd01f926034ccfc854acb91bc344b3fb9f8b16b02",
+    "canonical_clean_a_trace_sha256": "f3285e3fc2f485a79f51dd6f750e6c64849a5ea7b390416b30ebe8f5dee53279",
+    "canonical_clean_b_trace_sha256": "6452e6de91552f44435cee8cdec7b61b0581673b07706789f92eff3911b1bc82"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_arithmetic_tool--007",
+    "instance_spec_sha256": "c9ebeb99656c019147db7acabc52804f40281d0cb5fc0be4da2fc52023e0e7be",
+    "raw_clean_a_trace_sha256": "a4e8fd5a0e282e4d58ec765da60f94291d552180a988852a8de3af8be2ccf48d",
+    "raw_clean_b_trace_sha256": "5bc52cd1c4e451739d7d3e486e53c753c2b1d5679318ff60edc074a97866da1c",
+    "canonical_clean_a_trace_sha256": "28b7bd6a4d12d33f8ea740af730f48776c1240380495e08659f915acd1fcaa02",
+    "canonical_clean_b_trace_sha256": "f9362e055ac3aa164807a31c380406cc3f0e69b9970b5220404f59a7823d329b"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_arithmetic_tool--008",
+    "instance_spec_sha256": "3349b74fc173d7fc01434c05de13cd48836cf57ca38cb33148cb9cb8665d92f6",
+    "raw_clean_a_trace_sha256": "5900d6cacf450f51980451e3d7c5c955ce997b5485bdff6d3e54dbbcf214eaba",
+    "raw_clean_b_trace_sha256": "b2c54d359f0c7720486121059ac257c3076815bb643d990fdf7dda073b7aee80",
+    "canonical_clean_a_trace_sha256": "7f7e5b07b4368b505f80a9fae873bc7137e42d9e03b78120577d8ecc9685def4",
+    "canonical_clean_b_trace_sha256": "6dc0286f65c0c68ad274c7444a0c8d560ce3f8807e12b75fb19221036a88d843"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_arithmetic_tool--009",
+    "instance_spec_sha256": "6395cb917c3ae5b5ed6a37dc2cb812ca65e1fc0d3436743cf19feb7f5bcf1220",
+    "raw_clean_a_trace_sha256": "48c60331427331bac13c97c6427381f81c44157533a38f2de10d88be0a1863eb",
+    "raw_clean_b_trace_sha256": "d660512cebe686738de77422d1346ce5b5f2577aa4af8a3c5fcfed6f4b2ccc7d",
+    "canonical_clean_a_trace_sha256": "abeba997dfe961dc41b23d0abc7bcd12dbc94101f872e5426b6ee602c4f8564d",
+    "canonical_clean_b_trace_sha256": "4509a8f649354e9c0bbc3bc6feecacf90b0b01b2b68ba87288ab4335a8b413ae"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_time_tool--000",
+    "instance_spec_sha256": "8e6d2a5a7e116bddf15b28d20d250152141ffa46d9ad873e4e8361a593fb0330",
+    "raw_clean_a_trace_sha256": "18c777c73517aaf12347a8de66366c897fe6a7b8484a4fc454fb79a159d34614",
+    "raw_clean_b_trace_sha256": "15cdf45f79b2c6445c9ee566d9097996e500088c6ffa2afbda08d774065fa6dc",
+    "canonical_clean_a_trace_sha256": "b6a8f538c8c1cdb3863358a82003cb0873ba9c06158441dc74f6509f380fbf44",
+    "canonical_clean_b_trace_sha256": "e9129efb3b547cbae2b07b0f69f9d4551ec91a9c742608647f80cdac731fa40e"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_time_tool--001",
+    "instance_spec_sha256": "efc5bdc369149a92a1ee89d140c504b20ebc681da065fd4d046b9d0f7975e456",
+    "raw_clean_a_trace_sha256": "5fe2854aa662f3c79f3a8c9cf7ecdf697f9f8b77f8a8adb42ae435710970e713",
+    "raw_clean_b_trace_sha256": "4bf3b380bb93eec2f4d233df114ff63ca903e8ee2dc1e6e0ed150240518b34aa",
+    "canonical_clean_a_trace_sha256": "eba07507c0ee6eaca9061073f3b58027947fe707e03fca2ae19527cfc9279aaa",
+    "canonical_clean_b_trace_sha256": "d259cafb65f57dccb41083c031febfae8f093b02a8d3f42a4805aa8897e0160a"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_time_tool--002",
+    "instance_spec_sha256": "3c5fbadd78b22423cc7a27fe2e0a7c178d00eb434e8791d50862e5b91288ae7c",
+    "raw_clean_a_trace_sha256": "35b63acf58eab7b3682267b2025f294b1ba85e58665cbeaec8286a7fc0c9e962",
+    "raw_clean_b_trace_sha256": "fc15a62c09c66ea8976d92792bd415a9f64b1d750691e8599334b3a96d2063ff",
+    "canonical_clean_a_trace_sha256": "4cd6953bbdbc327f97179db29a9677f9df46e4b0e86eb5c84cf66d702443a941",
+    "canonical_clean_b_trace_sha256": "f62a877a626ba3d998388cbbfab9fbbaf0a21aa9541fbb40fd2784d62b661024"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_time_tool--003",
+    "instance_spec_sha256": "174be39882ed7659248bb83d1fe3f5a9f2d973c57dff8c8a278311970803aa18",
+    "raw_clean_a_trace_sha256": "21392a4f29215a4e02aabe2000d9b896645780aac45477eb6172e2b1de175f24",
+    "raw_clean_b_trace_sha256": "501602860db0843a3339fd836c63940be5130cfa57c673491ba32c5024161a53",
+    "canonical_clean_a_trace_sha256": "b701944516a8c9df5acae0f5ccc0fd75c58c9644582cba6d4a5513322ed8268d",
+    "canonical_clean_b_trace_sha256": "60635423a64dcd2555723c78151d4675beb3b73ef2ade9ff7028e9bf5a227cc0"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_time_tool--004",
+    "instance_spec_sha256": "004bdc820cac52c4700eaed73e3c6c2fcc357711e5224504b0335add5df22ea9",
+    "raw_clean_a_trace_sha256": "b5580ed34d3a7988539e314508aad146e6f1c675bf728b5b7579ac6a1153e6da",
+    "raw_clean_b_trace_sha256": "b4cf257f8282cd192e0d373f113f910932ad776e5ee8986ae5006d2a705c6bed",
+    "canonical_clean_a_trace_sha256": "ccc1e6939e64578e5580c37d80c27e0313f64dbe57fd0bc7c4831aff54600904",
+    "canonical_clean_b_trace_sha256": "001c8974e5a84313437882927f405a7b57e7d33332eb27408bef250e6feb671e"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_time_tool--005",
+    "instance_spec_sha256": "9f663e4a06cd10c095477d88a08a7a4ff28b37616bebb7d495b228bb4e0093b5",
+    "raw_clean_a_trace_sha256": "54b72c25972d39be41a71447780070171172f0ef140f449f80fe01201d3864ba",
+    "raw_clean_b_trace_sha256": "f36807635823451b2b0b4b7d5eb5df0e580da348faa05cb87eeb9d488c072b1c",
+    "canonical_clean_a_trace_sha256": "a70d9b395e88ab68ec61d10499ad9d33abc0da1c76dd72f519910ddc408e43df",
+    "canonical_clean_b_trace_sha256": "147f2d2167cc48f1e6060bf5286e7b8d2ffd61451088b48ed51b597291ce6ea9"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_time_tool--006",
+    "instance_spec_sha256": "5f7dc4c8bb4dc57c7956c9acb624993d4c1ce4b782edc8ffc88864048770b69b",
+    "raw_clean_a_trace_sha256": "86c591c4881e7ded1ac853b6a45d123bba3eb1342d60c112012321beb9b4d0b4",
+    "raw_clean_b_trace_sha256": "b1ba0a09ad0a76eeb10b47823cf21e781a85b497ccdf0ee382ae7c8ba2040dc3",
+    "canonical_clean_a_trace_sha256": "c7dea1c78d5599cbce70f3ec39673875c4e016055edfb342f955170355a75377",
+    "canonical_clean_b_trace_sha256": "18c1e16525a3b23222522193a9e96e0565883b3042721ca441b27c0ec5548fd3"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_time_tool--007",
+    "instance_spec_sha256": "ebce3484baee19ba46eb2aa4db65bb15e0297ae1051db4dd84fd36686cef6c6f",
+    "raw_clean_a_trace_sha256": "b6cd204931793275c9ca437081b5983e55becd95c6f661740f3997b1e4a6d2ef",
+    "raw_clean_b_trace_sha256": "2eb207ccecd20b1aaaf0fb0157020d06b40a73ba8564df8e0e4d88881826d455",
+    "canonical_clean_a_trace_sha256": "635a64bcf0478ea0ce29330f4d692e957991c8f2d9228a2e3c259ee4b01f5985",
+    "canonical_clean_b_trace_sha256": "8308da6b38cfde5388ccae4be99dc7fe9ca92816e01f083d8e7be6573d27b4b4"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_time_tool--008",
+    "instance_spec_sha256": "2bf7ff61a9c46415bf2d8ef454801065a1b7023b7e3f8dac9e541e4ba6435dfa",
+    "raw_clean_a_trace_sha256": "ea1c63dcb0345b444a03ef0ce91342d277b503818f2a4cdd3dcf53cf22ae579d",
+    "raw_clean_b_trace_sha256": "b440f150e83dde9898111d187ac3e550ab5260e90a4cae11a748ce375c0fa935",
+    "canonical_clean_a_trace_sha256": "2c89dacb59824b43aeb6a4f474caf62fc21e50cf8887247f5b7b934729b5cf27",
+    "canonical_clean_b_trace_sha256": "64f18b506728898b419650d0ec142ac7435951b9cf1380e91d3333bc2e63458d"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--local_time_tool--009",
+    "instance_spec_sha256": "e800f44356c314ccf630a3be8ee910584e85293528d8b97c31073dccbc4b2143",
+    "raw_clean_a_trace_sha256": "c762e4c031978a7f40b0442c289da896403e0f3649b6bcda890b858b2a661e11",
+    "raw_clean_b_trace_sha256": "b600bbfc834458955415ac23a7e2800af218f143588a130a7f695dfc5316b604",
+    "canonical_clean_a_trace_sha256": "5a201ca18acfefa048094939e666573ccdc8a18130bf9e6f8f0c6e1145cfc17d",
+    "canonical_clean_b_trace_sha256": "a1e7030d0e104128cfdb21eaf9e829d2595aca6cf56fc8faaa30657a108d75f4"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--multi_step_memory_tool--000",
+    "instance_spec_sha256": "4d22408364f63faf148ca4d2a8cb221a8a5ae40af5d8c959b1fd06b77b073003",
+    "raw_clean_a_trace_sha256": "97b1118fdb38354bc913a14bef00b8ac357acc9164000b44f90ada0e3be0bb6d",
+    "raw_clean_b_trace_sha256": "a9b81f706981bddcadb5979c7f563769a726ded043c0887aaa4afb435e80b7f2",
+    "canonical_clean_a_trace_sha256": "fedce0ad9e81e3c8307ecebcea54ca03bacf27912bf1b682618b2c508758a278",
+    "canonical_clean_b_trace_sha256": "399304ce1e23134dade7495917bf721ec124b701a229e1b97479e6b689919dd5"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--multi_step_memory_tool--001",
+    "instance_spec_sha256": "62fd427dde66f61a0cac9dcb15c5a48db1c189985e92ba8310b30a6cf2ca1b74",
+    "raw_clean_a_trace_sha256": "1954862409c5d23514fd58203479251451d24dc23163a3ff9ca64746e544fbfb",
+    "raw_clean_b_trace_sha256": "7d18e9091c2dafdc2fba9d811f2f1f2abcf3347271c0679fb727ab0bbcd27eb7",
+    "canonical_clean_a_trace_sha256": "dfc3f7c80dc9b7342ff983d2ff8fb0e3de8a062441299a44fd500204e9204877",
+    "canonical_clean_b_trace_sha256": "6fa1d30ca61de7ea7141e21a505f7558a556540b48edf014ddaa745602a86761"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--multi_step_memory_tool--002",
+    "instance_spec_sha256": "114891186a615d2ccf95039290186516f99d0b233de5944620682749633ef2a9",
+    "raw_clean_a_trace_sha256": "a207c636a1d9924e306d9249db8b4af16425ac70d5b882365c6b9c42dd8a2948",
+    "raw_clean_b_trace_sha256": "09dfba4c251683d3808e7b874a286f5d082fa052b2813024e490e094d0069f1e",
+    "canonical_clean_a_trace_sha256": "d12f7ebc98674670d2b8f43322b0639123171cc7242da2c65c4d6c36a54c5ac9",
+    "canonical_clean_b_trace_sha256": "6e76126fbd3d40cefe2165883d4e3d3638bbff06363f7ca7ec763e7870e5a11d"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--multi_step_memory_tool--003",
+    "instance_spec_sha256": "ecf4a00aa30eae9793c0194b96531b0a5d915e141e7dbcc618b91fb4cb2f8d97",
+    "raw_clean_a_trace_sha256": "f23280a3840248790667b3dad77d3e3d813bd8074f14ac27fc269212a0d582fe",
+    "raw_clean_b_trace_sha256": "64c75a1b88e76b39539c21600f5bf134452060e5ce9f62afc53a51bc89a80440",
+    "canonical_clean_a_trace_sha256": "e09d08c26c663a7ad00feecc111e10d39a1c2060a8c9ceea2d3ab7d62c25954b",
+    "canonical_clean_b_trace_sha256": "93368b249b7a7a855ea01fd54d86b6cf9d3de876befd8c4923f8b91144be2f0d"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--multi_step_memory_tool--004",
+    "instance_spec_sha256": "398f64bcd6b7017117570418729e2e440043bc29b8ad62654959872f838f896d",
+    "raw_clean_a_trace_sha256": "0912f12f076dd5eb7db53dfc10829774878d1c1541d049aae0e6780ba6025918",
+    "raw_clean_b_trace_sha256": "c25d650c148edf9e0f35385252cdf1916adc2d4ca1d7300aee62fd143215f527",
+    "canonical_clean_a_trace_sha256": "f273df05ffccd195ea7a746b4adaa31c75a1a07061bc7cbd09843cfea0fa922e",
+    "canonical_clean_b_trace_sha256": "c8d2b16e241b1c6a8a385495a837eb785302611e46d071c7da137a728f7c0213"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--multi_step_memory_tool--005",
+    "instance_spec_sha256": "db2d176f18503046b7ecf759a5bf4380b1d2d45fb4773119e741bc11367122d2",
+    "raw_clean_a_trace_sha256": "d4c1abe83ccf2f8f809a381870ad8a9a3530947113c5b94e907a16e442239bda",
+    "raw_clean_b_trace_sha256": "24f3878b6c6a2a08de6dcb2e15322390b2b90cada76f566ec07189002eba5774",
+    "canonical_clean_a_trace_sha256": "b674af9c02590c72350bb13be420803744079e46c28d5c8200a6c27638212848",
+    "canonical_clean_b_trace_sha256": "8080704708aad85c14312efc9af73ccf9584879833da60001c15d00da18b67e9"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--multi_step_memory_tool--006",
+    "instance_spec_sha256": "c3b88e6bf05053262b4f5d6eaf0d41e13e3d664efb44580a6bb3aca7651ad7b4",
+    "raw_clean_a_trace_sha256": "672b2e8e3b67c13b326aa76b30c1f67e67b67741a9945fd134d908bb690b0e7f",
+    "raw_clean_b_trace_sha256": "17a2322cc0c3e663ca58cde50571d23df050c61753195767d4a75e55ad16ed21",
+    "canonical_clean_a_trace_sha256": "23f404e037f102a810bf43bd3bd71d72b5da02e906b809362c810eecb9f4d1c2",
+    "canonical_clean_b_trace_sha256": "5299ed7fec10e662740508333b1f2a51ef04d50e7a1fbc2c474c17c49ad0a09d"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--multi_step_memory_tool--007",
+    "instance_spec_sha256": "0a74000d74942ea8555a7ccef194addd86d85e68bdcda98ef2955aa03d7e8939",
+    "raw_clean_a_trace_sha256": "2b7cba2938a4cc716d843048ff7942aa3227c0cc8581d9fbd34a77c7ce3d93a0",
+    "raw_clean_b_trace_sha256": "97fbed29092e63f7c905bba7476eee8b53af65554cacedfd79a10d3872c412b9",
+    "canonical_clean_a_trace_sha256": "f65122c770131f5019ba75e0e0f63d7585a20bb73ef7ed2f2914313526fc0b75",
+    "canonical_clean_b_trace_sha256": "a3784c6492a606435d7f237efaee7ab7b0398ebb0cd648eac5ced3d29309af53"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--multi_step_memory_tool--008",
+    "instance_spec_sha256": "ebc178f7167ed05cf8ce05212b9138d7f9fd3b00aef3e2a7d3be1967116eb25a",
+    "raw_clean_a_trace_sha256": "1ce5832c9a93cb68e858e9f64e2502f7ee1f6eeed9f368d56d0ab9471125c43c",
+    "raw_clean_b_trace_sha256": "fd7d59c21b7802110ba85a7fbe042f66bedb7873790b7eee7918495837e0be55",
+    "canonical_clean_a_trace_sha256": "4ab9290877d1e54f9aa18ff0cad51e11c066b5c3db238d21f934e83a4eefd189",
+    "canonical_clean_b_trace_sha256": "1a052936a33e353358091426563395a3d8fecb0a27f0f04c83725f21787c996d"
+  },
+  {
+    "instance_id": "calibration--full-tools-persistent-memory--multi_step_memory_tool--009",
+    "instance_spec_sha256": "cfa035d96800899f25ae84c5ecd002692d13bafbdb7c1aeec4c5d5f6ff2bf967",
+    "raw_clean_a_trace_sha256": "85330f22ae40cf2c7b99e9195a1e2fd6ae2d8ae1f8743f28a03c46537f97811d",
+    "raw_clean_b_trace_sha256": "b73b2725cdd87a799e0211b300ea0b026646314ffba7729fde23b682521a3aaf",
+    "canonical_clean_a_trace_sha256": "d97a085126a2ee06aa7c1648afa053fa3007f271c59290a4cc679bf25260eac9",
+    "canonical_clean_b_trace_sha256": "9fb2d42a0424096574d575c8147536c599a3adeb46ea6db2b84eee134e2a3d7e"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_arithmetic_tool--000",
+    "instance_spec_sha256": "e19c6671216247cd79fead9dda640221274902ea5da7a4b52957a0329bc7cb0c",
+    "raw_clean_a_trace_sha256": "a83cf042047ac38bc2d969dee8f145361907ec453d8fe0e811082b8a244abf60",
+    "raw_clean_b_trace_sha256": "c4941e6bb12191f31c4bfad03d184fc94306245e895c2fdaad2324f18e9784b1",
+    "canonical_clean_a_trace_sha256": "acf0cc42e4a193de560710aeaa31108deff08b18216c7f611982a63f013dc960",
+    "canonical_clean_b_trace_sha256": "4508d5b0b889580f3e1c8c60ac9f060726f6810b65b95d65567bb4f8fd5e52bb"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_arithmetic_tool--001",
+    "instance_spec_sha256": "863e237cc40dba3729223439021436501718cf8f1beddf65815d37662849d5aa",
+    "raw_clean_a_trace_sha256": "7f4929e468ecaf02e3ad133006183e5de0b21416a3c42481271cbb979cc0ccb7",
+    "raw_clean_b_trace_sha256": "0610cf79319a1f82574ebcd69fece6be21f51eaa4253ae16673c728cad3a08e5",
+    "canonical_clean_a_trace_sha256": "5c4d24815e82e269480981ede08344b23c27e9cc57ef297f81969afa3adb3d53",
+    "canonical_clean_b_trace_sha256": "67a7625d135aac36acdf88b74f388e2c1687e5933b6c8af0d12fc10baf5d6366"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_arithmetic_tool--002",
+    "instance_spec_sha256": "362e2756dde5ecb41d219729dcf127b06c1a59a3af646c37782e85af83c39f55",
+    "raw_clean_a_trace_sha256": "b802e923cc4fa602a91f4b91fb713e0745ef3166161ba3c669b0090a066c26e7",
+    "raw_clean_b_trace_sha256": "a0f5ba6e81dab1bbf40aa6772c3e10f36c966686ca2c22a59b3a298c51bab04e",
+    "canonical_clean_a_trace_sha256": "ead4c8cfd3ab8b1e7b39255faabc06291173d3f129f6865bcec42fa525098212",
+    "canonical_clean_b_trace_sha256": "832e307b987de5470d5ffbc9eee9b44f7a654e12a213e13d73eb5b276b6e0b9f"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_arithmetic_tool--003",
+    "instance_spec_sha256": "084793e8d5896bea2e096ea94962d53fdae7d8ea113bee11777e37d3f0a31b9f",
+    "raw_clean_a_trace_sha256": "0fa6a80287fe8abe6ec5d6f09aea054d36e9c95bed3ac343af1ba7edd5f0c2d6",
+    "raw_clean_b_trace_sha256": "5df0ce63214507e62884b43caccee4aa3082a43077e2f7785afed18f4f646209",
+    "canonical_clean_a_trace_sha256": "2298d0a3bb8fdc29a2b7350cf202eb850cc2822d080267b80b20de0e80779a81",
+    "canonical_clean_b_trace_sha256": "e9ab20a102995f72e80c43ebca20e8dd058ddf728d129b65fd319a3c2903bb9f"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_arithmetic_tool--004",
+    "instance_spec_sha256": "d805f0517c4fbceef921aeaac761cc536b992120999f908732fb569ac6a3b02a",
+    "raw_clean_a_trace_sha256": "4376b7320f7e9061b160c966f7f7f2a73fc86b296acfbacefdc912978899bf39",
+    "raw_clean_b_trace_sha256": "9d6df372a0db286ffde98e2aae897dd2cc6a74f0fc6ca647891edb3b4c39d5da",
+    "canonical_clean_a_trace_sha256": "bc7e136a0019a16c62085f1a4a8915e5545e0f58c0aac2ad41602a361937e6e2",
+    "canonical_clean_b_trace_sha256": "84dd451c3053831e2db6e6b1d278873fc0457f6fb40aaa9828e7f3180188b69d"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_arithmetic_tool--005",
+    "instance_spec_sha256": "ddd673458fd12f464ce8259472bb69e64953538218d22cefc7ccaf39ce2b5616",
+    "raw_clean_a_trace_sha256": "f2c1dbe6d0bad1642f3a75d03ab7f6c930edf96f72149f9fe268af590f981551",
+    "raw_clean_b_trace_sha256": "f753a61e652b05d32004d538a21e8ace676021717c98689e4ad66414c363e169",
+    "canonical_clean_a_trace_sha256": "b4b785ae7963c8079f75624377ce51c6d18f4a5ab9927822223687c781e32ccc",
+    "canonical_clean_b_trace_sha256": "97e3a85176541bcc9916ed24e873d8218020aa3d7d0bf21b4ac8a77d776a6880"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_arithmetic_tool--006",
+    "instance_spec_sha256": "506cbf2078b71f75a2adc7933434a18952bcbc9e514d5de31fb3c2fcbf6ae686",
+    "raw_clean_a_trace_sha256": "d1b11fedc40df78c7139c82a4378f1dbc5f6bccef09e14fedd1de54ac513cb3a",
+    "raw_clean_b_trace_sha256": "309de8f424c1b0c39bd97b7ddaf774ee85d3b9dbb5f6c4a5c2d45a32cb39273a",
+    "canonical_clean_a_trace_sha256": "1d18c41b196c1d04695f6a082e3ce174215e9a8e2c958a9c19fee1b2bf29dc93",
+    "canonical_clean_b_trace_sha256": "1d18c41b196c1d04695f6a082e3ce174215e9a8e2c958a9c19fee1b2bf29dc93"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_arithmetic_tool--007",
+    "instance_spec_sha256": "b9a987118ec642ebf32a9a7940ce01f1a4c3b42ce14b67a7e8fd26359423eb03",
+    "raw_clean_a_trace_sha256": "8dd575f41d3390232b7bec03db50cfbeea7f8524b24d5384b9e2995aa8e402ee",
+    "raw_clean_b_trace_sha256": "a927feab531082767bff73164f24bfc3a64251cfdb50013d8bf2393497f313c3",
+    "canonical_clean_a_trace_sha256": "11403d3ba3870d8d596e9a39e8e58ff788faf5df324f778e6a05dff2daf3f853",
+    "canonical_clean_b_trace_sha256": "a22af572f87dd0f40a4cfafa99929e4755866ea68dc72b76ba985d0bda894283"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_arithmetic_tool--008",
+    "instance_spec_sha256": "7719c9c3bf5a1bc321131a22db54cd92608655e23e8ae43067d297d3498a94dc",
+    "raw_clean_a_trace_sha256": "c598dda810ffb4476cae9ea4e91cb911707c2ce0c607c6462ebafcf75c867cea",
+    "raw_clean_b_trace_sha256": "8af9ced37e34b1b2eaab9ec891b0fb416c930f5713124414b1cc5d4eaf3cf2b1",
+    "canonical_clean_a_trace_sha256": "1b2ef92d79ccacfe3cf9ff16889712c339b747d2b50d33a380c1e7fe825d1e55",
+    "canonical_clean_b_trace_sha256": "f0a1f86561e6e0ff6b06c53857784fa18fde289ced46d048e847b211685a8c1b"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_arithmetic_tool--009",
+    "instance_spec_sha256": "ff26c208410d06e51e4e9cdea378bc34dac58a95de24372b5f2e1a043674714a",
+    "raw_clean_a_trace_sha256": "3209a3577366865e79c666d1fabfb35c59ad7285fe22f6b46cd96826ab5b5bb1",
+    "raw_clean_b_trace_sha256": "62aab1e8b4c22b5b08dff070608f4546e86dd6c4dd25af97aa3072319c0d013b",
+    "canonical_clean_a_trace_sha256": "61c606902c6212f323eb925e1629baf78fcc8a98aa3dcf6fd53b5d0bda54c82d",
+    "canonical_clean_b_trace_sha256": "7176fea92726c32d70360d4bd0e075b8f705407e4ee854f44a98c47a7c5b40b6"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_arithmetic_tool--010",
+    "instance_spec_sha256": "6abea9dc642f3b1a8fd6f8c5244a6d219ccf3fea0f43736f1d6df528e0bac817",
+    "raw_clean_a_trace_sha256": "210dca070b8bc63c4a4da788744496009d26a7f2e4d542e9e7a70f20e9c2a904",
+    "raw_clean_b_trace_sha256": "3947f3e8a9c98deba099768a0bf2a2fbb05fddabb3ff303dd88bdc131a33ea59",
+    "canonical_clean_a_trace_sha256": "625112350b7719ea6bacf453aef1fd02299e314d835730870350663c5550aaa3",
+    "canonical_clean_b_trace_sha256": "b9b0e16a476d4a989f4137b21d19357fcb1b8f3dda636d704bac4b3d944f6695"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_arithmetic_tool--011",
+    "instance_spec_sha256": "0769200e7ad489ed698f427abe020d37a37b89afcfd89236774ba3c943f01ecf",
+    "raw_clean_a_trace_sha256": "1b56d209fa2bb7b3fc14a10d788dbaefe01ffa84fd32c3a8d98a00c47a2a23e4",
+    "raw_clean_b_trace_sha256": "6670be4070e7f10d5718a9b40bc76b778972f5e99a1492c6813e5254c86050a4",
+    "canonical_clean_a_trace_sha256": "8eeb1e7091720ca091b6c34791ad1bf869d31ae1854f5b88d804480bda4bcd7e",
+    "canonical_clean_b_trace_sha256": "bb87a8f88b5d6c5f3b75bb014f695da3d6a303f973e560aa843c767e68753700"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_arithmetic_tool--012",
+    "instance_spec_sha256": "37bd9cefad498ae9b19f60c1575234d838cf1e0db41eda39b9a99b083b3e98a3",
+    "raw_clean_a_trace_sha256": "f4fd28f173c7518f571c223db62675e1ad48bafda188878231c035baaf458975",
+    "raw_clean_b_trace_sha256": "8066d5040ac4c58edb3b01a9d43a64afe743941c6c370548162906078817c3a8",
+    "canonical_clean_a_trace_sha256": "49ca5e32f9262abfbde48e9967e8de98bb0bab3147b6250051f99fec07b074b2",
+    "canonical_clean_b_trace_sha256": "49ca5e32f9262abfbde48e9967e8de98bb0bab3147b6250051f99fec07b074b2"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_arithmetic_tool--013",
+    "instance_spec_sha256": "57343581ad24ef5e16a222c8c0f2f61fac146f57cbd623377c53a3ae01b7b4c6",
+    "raw_clean_a_trace_sha256": "49915793a5ad3c568d7505e4511202371192cda866e5cac5db42b6f7a1f29d44",
+    "raw_clean_b_trace_sha256": "3ec4cc9790fa97943cbf6484c087445dc8255850aab040580276d7d4a3528de9",
+    "canonical_clean_a_trace_sha256": "a360531ded43244357b0de4c3f25e0f358f9ffcf1f20ccfa5e1a2d45b4ceb8b3",
+    "canonical_clean_b_trace_sha256": "3e719f17d6e22df5e9ee4b0bddd2748353f583f6ec2a48578f0e9aee0378da1b"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_arithmetic_tool--014",
+    "instance_spec_sha256": "bc7118a282b6639a3ac1368742d781c2c3e68e419d3b1e367e663fadfea9b2a0",
+    "raw_clean_a_trace_sha256": "3ee00a72d40abeb02f97d53ca44d37bc510d6b472bb5b3972efe5c658a45b5cf",
+    "raw_clean_b_trace_sha256": "93e443e00cadc837bbd780f0f1cde149f01a76a93049a5ae4e69e771820fc538",
+    "canonical_clean_a_trace_sha256": "c2aee9930dcd28a7097dba32f3fe3109e473d28809567af478617c9a2ebe1b4e",
+    "canonical_clean_b_trace_sha256": "1f03a1c1c6bbe42c0241bf7b49dcf252c282cebc776577f48a9ced021e032ebf"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_time_tool--000",
+    "instance_spec_sha256": "a2de49b988b7cab44fff26ca18639a8e758ccb0ed7908a2aae561d5b4926ca29",
+    "raw_clean_a_trace_sha256": "1eab44931d9eda56f572941626ddd78e7728469935f6c0171ec4a03e8f5dceaa",
+    "raw_clean_b_trace_sha256": "229d969d1e816444371480031f4da3546b9f41802288edc7d157ccdb82644b32",
+    "canonical_clean_a_trace_sha256": "c913a4bd73876d374735d00ac8358272f267587ae4d4c5411016833737ce06e9",
+    "canonical_clean_b_trace_sha256": "4118743f3c7c4bd46211fe306328711d65562d2cfeb048fb84a3109ec31a3992"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_time_tool--001",
+    "instance_spec_sha256": "e06dc208bfece62b02bc0e7249ce511269f0d1609b07a383124187ccd76cdcef",
+    "raw_clean_a_trace_sha256": "773b4f3e3a5415e83289a29c0484c11405189e2ee60bafd9fb7ecb07e67bf97f",
+    "raw_clean_b_trace_sha256": "c445e6eacbaac0f1df4c63e16c02100cd558cfddf2245a28a6187bab5bb885cd",
+    "canonical_clean_a_trace_sha256": "87b97dd3750ce457fc6a687a0b44e5d72ee392ea4922dd860e5de10e659e0af8",
+    "canonical_clean_b_trace_sha256": "e7cdc9d37d4854f6dacaeb42bc33953b6ad935c8672e9dfe4c33589ae8c88aac"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_time_tool--002",
+    "instance_spec_sha256": "6f346ae490c50af2fc70e8824bb5441a2c49cf20bf5e6d1ad3bc9ed875f8c723",
+    "raw_clean_a_trace_sha256": "e1adb17328cf540181e10e549afe8b26eb458e36b0cbfb0f83abff49d0453f9d",
+    "raw_clean_b_trace_sha256": "fe213726e5660e6d0f3e4c2c3a2253a2e7ef668e011f9d32ba4935f10564020e",
+    "canonical_clean_a_trace_sha256": "6b5c2e09bcf6d6e81acd0ae5c3d2898c29c78ec695bc7eab34aa2636f1b7c887",
+    "canonical_clean_b_trace_sha256": "873cae308c73e6368bbb5604fe0ba77cd686a5b9cb9473f13cbe103640c2ba9c"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_time_tool--003",
+    "instance_spec_sha256": "5ec621f38d2efdd08a1e0056eeb6e11b6fc6336625a72e0d2dc842333cceb263",
+    "raw_clean_a_trace_sha256": "a3987034ab19f5210578b51672aee9f4d8bd44f97e330a8a3eaf25caacbeac52",
+    "raw_clean_b_trace_sha256": "f26e8fcfe813418ff2ffdd80a85047f7b15982551ed01cc94e6647154fbb4c24",
+    "canonical_clean_a_trace_sha256": "d0920b08d1d79c37bd371ee5fb58981c187cabc5e726d4a72bb10d7ccb33fc08",
+    "canonical_clean_b_trace_sha256": "ce856605d3bca275ae0471cf4794c6ce93ba997c8a656c89b6125e08ef10f354"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_time_tool--004",
+    "instance_spec_sha256": "6133b459ca28707f16dff05bc52f817e9fc34da84dbd5e1f56668c203ed3fb67",
+    "raw_clean_a_trace_sha256": "272c8798382f7128ff25712853aee3363e62421caa0aa3c812decd7f48403ada",
+    "raw_clean_b_trace_sha256": "584ca1875b6ad73ee7d9cbe5849534469bb78c9c10c386b7935e8fc2ef9f6a82",
+    "canonical_clean_a_trace_sha256": "6b75f4798156c9886f8af465ea2c9697d27e888010129225612bfb13331b70d0",
+    "canonical_clean_b_trace_sha256": "d8f3560c7704eb948bb6fef107a069125528cae51ff638e91a4f63f106c57427"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_time_tool--005",
+    "instance_spec_sha256": "ea0aba51ea89cd559920a49cd8e51c419e71f81d5a4a30786453a8d53c41b2d8",
+    "raw_clean_a_trace_sha256": "5481d8e5d53a2f2fa14d6e52bef03e88a177a45712d984c9c0582729d145b7db",
+    "raw_clean_b_trace_sha256": "07582d648adb9a40a570b063b80cdb0480fc74dd6777b847c51a554adecc742b",
+    "canonical_clean_a_trace_sha256": "0121f0f2a6d3367960fd912ba3f03ddfbf480e67d9e63d813d5bdd97294b1bed",
+    "canonical_clean_b_trace_sha256": "5b2bc17abd36cd0b453168656be37649f7ce20a8f30be19279fb68d83c77f9f5"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_time_tool--006",
+    "instance_spec_sha256": "29d4a72b6e54a3ff828b842efc49089c0aa1731ad3474a4b81635fb42304f3b7",
+    "raw_clean_a_trace_sha256": "8e73f69c61dfb44384d2ee4dfecc71adfc47b43141af6a653e117569bc78887c",
+    "raw_clean_b_trace_sha256": "533d598ba3fefdd18dd71266dbf512de6a810681d12c1cf39d2fc5e7d16b30ec",
+    "canonical_clean_a_trace_sha256": "fca997fd823613688b548ecf2f71077762ee63633d0c633c18d136970e87f8fe",
+    "canonical_clean_b_trace_sha256": "dc691b10ca810b8d62bf26a1f10174bc6da919c729f20cf4e3e2ee52210c2598"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_time_tool--007",
+    "instance_spec_sha256": "3814e70c6e64ab4271d402581be5383a09e97b071821a7a60434ee314af2efb7",
+    "raw_clean_a_trace_sha256": "9551b92fad5dd25102c66be4c09cb6979bbd314eb328fb50b6f4bc645d1f7454",
+    "raw_clean_b_trace_sha256": "6d42fd461b946a1a1351fe5915c9a08e255bdd3f3adf94f3910ec25a17674dce",
+    "canonical_clean_a_trace_sha256": "0bf62ddcf2705a9b6a618cb8bb7525073d271cbf463c698ecc07d0c8c5a7353d",
+    "canonical_clean_b_trace_sha256": "26c598fff200a36f04b62804e880bff7ee351653fc013e51934e6ed5f19e183e"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_time_tool--008",
+    "instance_spec_sha256": "bf59be6015977c448c73555ae246ed8e0a7d108cce60d77e037c722667af0a3a",
+    "raw_clean_a_trace_sha256": "177e56228af478023f5bb3eba51c9b5ce923dde2ccf8af6c0ebeaff1c94e13b7",
+    "raw_clean_b_trace_sha256": "80151e195fe7e5210c2aa09fea1d34aff0a41db69915f1c2fe47bde8d3936cb6",
+    "canonical_clean_a_trace_sha256": "7129a7f9d5797740fc9ce56cce4bc4905ca19a9478cdb12eb63ae26883bfeb73",
+    "canonical_clean_b_trace_sha256": "ade124dfe02ca3df71d63b59de504dc4d5d648f4616b431a544ed9ff8cf2c2fa"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_time_tool--009",
+    "instance_spec_sha256": "a4a657e62cda6b4d0165799eb45d533c57628c04aaef818849c958cc49b0854e",
+    "raw_clean_a_trace_sha256": "985eb72ebe757e43bab671e58b9710a50515e30dae7b1dc010ada82aa44b9f44",
+    "raw_clean_b_trace_sha256": "1273702308b77366c73e3c7eac0fd42889873ef068e0f0fe404de79f3d67ee7e",
+    "canonical_clean_a_trace_sha256": "c0d04c0895806db946237d1e1731063ef0a04a9168068710ddd9c8bba0597c0e",
+    "canonical_clean_b_trace_sha256": "1a45a68eff26303a2e0b53e84d874f2063154e8814b1781896c1c726159d19dc"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_time_tool--010",
+    "instance_spec_sha256": "40dffe5685be3fa4242d205224869eb428ebfccea0d58dd6059d1369019f9de4",
+    "raw_clean_a_trace_sha256": "c29aa73758abaf0b25f3b47db42f8ee1051008f08260c4cdd1b9284a21e3b1ea",
+    "raw_clean_b_trace_sha256": "65e2d7e81793072a9c58424ade5520086992d7ce09878a00092722a24dcd3eb4",
+    "canonical_clean_a_trace_sha256": "d6153da03e5222e9a2c63989b07ab7b5502ede34ef0fa2c93aeb518beb5cb509",
+    "canonical_clean_b_trace_sha256": "1d0004e98be7d8edfce5a3c9fb05b94849a4f1ae33f737b56dec25be371628cd"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_time_tool--011",
+    "instance_spec_sha256": "2dbf828144d54af28c8aca95330a23283506a621774e7f2ab2e1f063cdd60f08",
+    "raw_clean_a_trace_sha256": "609ecc03028377875f13a99e328a23a992d6f641c5dee95f73ba803f1c0eeca5",
+    "raw_clean_b_trace_sha256": "d592455eeacc8f387e349ec39af14e944eb97677b2087c4d8f45a6e8de8e60d7",
+    "canonical_clean_a_trace_sha256": "50da70e55b88e3bb98fe0626cc39e4009ea97b6838f115573d3ebb5243ca9b99",
+    "canonical_clean_b_trace_sha256": "aa7bdb5c469c3066f365f98ed8d967af4191feb27b7abde99f66ae7802c109ac"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_time_tool--012",
+    "instance_spec_sha256": "e2c5f16c394735f19c431042f6980d870a1499a4666217446104f68a0e939fe6",
+    "raw_clean_a_trace_sha256": "392419b3d896f074e596458b34eab63a26c493630f6af935f20cadbaf1d17132",
+    "raw_clean_b_trace_sha256": "cbd92e8003cd74056605b4748a420d5fb2c0df6825d82ce526cded0a05e39ba3",
+    "canonical_clean_a_trace_sha256": "3d83b493e5da917ac9b515784130783ba2161cb4b4f7f4d58399a6c5339dde63",
+    "canonical_clean_b_trace_sha256": "272ff6c83608aa2b989d72881fe952b40f6e19e97f9f5c45be59002d263e58b1"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_time_tool--013",
+    "instance_spec_sha256": "4b1d79d369919104093b3a8696ac0f577a7d03c45b506eecec7b7e862cc98722",
+    "raw_clean_a_trace_sha256": "6a8ada58cb7c6f5699d10626e5ae97b58b48e5c6a2f4add1946dc3d398161c22",
+    "raw_clean_b_trace_sha256": "f2cc794af23e95a5b12ba1046ba18a337736aa6cafe6de3df1764d034c9d316e",
+    "canonical_clean_a_trace_sha256": "34c2722e75779c5e7528d990fdb05f63a77d66b4ca1e184bfaf57d3b6544123b",
+    "canonical_clean_b_trace_sha256": "26ab3ffe7dd9c0a4a1d3b5796644de2b34d93e65dbf12d03d5f363e76f10e3f8"
+  },
+  {
+    "instance_id": "calibration--local-core-no-memory--local_time_tool--014",
+    "instance_spec_sha256": "380ceea36c0a2371977df621e472ef70499ef7c983d1975f8a085315849d21e8",
+    "raw_clean_a_trace_sha256": "57c4af34b8203422dee801af2f701254b8f7fa9d2e32030ced0298d0d149de53",
+    "raw_clean_b_trace_sha256": "20ecbe0971ccc37ff9df0c3b7267e86e3d7746856d57d951bab0cfbe6a3a53cc",
+    "canonical_clean_a_trace_sha256": "39aedb7f2a5fdd5ca0bb1dee1c9bde195d2ca695574c69a9b8f6dd821a9c8ec3",
+    "canonical_clean_b_trace_sha256": "e14a10e2a87fe32521fc9d4a70e45ef8365631acecdd243a389735fe1fe310ca"
+  }
+]

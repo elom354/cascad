@@ -1,0 +1,25 @@
+{
+  "hash_algorithm": "SHA-256",
+  "artifacts": {
+    "audit.json": {
+      "sha256": "ac417d6bf1101d88db7b906a46b1db06ad9aeb8066307d0c6d0a7059ed4f013f",
+      "bytes": 219
+    },
+    "post_collection_integrity.json": {
+      "sha256": "0e074570da2c4c9a283b338abd9b9ea98a2f0d20ec33504233d397e317121f2c",
+      "bytes": 36062
+    },
+    "specificity_pair_summary.csv": {
+      "sha256": "6514b9709b09e331ae7c971381d728f3d0f6c912ce0145453994617eba7dcbb6",
+      "bytes": 7044
+    },
+    "specificity_records.json": {
+      "sha256": "f0c669305f219d73cae64016963a23ed5ac903683d9f01e0944c20bba354977f",
+      "bytes": 132157
+    },
+    "specificity_summary.json": {
+      "sha256": "17304bf19a5e5f870973b5653662154940a0dd6e15384d9b8e6d3084af6a7387",
+      "bytes": 3307
+    }
+  }
+}

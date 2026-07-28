@@ -1,0 +1,542 @@
+{
+  "instances": [
+    {
+      "instance_id": "branched-calibration-b1-200000",
+      "seed": 200000,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200001",
+      "seed": 200001,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-02"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200002",
+      "seed": 200002,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200003",
+      "seed": 200003,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-02"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200004",
+      "seed": 200004,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200005",
+      "seed": 200005,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-02"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200006",
+      "seed": 200006,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200007",
+      "seed": 200007,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-02"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200008",
+      "seed": 200008,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200009",
+      "seed": 200009,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-02"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200010",
+      "seed": 200010,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200011",
+      "seed": 200011,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-02"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200012",
+      "seed": 200012,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200013",
+      "seed": 200013,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-02"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200014",
+      "seed": 200014,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200015",
+      "seed": 200015,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-02"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200016",
+      "seed": 200016,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200017",
+      "seed": 200017,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-02"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200018",
+      "seed": 200018,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200019",
+      "seed": 200019,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-02"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200020",
+      "seed": 200020,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200021",
+      "seed": 200021,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-02"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200022",
+      "seed": 200022,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-01"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    },
+    {
+      "instance_id": "branched-calibration-b1-200023",
+      "seed": 200023,
+      "split": "calibration",
+      "noise_level": "B1",
+      "noise_template_ids": [
+        "branch-cal-format-02"
+      ],
+      "independent_divergent_nodes": [
+        "metrics_export"
+      ]
+    }
+  ],
+  "profile": {
+    "split_id": "branched-dependency-calibration-v1",
+    "variable_fields": {
+      "metrics_export": [
+        "format_hint"
+      ]
+    },
+    "instance_ids": [
+      "branched-calibration-b1-200000",
+      "branched-calibration-b1-200001",
+      "branched-calibration-b1-200002",
+      "branched-calibration-b1-200003",
+      "branched-calibration-b1-200004",
+      "branched-calibration-b1-200005",
+      "branched-calibration-b1-200006",
+      "branched-calibration-b1-200007",
+      "branched-calibration-b1-200008",
+      "branched-calibration-b1-200009",
+      "branched-calibration-b1-200010",
+      "branched-calibration-b1-200011",
+      "branched-calibration-b1-200012",
+      "branched-calibration-b1-200013",
+      "branched-calibration-b1-200014",
+      "branched-calibration-b1-200015",
+      "branched-calibration-b1-200016",
+      "branched-calibration-b1-200017",
+      "branched-calibration-b1-200018",
+      "branched-calibration-b1-200019",
+      "branched-calibration-b1-200020",
+      "branched-calibration-b1-200021",
+      "branched-calibration-b1-200022",
+      "branched-calibration-b1-200023"
+    ],
+    "template_ids": [
+      "branch-cal-format-01",
+      "branch-cal-format-02"
+    ],
+    "distributions": {
+      "metrics_export": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "samples": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "share": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "samples": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "responder": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "samples": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "planner": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "samples": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "audit_log": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "samples": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "memory": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "samples": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "notify": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "samples": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  }
+}

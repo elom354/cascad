@@ -1,0 +1,6 @@
+method_a,method_b,paired_instances,both_correct,a_correct_b_wrong,a_wrong_b_correct,both_wrong
+cascad_full,canonicalized_first_difference,80,20,60,0,0
+cascad_full,cascad_no_calibration,80,20,60,0,0
+cascad_full,cascad_no_dependencies,80,80,0,0,0
+cascad_full,maximum_raw_divergence,80,0,80,0,0
+cascad_full,naive_first_raw_difference,80,20,60,0,0

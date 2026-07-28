@@ -1,0 +1,317 @@
+[
+  {
+    "policy": "none",
+    "episode": 2,
+    "eligible_runs": 60,
+    "unrecovered_runs": 60,
+    "survival_probability": 1.0
+  },
+  {
+    "policy": "none",
+    "episode": 3,
+    "eligible_runs": 60,
+    "unrecovered_runs": 60,
+    "survival_probability": 1.0
+  },
+  {
+    "policy": "none",
+    "episode": 4,
+    "eligible_runs": 40,
+    "unrecovered_runs": 40,
+    "survival_probability": 1.0
+  },
+  {
+    "policy": "none",
+    "episode": 5,
+    "eligible_runs": 40,
+    "unrecovered_runs": 40,
+    "survival_probability": 1.0
+  },
+  {
+    "policy": "none",
+    "episode": 6,
+    "eligible_runs": 20,
+    "unrecovered_runs": 20,
+    "survival_probability": 1.0
+  },
+  {
+    "policy": "none",
+    "episode": 7,
+    "eligible_runs": 20,
+    "unrecovered_runs": 20,
+    "survival_probability": 1.0
+  },
+  {
+    "policy": "none",
+    "episode": 8,
+    "eligible_runs": 20,
+    "unrecovered_runs": 20,
+    "survival_probability": 1.0
+  },
+  {
+    "policy": "none",
+    "episode": 9,
+    "eligible_runs": 20,
+    "unrecovered_runs": 20,
+    "survival_probability": 1.0
+  },
+  {
+    "policy": "none",
+    "episode": 10,
+    "eligible_runs": 20,
+    "unrecovered_runs": 20,
+    "survival_probability": 1.0
+  },
+  {
+    "policy": "prewrite_quarantine",
+    "episode": 2,
+    "eligible_runs": 60,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "prewrite_quarantine",
+    "episode": 3,
+    "eligible_runs": 60,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "prewrite_quarantine",
+    "episode": 4,
+    "eligible_runs": 40,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "prewrite_quarantine",
+    "episode": 5,
+    "eligible_runs": 40,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "prewrite_quarantine",
+    "episode": 6,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "prewrite_quarantine",
+    "episode": 7,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "prewrite_quarantine",
+    "episode": 8,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "prewrite_quarantine",
+    "episode": 9,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "prewrite_quarantine",
+    "episode": 10,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c2",
+    "episode": 2,
+    "eligible_runs": 60,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c2",
+    "episode": 3,
+    "eligible_runs": 60,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c2",
+    "episode": 4,
+    "eligible_runs": 40,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c2",
+    "episode": 5,
+    "eligible_runs": 40,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c2",
+    "episode": 6,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c2",
+    "episode": 7,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c2",
+    "episode": 8,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c2",
+    "episode": 9,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c2",
+    "episode": 10,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c3",
+    "episode": 2,
+    "eligible_runs": 60,
+    "unrecovered_runs": 60,
+    "survival_probability": 1.0
+  },
+  {
+    "policy": "delayed_correction:c3",
+    "episode": 3,
+    "eligible_runs": 60,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c3",
+    "episode": 4,
+    "eligible_runs": 40,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c3",
+    "episode": 5,
+    "eligible_runs": 40,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c3",
+    "episode": 6,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c3",
+    "episode": 7,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c3",
+    "episode": 8,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c3",
+    "episode": 9,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c3",
+    "episode": 10,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c5",
+    "episode": 2,
+    "eligible_runs": 60,
+    "unrecovered_runs": 60,
+    "survival_probability": 1.0
+  },
+  {
+    "policy": "delayed_correction:c5",
+    "episode": 3,
+    "eligible_runs": 60,
+    "unrecovered_runs": 60,
+    "survival_probability": 1.0
+  },
+  {
+    "policy": "delayed_correction:c5",
+    "episode": 4,
+    "eligible_runs": 40,
+    "unrecovered_runs": 40,
+    "survival_probability": 1.0
+  },
+  {
+    "policy": "delayed_correction:c5",
+    "episode": 5,
+    "eligible_runs": 40,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c5",
+    "episode": 6,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c5",
+    "episode": 7,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c5",
+    "episode": 8,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c5",
+    "episode": 9,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  },
+  {
+    "policy": "delayed_correction:c5",
+    "episode": 10,
+    "eligible_runs": 20,
+    "unrecovered_runs": 0,
+    "survival_probability": 0.0
+  }
+]

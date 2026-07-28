@@ -1,0 +1,202 @@
+[
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 0,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "memory",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "mediator",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 1,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "memory",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "mediator",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 2,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 3,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "memory",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "mediator",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 4,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "memory",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "mediator",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 5,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "memory",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "mediator",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 6,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "memory",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "mediator",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 7,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "memory",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "mediator",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 8,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "memory",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "mediator",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 9,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "memory",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "mediator",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 10,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "memory",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "mediator",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 11,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "memory",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "mediator",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 12,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "memory",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "mediator",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 13,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "memory",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "mediator",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 14,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "memory",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "mediator",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 15,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "memory",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "mediator",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 16,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "memory",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "mediator",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 17,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "memory",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "mediator",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 18,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "share",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "root",
+    "cascad_prediction_type": "root"
+  },
+  {
+    "scenario": "cloud_distant_symptom",
+    "seed": 19,
+    "ground_truth_root_cause": "share",
+    "visible_symptom": "notify",
+    "deepseek_prediction": "memory",
+    "cascad_prediction": "share",
+    "deepseek_prediction_type": "mediator",
+    "cascad_prediction_type": "root"
+  }
+]
