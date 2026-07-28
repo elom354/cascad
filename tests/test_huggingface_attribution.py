@@ -1,3 +1,4 @@
+import csv
 import importlib.util
 from pathlib import Path
 
@@ -107,3 +108,25 @@ def test_huggingface_summary_counts_invalid_output_as_wrong() -> None:
     assert model["root_accuracy"] == 0.5
     assert model["invalid_parse_count"] == 1
     assert model["graph_vs_model_paired"]["a_correct_b_wrong"] == 1
+
+
+def test_csv_export_accepts_completed_and_error_rows(tmp_path: Path) -> None:
+    module = _runner_module()
+    destination = tmp_path / "mixed.csv"
+
+    module._write_csv(
+        destination,
+        [
+            {"status": "completed", "instance_id": "one"},
+            {
+                "status": "error",
+                "instance_id": "two",
+                "error": "CUDA out of memory",
+            },
+        ],
+    )
+
+    with destination.open(encoding="utf-8", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    assert rows[0]["error"] == ""
+    assert rows[1]["error"] == "CUDA out of memory"

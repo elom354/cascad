@@ -201,7 +201,15 @@ def main() -> None:
             _append_jsonl(checkpoint, row)
             print(
                 f"[{alias}] {index}/{len(pending)} {instance_id} "
-                f"{row['status']}",
+                f"{row['status']}"
+                + (
+                    ""
+                    if row["status"] == "completed"
+                    else (
+                        f" {row['error']['type']}: "
+                        f"{row['error']['message']}"
+                    )
+                ),
                 flush=True,
             )
 
@@ -347,7 +355,13 @@ def _write_json(path: Path, value: Any) -> None:
 
 
 def _write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
-    columns = list(rows[0]) if rows else []
+    columns = list(
+        dict.fromkeys(
+            key
+            for row in rows
+            for key in row
+        )
+    )
     with path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=columns)
         writer.writeheader()
