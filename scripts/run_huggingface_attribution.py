@@ -56,6 +56,16 @@ def main() -> None:
         choices=["4bit", "8bit", "none"],
         default="4bit",
     )
+    parser.add_argument(
+        "--attention-backend",
+        choices=["sdpa", "eager"],
+        default="sdpa",
+    )
+    parser.add_argument(
+        "--cache-implementation",
+        choices=["dynamic", "offloaded"],
+        default="offloaded",
+    )
     parser.add_argument("--max-new-tokens", type=int, default=32)
     parser.add_argument(
         "--limit",
@@ -82,11 +92,22 @@ def main() -> None:
             raise ValueError("--limit must be positive")
         selected_ids = selected_ids[: args.limit]
 
+    execution_config_id = _execution_config_id(
+        quantization=args.quantization,
+        attention_backend=args.attention_backend,
+        cache_implementation=args.cache_implementation,
+        max_new_tokens=args.max_new_tokens,
+    )
     out.mkdir(parents=True, exist_ok=True)
     checkpoint = out / "raw_results.jsonl"
     existing = _read_jsonl(checkpoint)
     completed = {
-        (row["model_id"], row["resolved_revision"], row["instance_id"])
+        (
+            row["model_id"],
+            row["resolved_revision"],
+            row.get("execution_config_id"),
+            row["instance_id"],
+        )
         for row in existing
         if row.get("status") == "completed"
     }
@@ -104,12 +125,15 @@ def main() -> None:
             else f"smoke-only first {args.limit} lexicographic instance IDs"
         ),
         "expected_instance_count": len(selected_ids),
+        "execution_config_id": execution_config_id,
         "models": resolved_models,
         "decoding": {
             "temperature": 0.0,
             "do_sample": False,
             "max_new_tokens": args.max_new_tokens,
             "truncation": "forbidden",
+            "attention_backend": args.attention_backend,
+            "cache_implementation": args.cache_implementation,
         },
         "prompt_contract": "same paired observable prompt and strict parser",
         "checkpoint": "append-only raw_results.jsonl",
@@ -127,6 +151,9 @@ def main() -> None:
                 "resolved_revision": resolved,
                 "context_tokens": spec.context_tokens,
                 "quantization": args.quantization,
+                "attention_backend": args.attention_backend,
+                "cache_implementation": args.cache_implementation,
+                "execution_config_id": execution_config_id,
             }
         )
         _write_json(out / "run_manifest.json", manifest)
@@ -134,13 +161,21 @@ def main() -> None:
             spec,
             resolved_revision=resolved,
             quantization=args.quantization,
+            attention_backend=args.attention_backend,
+            cache_implementation=args.cache_implementation,
             max_new_tokens=args.max_new_tokens,
             token=token,
         )
         pending = [
             instance_id
             for instance_id in selected_ids
-            if (spec.model_id, resolved, instance_id) not in completed
+            if (
+                spec.model_id,
+                resolved,
+                execution_config_id,
+                instance_id,
+            )
+            not in completed
         ]
         if pending:
             client.load()
@@ -181,7 +216,15 @@ def main() -> None:
                     ),
                     **(client.last_call_metadata or {}),
                 }
-                completed.add((spec.model_id, resolved, instance_id))
+                row["execution_config_id"] = execution_config_id
+                completed.add(
+                    (
+                        spec.model_id,
+                        resolved,
+                        execution_config_id,
+                        instance_id,
+                    )
+                )
             except Exception as exc:
                 row = {
                     "status": "error",
@@ -191,6 +234,7 @@ def main() -> None:
                     "requested_revision": spec.requested_revision,
                     "resolved_revision": resolved,
                     "instance_id": instance_id,
+                    "execution_config_id": execution_config_id,
                     "error": {
                         "type": exc.__class__.__name__,
                         "message": str(exc),
@@ -213,34 +257,55 @@ def main() -> None:
                 flush=True,
             )
 
-    manifest["status"] = "completed"
-    manifest["completed_utc"] = datetime.now(tz=UTC).isoformat()
-    _write_json(out / "run_manifest.json", manifest)
     _write_json(out / "records.json", records)
     _write_csv(
         out / "records.csv",
         [_flat_record(row) for row in records],
     )
     deepseek = _deepseek_by_id(Path(args.deepseek_records))
-    summary = summarize(records, deepseek)
+    summary = summarize(
+        records,
+        deepseek,
+        execution_config_id=execution_config_id,
+        expected_instance_ids=set(selected_ids),
+    )
     _write_json(out / "summary.json", summary)
+    manifest["status"] = (
+        "completed" if summary["study_complete"] else "finished_with_errors"
+    )
+    manifest["completed_utc"] = datetime.now(tz=UTC).isoformat()
+    _write_json(out / "run_manifest.json", manifest)
     _write_integrity(out)
 
 
 def summarize(
     records: list[dict[str, Any]],
     deepseek_by_id: dict[str, dict[str, Any]] | None = None,
+    *,
+    execution_config_id: str | None = None,
+    expected_instance_ids: set[str] | None = None,
 ) -> dict[str, Any]:
     """Summarize completed calls by immutable model revision."""
-    grouped: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
+    grouped: dict[
+        tuple[str, str],
+        dict[str, dict[str, Any]],
+    ] = defaultdict(dict)
     errors = 0
     for row in records:
+        if (
+            execution_config_id is not None
+            and row.get("execution_config_id") != execution_config_id
+        ):
+            continue
         if row["status"] == "completed":
-            grouped[(row["model_id"], row["resolved_revision"])].append(row)
+            grouped[(row["model_id"], row["resolved_revision"])][
+                row["instance_id"]
+            ] = row
         else:
             errors += 1
     models = []
-    for (model_id, revision), rows in sorted(grouped.items()):
+    for (model_id, revision), rows_by_id in sorted(grouped.items()):
+        rows = list(rows_by_id.values())
         correct = sum(bool(row["correct"]) for row in rows)
         low, high = wilson_interval(correct, len(rows))
         entry = {
@@ -262,6 +327,17 @@ def summarize(
                 [bool(row["correct"]) for row in rows],
             ),
         }
+        if expected_instance_ids is not None:
+            completed_ids = {row["instance_id"] for row in rows}
+            missing = sorted(expected_instance_ids - completed_ids)
+            entry.update(
+                {
+                    "expected_n": len(expected_instance_ids),
+                    "unique_completed_n": len(completed_ids),
+                    "missing_instance_ids": missing,
+                    "complete": not missing,
+                }
+            )
         if deepseek_by_id:
             paired_rows = [
                 row for row in rows if row["instance_id"] in deepseek_by_id
@@ -276,10 +352,33 @@ def summarize(
                 )
         models.append(entry)
     return {
+        "execution_config_id": execution_config_id,
         "models": models,
         "completed_calls": sum(len(rows) for rows in grouped.values()),
         "error_attempts": errors,
+        "study_complete": bool(models)
+        and all(model.get("complete", True) for model in models),
     }
+
+
+def _execution_config_id(
+    *,
+    quantization: str,
+    attention_backend: str,
+    cache_implementation: str,
+    max_new_tokens: int,
+) -> str:
+    payload = json.dumps(
+        {
+            "quantization": quantization,
+            "attention_backend": attention_backend,
+            "cache_implementation": cache_implementation,
+            "max_new_tokens": max_new_tokens,
+        },
+        sort_keys=True,
+        separators=(",", ":"),
+    )
+    return sha256(payload.encode("utf-8")).hexdigest()[:16]
 
 
 def _trace_pairs(source: Path) -> dict[str, tuple[Path, Path]]:

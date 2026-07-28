@@ -62,6 +62,8 @@ def test_local_attributor_uses_shared_parser_and_records_provenance() -> None:
     assert client.last_call_metadata is not None
     assert client.last_call_metadata["resolved_revision"] == "a" * 40
     assert client.last_call_metadata["quantization"] == "4bit"
+    assert client.last_call_metadata["attention_backend"] == "sdpa"
+    assert client.last_call_metadata["cache_implementation"] == "offloaded"
     assert client.last_call_metadata["hardware"] == "fake-gpu"
     assert client.last_call_metadata["parse_valid"] is True
     assert client.last_call_metadata["parsed_response"] == "tool"
@@ -130,3 +132,36 @@ def test_csv_export_accepts_completed_and_error_rows(tmp_path: Path) -> None:
         rows = list(csv.DictReader(handle))
     assert rows[0]["error"] == ""
     assert rows[1]["error"] == "CUDA out of memory"
+
+
+def test_summary_rejects_an_incomplete_frozen_split() -> None:
+    module = _runner_module()
+    config_id = module._execution_config_id(
+        quantization="4bit",
+        attention_backend="sdpa",
+        cache_implementation="offloaded",
+        max_new_tokens=32,
+    )
+    records = [
+        {
+            "status": "completed",
+            "model_id": "model",
+            "resolved_revision": "revision",
+            "execution_config_id": config_id,
+            "instance_id": "one",
+            "correct": True,
+            "parse_valid": True,
+            "graph_correct": True,
+            "latency_ms": 10.0,
+            "total_tokens": 12,
+        }
+    ]
+
+    summary = module.summarize(
+        records,
+        execution_config_id=config_id,
+        expected_instance_ids={"one", "two"},
+    )
+
+    assert summary["study_complete"] is False
+    assert summary["models"][0]["missing_instance_ids"] == ["two"]

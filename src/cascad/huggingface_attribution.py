@@ -11,6 +11,8 @@ from typing import Any, Literal
 
 
 QuantizationMode = Literal["4bit", "8bit", "none"]
+AttentionBackend = Literal["sdpa", "eager"]
+CacheImplementation = Literal["dynamic", "offloaded"]
 
 
 @dataclass(frozen=True)
@@ -88,6 +90,8 @@ class HuggingFaceAttributor:
         *,
         resolved_revision: str | None = None,
         quantization: QuantizationMode = "4bit",
+        attention_backend: AttentionBackend = "sdpa",
+        cache_implementation: CacheImplementation = "offloaded",
         max_new_tokens: int = 32,
         token: str | None = None,
         backend: Any | None = None,
@@ -96,11 +100,21 @@ class HuggingFaceAttributor:
             raise ValueError("max_new_tokens must be positive")
         if quantization not in {"4bit", "8bit", "none"}:
             raise ValueError(f"unsupported quantization mode: {quantization}")
+        if attention_backend not in {"sdpa", "eager"}:
+            raise ValueError(
+                f"unsupported attention backend: {attention_backend}"
+            )
+        if cache_implementation not in {"dynamic", "offloaded"}:
+            raise ValueError(
+                f"unsupported cache implementation: {cache_implementation}"
+            )
         self.spec = spec
         self.model = spec.model_id
         self.requested_revision = spec.requested_revision
         self.resolved_revision = resolved_revision
         self.quantization = quantization
+        self.attention_backend = attention_backend
+        self.cache_implementation = cache_implementation
         self.max_new_tokens = max_new_tokens
         self.token = token or os.getenv("HF_TOKEN")
         self._backend = backend
@@ -128,6 +142,8 @@ class HuggingFaceAttributor:
             self.spec,
             resolved_revision=revision,
             quantization=self.quantization,
+            attention_backend=self.attention_backend,
+            cache_implementation=self.cache_implementation,
             max_new_tokens=self.max_new_tokens,
             token=self.token,
         )
@@ -147,6 +163,8 @@ class HuggingFaceAttributor:
             "requested_revision": self.requested_revision,
             "resolved_revision": self.resolved_revision,
             "quantization": self.quantization,
+            "attention_backend": self.attention_backend,
+            "cache_implementation": self.cache_implementation,
             "temperature": self.temperature,
             "max_new_tokens": self.max_new_tokens,
             "input_tokens": None,
@@ -191,12 +209,16 @@ class _TransformersBackend:
         *,
         resolved_revision: str,
         quantization: QuantizationMode,
+        attention_backend: AttentionBackend,
+        cache_implementation: CacheImplementation,
         max_new_tokens: int,
         token: str | None,
     ) -> None:
         self.spec = spec
         self.resolved_revision = resolved_revision
         self.quantization = quantization
+        self.attention_backend = attention_backend
+        self.cache_implementation = cache_implementation
         self.max_new_tokens = max_new_tokens
         self.token = token
         self.tokenizer: Any | None = None
@@ -204,6 +226,10 @@ class _TransformersBackend:
         self.torch: Any | None = None
 
     def load(self) -> None:
+        os.environ.setdefault(
+            "PYTORCH_CUDA_ALLOC_CONF",
+            "expandable_segments:True",
+        )
         try:
             import torch
             from transformers import (
@@ -235,6 +261,7 @@ class _TransformersBackend:
             "revision": self.resolved_revision,
             "token": self.token,
             "low_cpu_mem_usage": True,
+            "attn_implementation": self.attention_backend,
         }
         if torch.cuda.is_available():
             model_kwargs.update({"device_map": "auto", "dtype": torch.float16})
@@ -288,16 +315,21 @@ class _TransformersBackend:
             )
         device = _input_device(self.model)
         inputs = {key: value.to(device) for key, value in inputs.items()}
+        generation_kwargs: dict[str, Any] = {
+            "do_sample": False,
+            "max_new_tokens": self.max_new_tokens,
+            "pad_token_id": (
+                self.tokenizer.pad_token_id
+                if self.tokenizer.pad_token_id is not None
+                else self.tokenizer.eos_token_id
+            ),
+        }
+        if self.cache_implementation == "offloaded":
+            generation_kwargs["cache_implementation"] = "offloaded"
         with self.torch.inference_mode():
             generated = self.model.generate(
                 **inputs,
-                do_sample=False,
-                max_new_tokens=self.max_new_tokens,
-                pad_token_id=(
-                    self.tokenizer.pad_token_id
-                    if self.tokenizer.pad_token_id is not None
-                    else self.tokenizer.eos_token_id
-                ),
+                **generation_kwargs,
             )
         new_tokens = generated[0, input_tokens:]
         raw = self.tokenizer.decode(

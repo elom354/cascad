@@ -78,7 +78,9 @@ On any CUDA machine:
 python -m pip install -e ".[huggingface]"
 PYTHONPATH=src python scripts/run_huggingface_attribution.py \
   --models qwen3-4b \
-  --quantization 4bit
+  --quantization 4bit \
+  --attention-backend sdpa \
+  --cache-implementation offloaded
 ```
 
 Download weights in advance when a compute session has limited network time:
@@ -97,6 +99,7 @@ triples are never called twice.
 A paper-facing run must satisfy all of the following:
 
 - all 200 frozen instances completed;
+- `summary.json` reports `study_complete: true`;
 - no input truncation;
 - one immutable resolved revision per model;
 - no missing raw response or prompt hash;
