@@ -19,6 +19,14 @@ weights. That resolved revision, GPU, quantization, token counts, latency, raw
 response, parsed response, and prompt hash are exported for every instance.
 Input truncation is forbidden.
 
+Free T4 execution uses the versioned `compact-v1` observable serialization.
+Repeated model-request state is represented through inheritance and cumulative
+message histories through deltas. The transformation is exactly reversible and
+is covered by a round-trip test; it does not truncate an event or payload.
+Because its prompt hash differs from the original `full-v1` DeepSeek calls, the
+runner refuses to calculate a cross-provider comparison until DeepSeek has been
+rerun with the same serialization.
+
 Qwen runs in non-thinking mode with its model-card sampling recommendation
 (`temperature=0.7`, `top_p=0.8`, `top_k=20`, `min_p=0`). A per-prompt seed is
 derived from the immutable revision and prompt hash and exported with the
@@ -86,7 +94,8 @@ PYTHONPATH=src python scripts/run_huggingface_attribution.py \
   --models qwen3-4b \
   --quantization 4bit \
   --attention-backend sdpa \
-  --cache-implementation dynamic
+  --cache-implementation dynamic \
+  --trace-serialization compact-v1
 ```
 
 Download weights in advance when a compute session has limited network time:

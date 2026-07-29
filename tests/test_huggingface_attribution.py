@@ -170,6 +170,36 @@ def test_summary_rejects_an_incomplete_frozen_split() -> None:
     assert summary["models"][0]["missing_instance_ids"] == ["two"]
 
 
+def test_deepseek_is_not_compared_when_prompt_hash_differs() -> None:
+    module = _runner_module()
+    records = [
+        {
+            "status": "completed",
+            "model_id": "model",
+            "resolved_revision": "revision",
+            "instance_id": "one",
+            "correct": True,
+            "parse_valid": True,
+            "graph_correct": True,
+            "latency_ms": 1.0,
+            "total_tokens": 2,
+            "prompt_sha256": "compact",
+        }
+    ]
+    summary = module.summarize(
+        records,
+        {"one": {"correct": True, "prompt_sha256": "full"}},
+    )
+
+    model = summary["models"][0]
+    assert "model_vs_deepseek_paired" not in model
+    assert model["deepseek_prompt_matched_n"] == 0
+    assert (
+        model["deepseek_comparison_status"]
+        == "NOT_COMPARABLE_PROMPT_HASH_MISMATCH"
+    )
+
+
 def test_runtime_conformance_gate_rejects_corrupted_generation() -> None:
     module = _runner_module()
     client = HuggingFaceAttributor(

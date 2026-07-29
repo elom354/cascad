@@ -57,6 +57,8 @@ configuration. Accept the new result only if:
 4. raw invalid outputs remain counted, not silently reparsed;
 5. `summary.json` reports `study_complete: true`.
 
-If the largest prompt still exceeds a free T4, use a larger-memory accelerator.
-A compact trace representation is scientifically permissible only as a new
-prompt protocol applied and rerun identically for every LLM baseline.
+The corrected free-T4 notebook uses the new, reversible `compact-v1`
+serialization. It removes cumulative duplication but no observable data.
+Results from this prompt version cannot be paired with the old `full-v1`
+DeepSeek responses: DeepSeek and every other comparison baseline must be rerun
+with the identical serialization and prompt hashes.

@@ -21,6 +21,7 @@ AttributionMode = Literal[
     "deepseek_single_guided",
     "deepseek_paired",
 ]
+TraceSerialization = Literal["full-v1", "compact-v1"]
 
 MODE_ALIASES: dict[str, AttributionMode] = {
     "single-neutral": "deepseek_single_neutral",
@@ -228,6 +229,7 @@ class AttributionPrompt:
     """Exact model input plus reproducibility and leakage metadata."""
 
     mode: AttributionMode
+    serialization_version: TraceSerialization
     prompt: str
     prompt_sha256: str
     clean_observable_trace: list[dict[str, Any]] | None
@@ -277,9 +279,15 @@ def attribute_failure_detailed(
     *,
     clean_trace: RunTrace | None = None,
     mode: str = "deepseek_single_guided",
+    serialization_version: TraceSerialization = "full-v1",
 ) -> AttributionResult:
     """Build, audit, execute and parse one attribution call."""
-    bundle = build_attribution_prompt(trace, mode=mode, clean_trace=clean_trace)
+    bundle = build_attribution_prompt(
+        trace,
+        mode=mode,
+        clean_trace=clean_trace,
+        serialization_version=serialization_version,
+    )
     if bundle.leaked_terms or bundle.privileged_metadata_present:
         raise ValueError(
             f"attribution prompt failed leakage audit: terms={list(bundle.leaked_terms)} "
@@ -334,11 +342,26 @@ def build_attribution_prompt(
     *,
     mode: str = "deepseek_single_guided",
     clean_trace: RunTrace | None = None,
+    serialization_version: TraceSerialization = "full-v1",
 ) -> AttributionPrompt:
     """Construct one of the three stable information-ablation prompts."""
+    if serialization_version not in {"full-v1", "compact-v1"}:
+        raise ValueError(
+            f"unknown trace serialization: {serialization_version}"
+        )
     normalized_mode = normalize_attribution_mode(mode)
-    observed = serialize_trace_for_attribution(corrupt_trace)
-    reference = serialize_trace_for_attribution(clean_trace) if clean_trace else None
+    observed = serialize_trace_for_attribution(
+        corrupt_trace,
+        serialization_version=serialization_version,
+    )
+    reference = (
+        serialize_trace_for_attribution(
+            clean_trace,
+            serialization_version=serialization_version,
+        )
+        if clean_trace
+        else None
+    )
     observed_candidates = tuple(sorted({event["node_id"] for event in observed}))
     if normalized_mode == "deepseek_paired":
         if reference is None:
@@ -347,10 +370,18 @@ def build_attribution_prompt(
         paired_candidates = tuple(
             sorted(set(reference_candidates) | set(observed_candidates))
         )
+        serialization_note = (
+            "\nCompact trace rule: in model_request events, omitted static "
+            "fields inherit their previous value and messages_delta is "
+            "appended to the previous messages list.\n"
+            if serialization_version == "compact-v1"
+            else ""
+        )
         prompt = (
             "Below are two execution traces of the same task: a clean reference execution and an observed execution in which a fault may have occurred.\n\n"
             "Compare the traces step by step and identify the first node where the observed execution diverges meaningfully from the clean reference.\n\n"
             "Return only one exact node_id.\n\n"
+            f"Trace serialization: {serialization_version}.{serialization_note}\n"
             f"Clean reference trace:\n{json.dumps(reference)}\n\n"
             f"Observed trace:\n{json.dumps(observed)}\n\n"
             f"Candidate node_ids: {list(paired_candidates)}"
@@ -376,6 +407,7 @@ def build_attribution_prompt(
     )
     return AttributionPrompt(
         mode=normalized_mode,
+        serialization_version=serialization_version,
         prompt=prompt,
         prompt_sha256=sha256(prompt.encode("utf-8")).hexdigest(),
         clean_observable_trace=reference if normalized_mode == "deepseek_paired" else None,
@@ -390,7 +422,11 @@ def build_attribution_prompt(
     )
 
 
-def serialize_trace_for_attribution(trace: RunTrace | None) -> list[dict[str, Any]]:
+def serialize_trace_for_attribution(
+    trace: RunTrace | None,
+    *,
+    serialization_version: TraceSerialization = "full-v1",
+) -> list[dict[str, Any]]:
     """Serialize observable events without evaluator-only metadata."""
     if trace is None:
         return []
@@ -401,7 +437,7 @@ def serialize_trace_for_attribution(trace: RunTrace | None) -> list[dict[str, An
         EventKind.INTERVENTION,
     }
     forbidden_payload_keys = {"source_fault_id", "ground_truth", "root_cause", "visible_failure", "injection_node"}
-    return [
+    full = [
         {
             "node_id": event.node_id,
             "event_kind": getattr(event.kind, "value", event.kind),
@@ -413,6 +449,87 @@ def serialize_trace_for_attribution(trace: RunTrace | None) -> list[dict[str, An
         for event in trace.events
         if event.kind not in hidden
     ]
+    if serialization_version == "full-v1":
+        return full
+    if serialization_version == "compact-v1":
+        return compact_observable_trace(full)
+    raise ValueError(f"unknown trace serialization: {serialization_version}")
+
+
+def compact_observable_trace(
+    full_trace: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """Remove cumulative model-request repetition without losing information."""
+    compact: list[dict[str, Any]] = []
+    previous_static: dict[str, Any] = {}
+    previous_messages: list[Any] = []
+    static_keys = ("runtime", "system_message", "available_tools")
+    for event in full_trace:
+        if event["event_kind"] != "model_request":
+            compact.append(event)
+            continue
+        payload = event["payload"]
+        encoded: dict[str, Any] = {
+            key: value
+            for key, value in payload.items()
+            if key not in {*static_keys, "messages"}
+        }
+        inherited = []
+        for key in static_keys:
+            if key not in payload:
+                continue
+            if key in previous_static and payload[key] == previous_static[key]:
+                inherited.append(key)
+            else:
+                encoded[key] = payload[key]
+                previous_static[key] = payload[key]
+        messages = list(payload.get("messages") or [])
+        if (
+            previous_messages
+            and messages[: len(previous_messages)] == previous_messages
+        ):
+            encoded["messages_delta"] = messages[len(previous_messages) :]
+            encoded["messages_total"] = len(messages)
+        else:
+            encoded["messages"] = messages
+        previous_messages = messages
+        if inherited:
+            encoded["inherits"] = inherited
+        compact.append({**event, "payload": encoded})
+    return compact
+
+
+def expand_compact_observable_trace(
+    compact_trace: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """Reconstruct the full-v1 observable trace for losslessness tests."""
+    expanded: list[dict[str, Any]] = []
+    previous_static: dict[str, Any] = {}
+    previous_messages: list[Any] = []
+    static_keys = ("runtime", "system_message", "available_tools")
+    for event in compact_trace:
+        if event["event_kind"] != "model_request":
+            expanded.append(event)
+            continue
+        encoded = event["payload"]
+        payload = {
+            key: value
+            for key, value in encoded.items()
+            if key not in {"inherits", "messages_delta", "messages_total"}
+        }
+        for key in encoded.get("inherits", []):
+            payload[key] = previous_static[key]
+        for key in static_keys:
+            if key in payload:
+                previous_static[key] = payload[key]
+        if "messages_delta" in encoded:
+            messages = [*previous_messages, *encoded["messages_delta"]]
+            if len(messages) != encoded["messages_total"]:
+                raise ValueError("compact messages_total does not match delta")
+            payload["messages"] = messages
+        previous_messages = list(payload.get("messages") or [])
+        expanded.append({**event, "payload": payload})
+    return expanded
 
 
 def audit_prompt(

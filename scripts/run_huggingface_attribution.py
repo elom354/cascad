@@ -70,6 +70,15 @@ def main() -> None:
     )
     parser.add_argument("--max-new-tokens", type=int, default=32)
     parser.add_argument(
+        "--trace-serialization",
+        choices=["full-v1", "compact-v1"],
+        default="compact-v1",
+        help=(
+            "compact-v1 removes only reconstructible cumulative repetition; "
+            "use full-v1 solely to reproduce the original API prompt"
+        ),
+    )
+    parser.add_argument(
         "--limit",
         type=int,
         help="Deterministic smoke-test limit; never use for final reporting.",
@@ -102,6 +111,7 @@ def main() -> None:
         max_new_tokens=args.max_new_tokens,
         software_versions=software_versions,
         decoding_policy="model-card-v1",
+        trace_serialization=args.trace_serialization,
     )
     out.mkdir(parents=True, exist_ok=True)
     checkpoint = out / "raw_results.jsonl"
@@ -140,7 +150,11 @@ def main() -> None:
             "cache_implementation": args.cache_implementation,
         },
         "software_versions": software_versions,
-        "prompt_contract": "same paired observable prompt and strict parser",
+        "prompt_contract": (
+            "paired observable prompt and strict parser; cross-provider "
+            "comparison requires identical prompt_sha256"
+        ),
+        "trace_serialization": args.trace_serialization,
         "execution_order": (
             "largest pending serialized trace pair first as a capacity gate; "
             "remaining instance IDs in lexicographic order"
@@ -231,6 +245,7 @@ def main() -> None:
                     client,
                     clean_trace=clean,
                     mode="paired",
+                    serialization_version=args.trace_serialization,
                 )
                 row = {
                     "status": "completed",
@@ -403,7 +418,11 @@ def summarize(
             )
         if deepseek_by_id:
             paired_rows = [
-                row for row in rows if row["instance_id"] in deepseek_by_id
+                row
+                for row in rows
+                if row["instance_id"] in deepseek_by_id
+                and row.get("prompt_sha256")
+                == deepseek_by_id[row["instance_id"]].get("prompt_sha256")
             ]
             if paired_rows:
                 entry["model_vs_deepseek_paired"] = paired_correctness(
@@ -413,6 +432,12 @@ def summarize(
                         for row in paired_rows
                     ],
                 )
+            entry["deepseek_prompt_matched_n"] = len(paired_rows)
+            entry["deepseek_comparison_status"] = (
+                "MATCHED"
+                if len(paired_rows) == len(rows)
+                else "NOT_COMPARABLE_PROMPT_HASH_MISMATCH"
+            )
         models.append(entry)
     return {
         "execution_config_id": execution_config_id,
@@ -432,6 +457,7 @@ def _execution_config_id(
     max_new_tokens: int,
     software_versions: dict[str, str | None] | None = None,
     decoding_policy: str = "legacy-greedy",
+    trace_serialization: str = "full-v1",
 ) -> str:
     payload = json.dumps(
         {
@@ -441,6 +467,7 @@ def _execution_config_id(
             "max_new_tokens": max_new_tokens,
             "software_versions": software_versions,
             "decoding_policy": decoding_policy,
+            "trace_serialization": trace_serialization,
         },
         sort_keys=True,
         separators=(",", ":"),

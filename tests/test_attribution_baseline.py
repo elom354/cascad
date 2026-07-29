@@ -2,7 +2,9 @@ from cascad.attribution_baseline import (
     attribute_failure,
     attribute_failure_detailed,
     build_attribution_prompt,
+    expand_compact_observable_trace,
     localization_accuracy,
+    serialize_trace_for_attribution,
 )
 from cascad.injection import FaultInjector
 from cascad.models import NodeEvent, RunTrace
@@ -44,3 +46,49 @@ def test_paired_prompt_accepts_structurally_different_candidate_sets() -> None:
 
     assert bundle.candidates == ("planner", "recovery")
     assert "Candidate node_ids: ['planner', 'recovery']" in bundle.prompt
+
+
+def test_compact_trace_round_trips_cumulative_model_requests() -> None:
+    trace = RunTrace(run_id="compact")
+    static = {
+        "runtime": {"model": "test"},
+        "system_message": "system",
+        "available_tools": ["calculate"],
+    }
+    first_message = {"type": "human", "content": "calculate"}
+    trace.add_event(
+        NodeEvent(
+            "call_model",
+            "model_request",
+            trace.run_id,
+            payload={**static, "messages": [first_message]},
+        )
+    )
+    trace.add_event(
+        NodeEvent(
+            "call_model",
+            "model_request",
+            trace.run_id,
+            payload={
+                **static,
+                "messages": [
+                    first_message,
+                    {"type": "ai", "content": "done"},
+                ],
+            },
+        )
+    )
+
+    full = serialize_trace_for_attribution(trace)
+    compact = serialize_trace_for_attribution(
+        trace,
+        serialization_version="compact-v1",
+    )
+
+    assert expand_compact_observable_trace(compact) == full
+    assert len(str(compact)) < len(str(full))
+    assert compact[1]["payload"]["inherits"] == [
+        "runtime",
+        "system_message",
+        "available_tools",
+    ]
