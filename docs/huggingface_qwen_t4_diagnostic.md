@@ -64,3 +64,30 @@ it is not launched by the free-T4 notebook.
 Results from this prompt version cannot be paired with the old `full-v1`
 DeepSeek responses: DeepSeek and every other comparison baseline must be rerun
 with the identical serialization and prompt hashes.
+
+## Successful T4 successor run
+
+The `qwen3-1.7b`/`compact-v2` successor completed all 200 frozen instances on
+30 July 2026:
+
+| Measure | Result |
+|---|---:|
+| completed calls | 200/200 |
+| runtime errors | 0 |
+| input truncations | 0 |
+| immutable revision | `70d244cc86ccca08cf5af4e1e306ecf908b1ad5e` |
+| mean call latency | 3.60 s |
+
+Inspection exposed a pre-existing parser defect: candidate IDs containing
+`::` were recognized only when the entire response was exactly the ID, not
+when safely wrapped in prose or a list. Raw responses and the original
+integrity manifest remain unchanged. The versioned `candidate-literal-v2`
+reanalysis reports:
+
+- 51/200 correct = 25.5%, Wilson 95% CI [19.96%, 31.96%];
+- five invalid responses instead of 56;
+- 104 `call_model`, 40 `load_memory`, 44 `tool::calculate`, and seven
+  `tool::get_current_datetime` predictions.
+
+This is explicitly a post-hoc parser correction. The result is not directly
+paired with the old DeepSeek calls because their prompt hashes use `full-v1`.

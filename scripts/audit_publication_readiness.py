@@ -91,7 +91,7 @@ def build_report(
             "one agent-model family only",
             "two injected root nodes and incomplete factorial crossing",
             "no prospective V2 power analysis",
-            "local Hugging Face baseline is not yet complete and valid",
+            "matched compact-v2 API baselines are not yet complete",
             "fresh held-out V3 collection has not been executed",
         ],
     }

@@ -27,7 +27,8 @@ confirmatory paper requires the fresh V3 study in
 | agent-model diversity | one family | add a separately frozen second-family replication when feasible |
 | DeepSeek baseline | 200/200 complete, 95% root accuracy | report honestly; it shows V2 is relatively easy |
 | OpenAI baseline | unavailable in V2 | report missing account access, never impute results |
-| Qwen T4 baseline | invalid runtime | exclude; rerun with the corrected capacity gates |
+| Qwen3-4B T4 baseline | invalid runtime | exclude rather than count as 0% |
+| Qwen3-1.7B T4 baseline | 200/200 complete; post-hoc parser-corrected accuracy 25.5% | disclose the amendment and rerun comparison baselines on `compact-v2` |
 | statistical inference | Wilson intervals and exact paired McNemar | freeze multiplicity and subgroup policy prospectively |
 | raw reproducibility | traces, hashes, lockfile, CI | create an archival release and DOI for submission |
 
@@ -71,9 +72,10 @@ PYTHONPATH=src uv run python scripts/audit_publication_readiness.py \
    retain automated prompt audits, publish exact prompt hashes, and add negative
    controls/distractor faults in V3.
 
-7. **“Local-model comparison is invalid.”** The supplied Qwen run is incomplete
-   and incoherent. Resolution: exclude it rather than counting it as 0%, apply
-   label-free runtime conformance and capacity gates, and require full coverage.
+7. **“Local-model comparison is invalid.”** The Qwen3-4B run is incomplete and
+   incoherent; the Qwen3-1.7B successor is complete but required a disclosed
+   parser correction. Resolution: exclude the 4B run, retain both raw audit
+   trails, and rerun API baselines using identical `compact-v2` prompt hashes.
 
 8. **“Results may not reproduce.”** Model APIs, GPU kernels, and mutable model
    revisions can change. Resolution: retain provider-returned model IDs, raw
