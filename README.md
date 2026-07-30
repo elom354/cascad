@@ -104,8 +104,9 @@ frozen DeepSeek V2 dataset.
 
 ## Local Hugging Face baselines
 
-Cascad includes two public, cross-family attribution baselines:
+Cascad includes three public local attribution configurations:
 
+- `Qwen/Qwen3-1.7B` for a free T4;
 - `Qwen/Qwen3-4B`;
 - `mistralai/Mistral-7B-Instruct-v0.3`.
 
@@ -117,7 +118,7 @@ input truncation, and checkpoints every call.
 ```bash
 python -m pip install -e ".[huggingface]"
 PYTHONPATH=src python scripts/run_huggingface_attribution.py \
-  --models qwen3-4b \
+  --models qwen3-1.7b \
   --quantization 4bit
 ```
 

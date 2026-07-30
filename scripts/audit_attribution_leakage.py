@@ -17,6 +17,11 @@ FORBIDDEN = {
     "document_neutral": {"generate_report", "report generator", "generation tool"},
     "cloud_neutral": {"share", "sharing tool", "share service"},
     "cloud_distant_symptom": {"share caused", "caused by share", "fault at share"},
+    "cloud_distant_symptom_natural_noise": {
+        "share caused",
+        "caused by share",
+        "fault at share",
+    },
 }
 MODES = ("single-neutral", "single-guided", "paired")
 

@@ -71,10 +71,10 @@ def main() -> None:
     parser.add_argument("--max-new-tokens", type=int, default=32)
     parser.add_argument(
         "--trace-serialization",
-        choices=["full-v1", "compact-v1"],
-        default="compact-v1",
+        choices=["full-v1", "compact-v1", "compact-v2"],
+        default="compact-v2",
         help=(
-            "compact-v1 removes only reconstructible cumulative repetition; "
+            "compact versions remove only reconstructible repetition; "
             "use full-v1 solely to reproduce the original API prompt"
         ),
     )

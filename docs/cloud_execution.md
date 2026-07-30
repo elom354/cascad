@@ -7,22 +7,24 @@ reuses the frozen 200 real-agent trace pairs, the same paired observable prompt,
 the same candidate nodes, and the same strict parser used for DeepSeek. It does
 not retrain any model and does not modify the frozen traces.
 
-Two public Apache-2.0 models are registered:
+Three public Apache-2.0 models are registered:
 
 | Alias | Hub model | Native context | Recommended use |
 |---|---|---:|---|
-| `qwen3-4b` | `Qwen/Qwen3-4B` | 32,768 | first free-GPU run |
-| `mistral-7b` | `mistralai/Mistral-7B-Instruct-v0.3` | 32,768 | independent model-family replication |
+| `qwen3-1.7b` | `Qwen/Qwen3-1.7B` | 32,768 | free T4 notebook |
+| `qwen3-4b` | `Qwen/Qwen3-4B` | 32,768 | GPU with at least 24 GiB |
+| `mistral-7b` | `mistralai/Mistral-7B-Instruct-v0.3` | 32,768 | 24+ GiB independent-family replication |
 
 The runner resolves `main` to an immutable Hub commit before downloading the
 weights. That resolved revision, GPU, quantization, token counts, latency, raw
 response, parsed response, and prompt hash are exported for every instance.
 Input truncation is forbidden.
 
-Free T4 execution uses the versioned `compact-v1` observable serialization.
+Free T4 execution uses the versioned `compact-v2` observable serialization.
 Repeated model-request state is represented through inheritance and cumulative
-message histories through deltas. The transformation is exactly reversible and
-is covered by a round-trip test; it does not truncate an event or payload.
+message histories through deltas. Context identical between the clean and
+observed traces is stored once. The transformation is exactly reversible and is
+covered by round-trip tests; it does not truncate an event or payload.
 Because its prompt hash differs from the original `full-v1` DeepSeek calls, the
 runner refuses to calculate a cross-provider comparison until DeepSeek has been
 rerun with the same serialization.
@@ -38,7 +40,7 @@ spec does not prescribe Qwen's sampling policy.
 1. Create a notebook and enable a GPU accelerator.
 2. Upload `notebooks/cascad_huggingface_cloud.ipynb`.
 3. Set `REPO_URL` in the first code cell after the repository is published.
-4. Keep `MODEL_ALIAS = "qwen3-4b"` for the first run.
+4. Keep `MODEL_ALIAS = "qwen3-1.7b"` for a free T4.
 5. Run every cell.
 6. Download the generated ZIP before closing the session.
 7. Start a fresh GPU session with `MODEL_ALIAS = "mistral-7b"` if disk space is
@@ -58,7 +60,7 @@ The same notebook detects `/content` automatically:
 1. open the notebook in Colab;
 2. select a GPU runtime;
 3. set the public repository URL;
-4. run one model per session;
+4. keep the default `qwen3-1.7b` model and run one model per session;
 5. download the result ZIP or copy it to Drive.
 
 Colab free resources are not guaranteed or unlimited:
@@ -95,7 +97,7 @@ PYTHONPATH=src python scripts/run_huggingface_attribution.py \
   --quantization 4bit \
   --attention-backend sdpa \
   --cache-implementation dynamic \
-  --trace-serialization compact-v1
+  --trace-serialization compact-v2
 ```
 
 Download weights in advance when a compute session has limited network time:

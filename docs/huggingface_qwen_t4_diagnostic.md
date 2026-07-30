@@ -57,8 +57,10 @@ configuration. Accept the new result only if:
 4. raw invalid outputs remain counted, not silently reparsed;
 5. `summary.json` reports `study_complete: true`.
 
-The corrected free-T4 notebook uses the new, reversible `compact-v1`
-serialization. It removes cumulative duplication but no observable data.
+The corrected free-T4 notebook uses Qwen3-1.7B and the reversible `compact-v2`
+serialization. It removes cumulative and cross-trace duplication but no
+observable data. Qwen3-4B remains registered for a GPU with at least 24 GiB;
+it is not launched by the free-T4 notebook.
 Results from this prompt version cannot be paired with the old `full-v1`
 DeepSeek responses: DeepSeek and every other comparison baseline must be rerun
 with the identical serialization and prompt hashes.

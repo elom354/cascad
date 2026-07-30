@@ -32,6 +32,18 @@ class HuggingFaceModelSpec:
 
 
 MODEL_SPECS: dict[str, HuggingFaceModelSpec] = {
+    "qwen3-1.7b": HuggingFaceModelSpec(
+        alias="qwen3-1.7b",
+        model_id="Qwen/Qwen3-1.7B",
+        requested_revision="main",
+        context_tokens=32_768,
+        disable_thinking=True,
+        do_sample=True,
+        temperature=0.7,
+        top_p=0.8,
+        top_k=20,
+        min_p=0.0,
+    ),
     "qwen3-4b": HuggingFaceModelSpec(
         alias="qwen3-4b",
         model_id="Qwen/Qwen3-4B",
@@ -52,7 +64,7 @@ MODEL_SPECS: dict[str, HuggingFaceModelSpec] = {
     ),
 }
 
-DEFAULT_MODEL_ALIASES = ("qwen3-4b", "mistral-7b")
+DEFAULT_MODEL_ALIASES = ("qwen3-1.7b", "mistral-7b")
 
 
 def model_spec(alias: str) -> HuggingFaceModelSpec:

@@ -3,6 +3,7 @@ from cascad.attribution_baseline import (
     attribute_failure_detailed,
     build_attribution_prompt,
     expand_compact_observable_trace,
+    expand_paired_shared_context,
     localization_accuracy,
     serialize_trace_for_attribution,
 )
@@ -92,3 +93,52 @@ def test_compact_trace_round_trips_cumulative_model_requests() -> None:
         "system_message",
         "available_tools",
     ]
+
+
+def test_compact_v2_round_trips_shared_paired_context() -> None:
+    clean = RunTrace(run_id="clean-v2")
+    observed = RunTrace(run_id="observed-v2")
+    payload = {
+        "runtime": {"model": "test"},
+        "system_message": "shared system",
+        "available_tools": ["calculate"],
+        "messages": [{"type": "human", "content": "calculate"}],
+    }
+    clean.add_event(
+        NodeEvent("call_model", "model_request", clean.run_id, payload=payload)
+    )
+    observed.add_event(
+        NodeEvent(
+            "call_model",
+            "model_request",
+            observed.run_id,
+            payload=payload,
+        )
+    )
+
+    bundle = build_attribution_prompt(
+        observed,
+        clean_trace=clean,
+        mode="paired",
+        serialization_version="compact-v2",
+    )
+
+    assert bundle.shared_observable_context == {
+        "runtime": {"model": "test"},
+        "system_message": "shared system",
+        "available_tools": ["calculate"],
+    }
+    assert (
+        expand_paired_shared_context(
+            bundle.shared_observable_context,
+            bundle.clean_observable_trace,
+        )
+        == serialize_trace_for_attribution(clean)
+    )
+    assert (
+        expand_paired_shared_context(
+            bundle.shared_observable_context,
+            bundle.corrupt_observable_trace,
+        )
+        == serialize_trace_for_attribution(observed)
+    )

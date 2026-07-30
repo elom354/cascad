@@ -21,7 +21,7 @@ AttributionMode = Literal[
     "deepseek_single_guided",
     "deepseek_paired",
 ]
-TraceSerialization = Literal["full-v1", "compact-v1"]
+TraceSerialization = Literal["full-v1", "compact-v1", "compact-v2"]
 
 MODE_ALIASES: dict[str, AttributionMode] = {
     "single-neutral": "deepseek_single_neutral",
@@ -234,6 +234,7 @@ class AttributionPrompt:
     prompt_sha256: str
     clean_observable_trace: list[dict[str, Any]] | None
     corrupt_observable_trace: list[dict[str, Any]]
+    shared_observable_context: dict[str, Any] | None
     clean_trace_sha256: str | None
     corrupt_trace_sha256: str
     candidates: tuple[str, ...]
@@ -345,7 +346,7 @@ def build_attribution_prompt(
     serialization_version: TraceSerialization = "full-v1",
 ) -> AttributionPrompt:
     """Construct one of the three stable information-ablation prompts."""
-    if serialization_version not in {"full-v1", "compact-v1"}:
+    if serialization_version not in {"full-v1", "compact-v1", "compact-v2"}:
         raise ValueError(
             f"unknown trace serialization: {serialization_version}"
         )
@@ -362,6 +363,13 @@ def build_attribution_prompt(
         if clean_trace
         else None
     )
+    shared_context = None
+    if normalized_mode == "deepseek_paired" and serialization_version == "compact-v2":
+        assert reference is not None
+        shared_context, reference, observed = compact_paired_shared_context(
+            reference,
+            observed,
+        )
     observed_candidates = tuple(sorted({event["node_id"] for event in observed}))
     if normalized_mode == "deepseek_paired":
         if reference is None:
@@ -374,7 +382,27 @@ def build_attribution_prompt(
             "\nCompact trace rule: in model_request events, omitted static "
             "fields inherit their previous value and messages_delta is "
             "appended to the previous messages list.\n"
-            if serialization_version == "compact-v1"
+            if serialization_version in {"compact-v1", "compact-v2"}
+            else ""
+        )
+        if serialization_version == "compact-v2":
+            serialization_note += (
+                "Fields listed in inherits_shared are restored from the "
+                "shared model-request context below.\n"
+            )
+
+        def dumps(value: Any) -> str:
+            if serialization_version == "compact-v2":
+                return json.dumps(
+                    value,
+                    separators=(",", ":"),
+                    ensure_ascii=False,
+                )
+            return json.dumps(value)
+
+        shared_section = (
+            f"Shared model-request context:\n{dumps(shared_context)}\n\n"
+            if shared_context
             else ""
         )
         prompt = (
@@ -382,8 +410,9 @@ def build_attribution_prompt(
             "Compare the traces step by step and identify the first node where the observed execution diverges meaningfully from the clean reference.\n\n"
             "Return only one exact node_id.\n\n"
             f"Trace serialization: {serialization_version}.{serialization_note}\n"
-            f"Clean reference trace:\n{json.dumps(reference)}\n\n"
-            f"Observed trace:\n{json.dumps(observed)}\n\n"
+            f"{shared_section}"
+            f"Clean reference trace:\n{dumps(reference)}\n\n"
+            f"Observed trace:\n{dumps(observed)}\n\n"
             f"Candidate node_ids: {list(paired_candidates)}"
         )
         observed_candidates = paired_candidates
@@ -404,6 +433,7 @@ def build_attribution_prompt(
         mode=normalized_mode,
         clean_observable_trace=reference if normalized_mode == "deepseek_paired" else None,
         corrupt_observable_trace=observed,
+        shared_observable_context=shared_context,
     )
     return AttributionPrompt(
         mode=normalized_mode,
@@ -412,8 +442,21 @@ def build_attribution_prompt(
         prompt_sha256=sha256(prompt.encode("utf-8")).hexdigest(),
         clean_observable_trace=reference if normalized_mode == "deepseek_paired" else None,
         corrupt_observable_trace=observed,
-        clean_trace_sha256=_trace_sha256(reference) if normalized_mode == "deepseek_paired" else None,
-        corrupt_trace_sha256=_trace_sha256(observed),
+        shared_observable_context=shared_context,
+        clean_trace_sha256=(
+            _trace_sha256(
+                {"shared": shared_context, "trace": reference}
+                if shared_context is not None
+                else reference
+            )
+            if normalized_mode == "deepseek_paired"
+            else None
+        ),
+        corrupt_trace_sha256=_trace_sha256(
+            {"shared": shared_context, "trace": observed}
+            if shared_context is not None
+            else observed
+        ),
         candidates=observed_candidates,
         leaked_terms=audit["leaked_terms"],
         privileged_metadata_present=audit["privileged_metadata_present"],
@@ -451,7 +494,7 @@ def serialize_trace_for_attribution(
     ]
     if serialization_version == "full-v1":
         return full
-    if serialization_version == "compact-v1":
+    if serialization_version in {"compact-v1", "compact-v2"}:
         return compact_observable_trace(full)
     raise ValueError(f"unknown trace serialization: {serialization_version}")
 
@@ -532,15 +575,102 @@ def expand_compact_observable_trace(
     return expanded
 
 
+def compact_paired_shared_context(
+    clean_trace: list[dict[str, Any]],
+    observed_trace: list[dict[str, Any]],
+) -> tuple[
+    dict[str, Any],
+    list[dict[str, Any]],
+    list[dict[str, Any]],
+]:
+    """Store identical first-request context once across a paired prompt."""
+    clean_first = _first_model_request(clean_trace)
+    observed_first = _first_model_request(observed_trace)
+    shared = {
+        key: clean_first["payload"][key]
+        for key in ("runtime", "system_message", "available_tools")
+        if key in clean_first["payload"]
+        and clean_first["payload"].get(key)
+        == observed_first["payload"].get(key)
+    }
+    return (
+        shared,
+        _replace_first_request_with_shared(clean_trace, shared),
+        _replace_first_request_with_shared(observed_trace, shared),
+    )
+
+
+def expand_paired_shared_context(
+    shared: dict[str, Any],
+    trace: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """Restore compact-v1 form before expanding a compact-v2 trace."""
+    restored = []
+    restored_first = False
+    for event in trace:
+        if event["event_kind"] != "model_request" or restored_first:
+            restored.append(event)
+            continue
+        payload = dict(event["payload"])
+        inherited = payload.pop("inherits_shared", [])
+        for key in inherited:
+            payload[key] = shared[key]
+        restored.append({**event, "payload": payload})
+        restored_first = True
+    return expand_compact_observable_trace(restored)
+
+
+def _first_model_request(
+    trace: list[dict[str, Any]],
+) -> dict[str, Any]:
+    try:
+        return next(
+            event
+            for event in trace
+            if event["event_kind"] == "model_request"
+        )
+    except StopIteration as exc:
+        raise ValueError("compact-v2 requires a model_request event") from exc
+
+
+def _replace_first_request_with_shared(
+    trace: list[dict[str, Any]],
+    shared: dict[str, Any],
+) -> list[dict[str, Any]]:
+    replaced = []
+    replaced_first = False
+    for event in trace:
+        if event["event_kind"] != "model_request" or replaced_first:
+            replaced.append(event)
+            continue
+        payload = {
+            key: value
+            for key, value in event["payload"].items()
+            if key not in shared
+        }
+        if shared:
+            payload["inherits_shared"] = list(shared)
+        replaced.append({**event, "payload": payload})
+        replaced_first = True
+    return replaced
+
+
 def audit_prompt(
     prompt: str,
     *,
     mode: AttributionMode,
     clean_observable_trace: list[dict[str, Any]] | None,
     corrupt_observable_trace: list[dict[str, Any]],
+    shared_observable_context: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     """Return leakage flags before any external API call."""
-    serialized = json.dumps({"clean": clean_observable_trace, "observed": corrupt_observable_trace}).casefold()
+    serialized = json.dumps(
+        {
+            "shared": shared_observable_context,
+            "clean": clean_observable_trace,
+            "observed": corrupt_observable_trace,
+        }
+    ).casefold()
     privileged_terms = (
         "fault_injected",
         "fault_label",
@@ -596,7 +726,7 @@ def _provider_error_message(body: str) -> str:
     return normalized[:500] or "empty provider response"
 
 
-def _trace_sha256(trace: list[dict[str, Any]] | None) -> str | None:
+def _trace_sha256(trace: Any | None) -> str | None:
     if trace is None:
         return None
     encoded = json.dumps(trace, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode("utf-8")

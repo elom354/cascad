@@ -70,6 +70,8 @@ def test_local_attributor_uses_shared_parser_and_records_provenance() -> None:
 
 
 def test_model_registry_is_explicit_and_rejects_unknown_alias() -> None:
+    assert model_spec("qwen3-1.7b").model_id == "Qwen/Qwen3-1.7B"
+    assert model_spec("qwen3-1.7b").context_tokens == 32_768
     assert model_spec("qwen3-4b").disable_thinking is True
     assert model_spec("qwen3-4b").do_sample is True
     assert model_spec("qwen3-4b").temperature == 0.7
