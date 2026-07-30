@@ -761,6 +761,15 @@ def _parse_node(raw: str, candidates: tuple[str, ...]) -> str | None:
     exact = {candidate.casefold(): candidate for candidate in candidates}
     if normalized in exact:
         return exact[normalized]
-    tokens = re.findall(r"[a-zA-Z0-9_-]+", normalized)
-    matches = {exact[token] for token in tokens if token in exact}
+    identifier_character = r"a-z0-9_:\-"
+    matches = {
+        candidate
+        for candidate in candidates
+        if re.search(
+            rf"(?<![{identifier_character}])"
+            rf"{re.escape(candidate.casefold())}"
+            rf"(?![{identifier_character}])",
+            normalized,
+        )
+    }
     return next(iter(matches)) if len(matches) == 1 else None

@@ -32,6 +32,37 @@ def test_attribution_rejects_ambiguous_multi_node_answer() -> None:
     assert result.predicted_node is None
 
 
+def test_parser_recognizes_namespaced_candidate_inside_safe_formatting() -> None:
+    trace = RunTrace(run_id="namespaced")
+    trace.add_event(
+        NodeEvent("tool::calculate", "tool_call", trace.run_id)
+    )
+
+    result = attribute_failure_detailed(
+        trace,
+        lambda _: "['tool::calculate']",
+    )
+
+    assert result.predicted_node == "tool::calculate"
+
+
+def test_parser_rejects_two_distinct_namespaced_candidates() -> None:
+    trace = RunTrace(run_id="ambiguous-namespaced")
+    trace.add_event(
+        NodeEvent("tool::calculate", "tool_call", trace.run_id)
+    )
+    trace.add_event(
+        NodeEvent("tool::remember", "tool_call", trace.run_id)
+    )
+
+    result = attribute_failure_detailed(
+        trace,
+        lambda _: "tool::calculate then tool::remember",
+    )
+
+    assert result.predicted_node is None
+
+
 def test_paired_prompt_accepts_structurally_different_candidate_sets() -> None:
     clean = RunTrace(run_id="clean")
     clean.add_event(NodeEvent("planner", "model_response", "clean"))
